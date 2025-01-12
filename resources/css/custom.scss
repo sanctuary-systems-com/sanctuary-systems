@@ -21,8 +21,8 @@
 }
 
 @layer components {
-    .banner {
-        clip-path: polygon(0% 0%, 100% 0%, calc(100% - 26px) 50%, 100% 100%, 0% 100%, calc(0% + 26px) 50%);
+    .container {
+        @apply mx-auto max-w-2xl;
     }
 }
 
@@ -46,7 +46,7 @@
     @apply bg-gray relative lg:py-32;
 
     .container {
-        @apply mx-auto max-w-2xl grid grid-cols-2 gap-4;
+        @apply grid grid-cols-2 gap-4;
     }
 
     .col {
