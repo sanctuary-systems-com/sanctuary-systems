@@ -1,0 +1,31 @@
+{{#
+    @name Members
+    @desc The Members page builder block. It extends the prose typography partial.
+    @set page.page_builder.members
+#}}
+
+<!-- /page_builder/_members.antlers.html -->
+{{ partial:page_builder/block class="bg-gray-950 py-16 sm:py-32 lg:py-48" }}
+    <div class="mx-auto max-w-5xl">
+        <div class="mb-8 flex flex-col">
+            <h3 class="text-white text-4xl font-bold mb-4 dot mx-auto">
+                {{ title }}
+            </h3>
+            <p class="text-primary-50 text-center max-w-xl mx-auto font-bold">
+                {{ body }}
+            </p>
+        </div>
+        <div class="grid grid-cols-5 gap-4">
+            {{ members }}
+            <div>
+                {{ partial src="statamic-peak-tools::components/picture" :image="image" cover="false" sizes="(min-width: 768px) 35vw, 90vw" lazy="true" }}
+                <span class="bg-primary-800 py-1 px-6 font-bold text-white text-xl block text-center font-serif banner">{{ name }}</span>
+                <span class="p-2 text-gray-300 block text-center">{{ role }}</span>
+            </div>
+            {{ /members }}
+        </div>
+        
+    </div>
+    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_members.antlers.html -->

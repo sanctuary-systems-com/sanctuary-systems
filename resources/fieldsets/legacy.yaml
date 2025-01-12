@@ -1,0 +1,46 @@
+title: Legacy
+fields:
+  -
+    handle: lead
+    field:
+      type: text
+      display: Lead
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: description
+    field:
+      type: text
+      display: Description
+  -
+    handle: body
+    field:
+      type: text
+      display: Body
+  -
+    handle: entries
+    field:
+      type: replicator
+      display: Entries
+      sets:
+        entries:
+          display: Entries
+          sets:
+            entry:
+              display: Entry
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: images
+                    type: assets
+                    display: Image

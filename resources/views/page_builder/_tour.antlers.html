@@ -1,0 +1,49 @@
+{{#
+    @name Tour
+    @desc The Tour page builder block. It extends the prose typography partial.
+    @set page.page_builder.tour
+#}}
+
+<!-- /page_builder/_tour.antlers.html -->
+{{ partial:page_builder/block class="bg-gray-900 py-16 sm:py-32 lg:py-48" }}
+    <div class="mx-auto max-w-5xl">
+        <div class="mb-8 flex flex-col">
+            <h3 class="text-white text-4xl font-bold mb-4 dot">
+                {{ title }}
+            </h3>
+            <p class="text-primary-50 text-center max-w-xl mx-auto font-bold">
+                {{ body }}
+            </p>
+        </div>
+        <table class="table-auto w-full text-left divide-y-2 divide-dashed divide-gray-700">
+            <thead>
+                <tr class="text-xl text-primary-100 uppercase">
+                    <th class="py-4">Date</th>
+                    <th class="py-4">Location</th>
+                    <th class="py-4">Venue</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y-2 divide-dashed divide-gray-700">
+                {{ entries }}
+                    <tr class="text-white">
+                        <td class="py-4">
+                            <span class="uppercase">{{ date format="M" }}.</span>
+                            <span class="text-3xl font-bold block">{{ date format="d" }}</span>
+                        </td>
+                        <td class="py-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline">
+                                <path fill-rule="evenodd"
+                                    d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                    clip-rule="evenodd" />
+                            </svg> {{ location }}
+                        </td>
+                        <td class="py-4">{{ venue }}</td>
+                    </tr>
+                {{ /entries }}
+            </tbody>
+        </table>
+        
+    </div>
+    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_tour.antlers.html -->

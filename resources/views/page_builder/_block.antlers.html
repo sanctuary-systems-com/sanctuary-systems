@@ -1,0 +1,7 @@
+{{#
+	@name Page builder block
+	@desc The page builder block wrapper
+#}}
+<section class="{{ class }}" {{ if (image) }} style="background: url('{{ image.url }}'); background-position: center center; background-size: cover;" {{ /if }}>
+    {{ slot }}
+</section>

@@ -1,0 +1,20 @@
+title: 'YouTube Video'
+fields:
+  -
+    handle: youtube_video_url
+    field:
+      type: text
+      display: 'YouTube Video URL'
+      instructions: 'Paste a full YouTube video URL here.'
+  -
+    handle: button_text
+    field:
+      type: text
+      display: 'Button Text'
+      width: 50
+  -
+    handle: button_url
+    field:
+      type: text
+      display: 'Button URL'
+      width: 50

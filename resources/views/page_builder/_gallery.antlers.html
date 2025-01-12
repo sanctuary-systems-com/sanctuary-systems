@@ -1,0 +1,18 @@
+{{#
+    @name Gallery
+    @desc The Gallery page builder block. It extends the prose typography partial.
+    @set page.page_builder.gallery
+#}}
+
+<!-- /page_builder/_gallery.antlers.html -->
+{{ partial:page_builder/block class="bg-gray-950 py-16 sm:py-32 lg:py-48" }}
+    <div class="mx-auto max-w-5xl columns-3 gap-4">
+        {{ gallery }}
+            <a href="{{ url }}" data-lightbox="gallery" data-title="{{ alt }}">
+                {{ partial src="statamic-peak-tools::components/picture" :image="url" class="my-4" cover="true" sizes="(min-width: 768px) 35vw, 90vw" lazy="true" }}
+            </a>
+        {{ /gallery }}
+    </div>
+    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_gallery.antlers.html -->

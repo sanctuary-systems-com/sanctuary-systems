@@ -1,0 +1,41 @@
+title: Members
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: body
+    field:
+      type: textarea
+      display: body
+  -
+    handle: members
+    field:
+      type: replicator
+      display: Members
+      sets:
+        members:
+          display: Members
+          sets:
+            members:
+              display: Members
+              fields:
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: images
+                    type: assets
+                    display: Image
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  handle: role
+                  field:
+                    type: text
+                    display: Role

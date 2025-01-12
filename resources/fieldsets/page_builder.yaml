@@ -1,0 +1,60 @@
+title: 'Page builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      localizable: true
+      hide_display: true
+      collapse: true
+      listable: false
+      display: 'Page builder'
+      button_label: 'Add block'
+      sets:
+        Content:
+          display: Content
+          instructions: 'Text based blocks.'
+          sets:
+            hero:
+              display: Hero
+              icon: align-object-center
+              fields:
+                -
+                  import: hero
+            article:
+              display: Article
+              instructions: 'Long form content, can be expanded with media like figures, video, quotes or tables.'
+              icon: text-formatting-image-bottom
+              fields:
+                -
+                  import: article
+            legacy:
+              display: Legacy
+              icon: layout-three-columns
+              fields:
+                -
+                  import: legacy
+            members:
+              display: Members
+              icon: user-avatar
+              fields:
+                -
+                  import: members
+            tour:
+              display: Tour
+              icon: form-address-field
+              fields:
+                -
+                  import: tour
+            gallery:
+              display: Gallery
+              icon: dashboard-layout-2
+              fields:
+                -
+                  import: gallery
+            youtube_video:
+              display: 'YouTube Video'
+              icon: social-youtube
+              fields:
+                -
+                  import: youtube_video

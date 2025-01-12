@@ -1,0 +1,25 @@
+{{#
+    @name Hero
+    @desc The Hero page builder block. It extends the prose typography partial.
+    @set page.page_builder.hero
+#}}
+
+<!-- /page_builder/_hero.antlers.html -->
+{{ partial:page_builder/block class="bg-gray relative" }}
+
+    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 grid grid-cols-2 gap-4">
+        <div class="col md:col-span-1">
+            <img src="assets/pcb.png" alt="">
+        </div>
+        <div class="col md:col-span-1">
+            <span class="text-primary font-semibold text-xl">Introducing</span>
+            <h1 class="text-white font-semibold text-5xl mb-4">Rogue Core</h1>
+            <p class="text-white font-light">Build for <span class="text-primary font-bold">Local AI</span> Home Assistant.<br>
+            A custom Raspberry Pi with a “Bring your own GPU” mindset.</p>
+            <p class="text-white font-light">PCIe Port to connect full power GPU's</p>
+        </div>
+        
+    </div>
+    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_hero.antlers.html -->

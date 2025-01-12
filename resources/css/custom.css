@@ -1,0 +1,29 @@
+/* If you don't want to use the JS in CSS syntax from `tailwind.config.site.js` you can add your own custom CSS here. Use different layers to make sure your CSS either get's purged or not: https://tailwindcss.com/docs/functions-and-directives#layer. CSS in the base layer won't get purged. */
+
+@layer base {
+    h1,h2,h3,h4 {
+        font-family: "Exo", serif;
+
+    }
+}
+
+@layer components {
+    .banner {
+        clip-path: polygon(0% 0%, 100% 0%, calc(100% - 26px) 50%, 100% 100%, 0% 100%, calc(0% + 26px) 50%);
+    }
+}
+
+@layer utilities {
+    .dot {
+        align-items: center;
+        display: flex;
+    }
+    .dot::before {
+        @apply bg-primary;
+        content: '';
+        display: block;
+        margin-right: 10px;
+        width: 10px;
+        height: 10px;
+    }
+}

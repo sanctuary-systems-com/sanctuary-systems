@@ -1,0 +1,36 @@
+title: Tour
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: entries
+    field:
+      type: replicator
+      display: Entries
+      collapse: true
+      sets:
+        entries:
+          display: Entries
+          sets:
+            entries:
+              display: Entries
+              fields:
+                -
+                  handle: date
+                  field:
+                    format: 'F, d'
+                    type: date
+                    display: Date
+                -
+                  handle: location
+                  field:
+                    type: text
+                    display: Location
+                -
+                  handle: venue
+                  field:
+                    type: text
+                    display: Venue
