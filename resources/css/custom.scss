@@ -1,6 +1,10 @@
 /* If you don't want to use the JS in CSS syntax from `tailwind.config.site.js` you can add your own custom CSS here. Use different layers to make sure your CSS either get's purged or not: https://tailwindcss.com/docs/functions-and-directives#layer. CSS in the base layer won't get purged. */
 
 @layer base {
+    html {
+        @apply text-white font-light;
+    }
+
     h1,h2,h3,h4 {
         font-family: "Exo", serif;
         @apply text-white font-semibold mb-4;
@@ -34,5 +38,28 @@
         margin-right: 10px;
         width: 10px;
         height: 10px;
+    }
+}
+
+
+.hero {
+    @apply bg-gray relative lg:py-32;
+
+    .container {
+        @apply mx-auto max-w-2xl grid grid-cols-2 gap-4;
+    }
+
+    .col {
+        @apply md:col-span-1;
+    }
+
+    .lead-title {
+        @apply text-primary font-semibold text-xl;
+    }
+
+    p {
+        span {
+            @apply text-primary font-bold;
+        }
     }
 }
