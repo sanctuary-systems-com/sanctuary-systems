@@ -3,8 +3,17 @@
 @layer base {
     h1,h2,h3,h4 {
         font-family: "Exo", serif;
+        @apply text-white font-semibold mb-4;
 
+        &.on_light {
+            @apply text-gray-900;
+        }
     }
+
+    h1 {
+        @apply text-5xl;
+    }
+
 }
 
 @layer components {

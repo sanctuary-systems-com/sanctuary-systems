@@ -17,7 +17,7 @@ export default defineConfig(({ command, mode }) => {
             laravel({
                 refresh: true,
                 input: [
-                    'resources/css/site.css',
+                    'resources/css/site.scss',
                     'resources/js/site.js',
                 ]
             })
