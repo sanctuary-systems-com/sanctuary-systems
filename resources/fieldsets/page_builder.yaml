@@ -28,12 +28,12 @@ fields:
               fields:
                 -
                   import: article
-            legacy:
-              display: Legacy
+            benefits:
+              display: Benefits
               icon: layout-three-columns
               fields:
                 -
-                  import: legacy
+                  import: benefits
             members:
               display: Members
               icon: user-avatar

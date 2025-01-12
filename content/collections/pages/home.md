@@ -39,7 +39,7 @@ page_builder:
         image: jorge-gordo-w2uh8ldd3tc-unsplash.jpg
         type: entry
         enabled: true
-    type: legacy
+    type: benefits
     enabled: true
   -
     id: m2isv2cg
