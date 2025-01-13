@@ -20,3 +20,15 @@ yarn-error.log
 /public/build/
 /users
 /storage/forms
+.DS_Store
+app/.DS_Store
+content/.DS_Store
+content/trees/.DS_Store
+database/.DS_Store
+lang/.DS_Store
+public/.DS_Store
+public/vendor/.DS_Store
+resources/.DS_Store
+resources/blueprints/.DS_Store
+.DS_Store
+.DS_Store
