@@ -11,11 +11,6 @@ fields:
       type: text
       display: Title
   -
-    handle: description
-    field:
-      type: text
-      display: Description
-  -
     handle: body
     field:
       type: text
@@ -38,9 +33,7 @@ fields:
                     type: text
                     display: Title
                 -
-                  handle: image
+                  handle: body
                   field:
-                    max_files: 1
-                    container: images
-                    type: assets
-                    display: Image
+                    type: textarea
+                    display: body

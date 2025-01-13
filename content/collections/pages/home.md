@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1736681305
+updated_at: 1736764904
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -20,25 +20,28 @@ page_builder:
     lead: Features
     title: Benefits
     description: 'Some text'
-    body: 'More text'
+    body: 'Optio dolores temporibus sit voluptates. Quas magnam qua.'
     entries:
       -
         id: m2htbc6a
-        title: 'Feature 1'
+        title: 'Privacy minded'
         type: entry
         enabled: true
+        body: 'Optio dolores temporibus sit voluptates. Quas magnam quas cumque. Eligendi eveniet voluptatem quis ducimus qui temporibus ut pariatur totam.'
       -
         id: m2htbmb4
-        title: 'Feature 2'
+        title: 'Your System, Your rules'
         image: yvette-de-wit-nyrvisodq2m-unsplash-1@2x.jpg
         type: entry
         enabled: true
+        body: 'Odit aut qui dolores. Eos fuga corrupti recusandae natus. Debitis omnis aut incidunt veritatis consequatur ut. Voluptatem eaque est officia. Velit delectus ratione.'
       -
         id: m2htbzms
-        title: 'Feature 2'
+        title: 'Privacy minded'
         image: jorge-gordo-w2uh8ldd3tc-unsplash.jpg
         type: entry
         enabled: true
+        body: 'Corporis et error. Necessitatibus et harum aperiam sint sint. Voluptatum non fugit consectetur. Deserunt esse aut. Rem excepturi quo.'
     type: benefits
     enabled: true
   -

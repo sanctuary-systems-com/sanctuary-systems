@@ -2,7 +2,11 @@
 
 @layer base {
     html {
-        @apply text-white font-light;
+        @apply bg-gray-900 text-white font-light antialiased scroll-smooth scroll-pt-4;
+    }
+
+    body {
+        @apply flex flex-col min-h-screen selection:bg-primary selection:text-white;
     }
 
     h1,h2,h3,h4 {
@@ -22,31 +26,35 @@
 
 @layer components {
     .container {
-        @apply mx-auto max-w-2xl;
+        @apply mx-auto max-w-5xl;
     }
 }
 
 @layer utilities {
     .dot {
-        align-items: center;
-        display: flex;
+        //align-items: center;
+        //display: flex;
+        position: relative;
     }
     .dot::before {
         @apply bg-primary;
         content: '';
+        position: absolute;
+        left: -29px;
+        top: 7px;
         display: block;
         margin-right: 10px;
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 22px;
     }
 }
 
 
 .hero {
-    @apply bg-gray relative lg:py-32;
+    @apply bg-gray lg:py-32;
 
     .container {
-        @apply grid grid-cols-2 gap-4;
+        @apply grid grid-cols-2 gap-6;
     }
 
     .col {
@@ -60,6 +68,38 @@
     p {
         span {
             @apply text-primary font-bold;
+        }
+    }
+}
+
+.benefits {
+    @apply pb-16 -mt-16;
+
+    .container {
+        @apply grid grid-cols-4 gap-6;
+    }
+
+    .description {
+        @apply flex flex-col justify-center pt-16;
+
+        .lead-title {
+            @apply font-bold text-primary;
+        }
+
+        h3 {
+            @apply text-4xl;
+        }
+    }
+
+    .benefit {
+        @apply bg-gray-50 p-6;
+
+        h3 {
+            @apply text-2xl;
+        }
+
+        p {
+            @apply text-gray-800;
         }
     }
 }
