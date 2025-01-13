@@ -32,6 +32,7 @@ jobs:
         uses: php-actions/composer@v6
         with:
           dev: no
+          php_version: "8.4"
           php_extensions: exif
       - name: Build ssg
         env:
