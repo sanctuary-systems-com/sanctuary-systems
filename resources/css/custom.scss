@@ -49,6 +49,18 @@
     }
 }
 
+.navbar {
+    @apply absolute w-full fluid-grid py-4;
+
+    .container {
+        @apply span-content flex justify-between items-start;
+    }
+
+    img {
+        width: 260px;
+    }
+}
+
 
 .hero {
     @apply bg-gray lg:py-32;
