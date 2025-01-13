@@ -32,7 +32,7 @@ jobs:
         uses: php-actions/composer@v6
         with:
           dev: no
-          php_version: "8.4"
+          php_version: "8.2"
           php_extensions: exif
       - name: Build ssg
         env:
@@ -40,7 +40,8 @@ jobs:
         run: |
           cp .env.example .env
           npm ci && npm run build
-          
+
+          php --version
           php artisan cache:clear
           php artisan config:cache
           php artisan route:cache
