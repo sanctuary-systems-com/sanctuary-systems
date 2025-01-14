@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1736764904
+updated_at: 1736847634
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -14,7 +14,17 @@ page_builder:
     id: m2dgwakw
     type: hero
     enabled: true
-    title: 'Rogue Core'
+    title: 'Power Your Sanctuary with Local AI'
+    lead_title: 'The Rogue Core'
+    description: |-
+      Reclaim your home with the Rogue Core, the ultimate platform for <span>privacy-first</span>, DIY smart home systems. Built for autonomous, <span>local AI</span> home automation, this custom Raspberry Pi embraces a "Bring Your Own GPU" mindset.
+      <br><br>
+      Featuring a PCIe port for connecting <span>full-power GPUs</span>, Rogue Core empowers you to run advanced large language models and create a private, offline voice assistant with unmatched performance.
+      <br><br>
+      <span>Your system. Your rules. Your sanctuary.</span>
+    image: pcb.png
+    button_text: 'Explore Rogue Core'
+    button_link: '#product'
   -
     id: m2htaiuq
     lead: Features
