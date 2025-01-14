@@ -8,15 +8,14 @@
 {{ partial:page_builder/block class="hero" }}
 
     <div class="container">
-        <div class="col">
-            <img src="assets/pcb.png" alt="pcb">
+        <div class="col flex items-center">
+            <img src="{{ image }}" alt="pcb">
         </div>
         <div class="col">
-            <span class="lead-title">Introducing</span>
-            <h1>Rogue Core</h1>
-            <p>Build for <span>Local AI</span> Home Assistant.<br>
-            A custom Raspberry Pi with a “Bring your own GPU” mindset.</p>
-            <p>PCIe Port to connect full power GPU's</p>
+            <span class="lead-title">{{ lead_title }}</span>
+            <h1>{{ title }}</h1>
+            <p>{{ description }}</p>
+            <a href="{{ button_link }}" class="btn-ghost">{{ button_text }}</a>
         </div>
         
     </div>

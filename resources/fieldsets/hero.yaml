@@ -1,21 +1,34 @@
 title: Hero
 fields:
   -
+    handle: lead_title
+    field:
+      type: text
+      display: 'Lead title'
+  -
     handle: title
     field:
       type: text
       display: Title
   -
-    handle: logo
+    handle: description
     field:
-      max_files: 1
-      container: images
-      type: assets
-      display: Logo
+      type: textarea
+      display: Description
   -
-    handle: background_img
+    handle: button_text
+    field:
+      type: text
+      display: 'Button text'
+  -
+    handle: button_link
+    field:
+      type: link
+      display: 'Button link'
+  -
+    handle: image
     field:
       max_files: 1
       container: images
       type: assets
-      display: 'Background img'
+      display: Image
