@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1736856250
+updated_at: 1736859722
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -55,60 +55,111 @@ page_builder:
   -
     id: m5wfbw76
     lead_title: 'Empowering You to Reclaim Your Home'
-    title: 'Where it all started'
+    title: 'Why we do what we do'
     content:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'At Sanctuary Systems, we believe your home isn’t just where you live—it’s your safe haven, for you and your loved ones. It should be private, secure, and entirely under your control. That’s why we design and manufacture cutting-edge, privacy-focused smart home products for those who refuse to compromise.'
-          -
-            type: hardBreak
-          -
-            type: hardBreak
-          -
-            type: text
-            text: 'Our flagship product, Rogue Core, redefines what’s possible in home automation. A custom Raspberry Pi with a PCIe port, it lets you connect a GPU to run powerful large language models (LLMs)—the backbone of privacy-respecting, offline voice assistants. This isn’t just about smarter homes; it’s about reclaiming autonomy and pushing boundaries.'
-          -
-            type: hardBreak
-      -
-        type: blockquote
-        content:
-          -
-            type: paragraph
-            content:
+            marks:
               -
-                type: text
-                marks:
-                  -
-                    type: bold
-                text: 'Your system, your rules, your sanctuary'
+                type: italic
+            text: 'At Sanctuary Systems, we believe your smart home isn’t just where you live—it’s your safe haven, for you and your loved ones. It should be private, secure, and entirely under your control.'
       -
         type: paragraph
         content:
           -
-            type: hardBreak
-          -
             type: text
-            text: 'And we’re just getting started. While our current focus is on Home Assistant LLMs, the possibilities extend far beyond voice control. Every product we create is crafted to empower innovators like you, ensuring every detail delivers seamless, polished performance.'
-          -
-            type: hardBreak
-          -
-            type: hardBreak
-          -
-            type: text
-            text: 'Sanctuary Systems isn’t just about technology; it’s about helping you take pride in your creations. Innovate boldly, reclaim your potential, and transform your home into the sanctuary it’s meant to be.'
-          -
-            type: hardBreak
-          -
-            type: hardBreak
+            text: 'We are '
           -
             type: text
             marks:
               -
                 type: bold
-            text: 'Your system, your rules, your sanctuary'
+            text: husbands
+          -
+            type: text
+            text: ', '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: fathers
+          -
+            type: text
+            text: ', and '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'DIY/tech enthusiasts'
+          -
+            type: text
+            text: ", that's why we design and manufacture cutting-edge, privacy-focused smart home products for those who refuse to compromise."
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Our first product says it all'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Th Rogue Core, redefines what’s possible in home automation. A custom Raspberry Pi with a PCIe port, it lets you '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'connect a GPU'
+          -
+            type: text
+            text: ' to run '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'powerful large language models'
+          -
+            type: text
+            text: ' (LLMs) locally—the backbone of privacy-respecting, offline voice assistants. This isn’t just about smarter homes; it’s about reclaiming autonomy and pushing boundaries.'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'And we’re just getting started.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'While our current focus is on Home Assistant LLMs, the possibilities extend far beyond voice control. Every product we create is crafted to empower innovators like you, ensuring every detail delivers seamless, polished performance.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Sanctuary Systems isn’t just about technology; it’s about helping you take pride in your creations. Innovate boldly, reclaim your potential, and transform your home into the sanctuary it’s meant to be.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Your system, your sanctuary'
     type: long_content
     enabled: true
 ---
