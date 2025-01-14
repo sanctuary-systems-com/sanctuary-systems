@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1736866441
+updated_at: 1736872929
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -161,5 +161,32 @@ page_builder:
                 type: bold
             text: 'Your system, your sanctuary'
     type: long_content
+    enabled: true
+  -
+    id: m5wme04w
+    lead_title: 'Why Choose Rogue Core?'
+    title: 'Unleash the Power of Local AI'
+    description: 'Rogue Core is more than a product—it’s your toolkit for crafting a smarter, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
+    image: pcb.png
+    usps:
+      -
+        id: m5wmfi34
+        title: 'Custom PCIe port for GPU'
+        description: 'Keep your data where it belongs—in your hands. Rogue Core’s offline capabilities ensure your personal information stays private, free from prying eyes or invasive cloud services.'
+        type: new_set
+        enabled: true
+      -
+        id: m5wmggc3
+        title: 'Rasberry Pi'
+        description: 'Featuring a PCIe port, Rogue Core enables you to connect powerful GPUs, giving you the muscle to run advanced AI models and create systems tailored to your unique needs.'
+        type: new_set
+        enabled: true
+      -
+        id: m5wmgpxf
+        title: 'Innovate Your Way'
+        description: 'With its modular design and open platform, Rogue Core lets you take full control of your home automation. Tinker, build, and customize to create a system that’s truly yours.'
+        type: new_set
+        enabled: true
+    type: product
     enabled: true
 ---
