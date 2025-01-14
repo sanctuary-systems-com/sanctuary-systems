@@ -64,3 +64,9 @@ fields:
               fields:
                 -
                   import: long_content
+            product:
+              display: Product
+              icon: addon-boxes-stack
+              fields:
+                -
+                  import: product

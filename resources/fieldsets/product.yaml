@@ -1,0 +1,46 @@
+title: product
+fields:
+  -
+    handle: lead_title
+    field:
+      type: text
+      display: 'Lead title'
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: images
+      type: assets
+      display: Image
+  -
+    handle: usps
+    field:
+      type: replicator
+      display: "USP's"
+      sets:
+        usps:
+          display: "USP's"
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description

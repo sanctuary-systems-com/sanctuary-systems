@@ -1,0 +1,32 @@
+{{#
+    @name Product
+    @desc The product page builder block. It extends the prose typography partial.
+    @set page.page_builder.product
+#}}
+
+<!-- /page_builder/_product.antlers.html -->
+{{ partial:page_builder/block class="product" }}
+
+    <div class="container">
+        <div class="col">
+            <span class="lead-title">{{ lead_title }}</span>
+            <h2>{{ title }}</h2>
+            <p>{{ description }}</p>
+        </div>
+        <div class="col">
+            <img src="{{ image }}" alt="pcb">
+            <div class="usps">
+                {{ usps }}
+                    <div class="usp">
+                        <div class="body">
+                            <h4>{{ title }}</h4>
+                            <p>{{ description }}</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                {{ /usps }}
+            </div>
+        </div>
+    </div>
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_product.antlers.html -->
