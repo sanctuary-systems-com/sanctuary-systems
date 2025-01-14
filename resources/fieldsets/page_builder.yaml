@@ -58,3 +58,9 @@ fields:
               fields:
                 -
                   import: youtube_video
+            long_content:
+              display: 'Long content'
+              icon: text-formatting-initial-letter
+              fields:
+                -
+                  import: long_content

@@ -1,0 +1,18 @@
+title: 'Long content'
+fields:
+  -
+    handle: lead_title
+    field:
+      type: text
+      display: 'Lead title'
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: content
+    field:
+      remove_empty_nodes: false
+      type: bard
+      display: Content

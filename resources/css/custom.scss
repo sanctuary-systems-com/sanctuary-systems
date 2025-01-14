@@ -72,6 +72,10 @@
             @apply text-gray-900;
         }
     }
+
+    .lead-title {
+        @apply font-bold text-primary;
+    }
 }
 
 .navbar {
@@ -99,7 +103,7 @@
     }
 
     .lead-title {
-        @apply text-primary font-semibold text-xl;
+        @apply text-xl;
     }
 
     p {
@@ -119,10 +123,6 @@
     .description {
         @apply flex flex-col justify-center pt-16;
 
-        .lead-title {
-            @apply font-bold text-primary;
-        }
-
         h3 {
             @apply text-4xl;
         }
@@ -138,5 +138,17 @@
         p {
             @apply text-gray-800;
         }
+    }
+}
+
+.long-content {
+    @apply py-16;
+    
+    .container {
+        @apply grid grid-cols-6 gap-6;
+    }
+
+    .col {
+        @apply col-span-4 col-start-2;
     }
 }
