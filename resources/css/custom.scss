@@ -30,7 +30,7 @@
 
 @layer components {
     .container {
-        @apply mx-auto max-w-5xl;
+        @apply mx-auto max-w-5xl gap-6 px-6 xl:px-0;
     }
 
     .btn {
@@ -79,7 +79,7 @@
 }
 
 .navbar {
-    @apply absolute w-full fluid-grid py-4;
+    @apply absolute w-full py-4;
 
     .container {
         @apply span-content flex justify-between items-start;
@@ -92,14 +92,14 @@
 
 
 .hero {
-    @apply bg-gray lg:py-32;
+    @apply bg-gray py-32 lg:py-32;
 
     .container {
         @apply grid grid-cols-2 gap-6;
     }
 
     .col {
-        @apply md:col-span-1;
+        @apply col-span-2 md:col-span-1;
     }
 
     .lead-title {
@@ -114,14 +114,14 @@
 }
 
 .benefits {
-    @apply pb-16 -mt-16;
+    @apply py-16 lg:pb-16 lg:pt-0 lg:-mt-16;
 
     .container {
-        @apply grid grid-cols-4 gap-6;
+        @apply grid grid-cols-12;
     }
 
     .description {
-        @apply flex flex-col justify-center pt-16;
+        @apply flex flex-col justify-center lg:pt-16 col-span-12 lg:col-span-3;
 
         h3 {
             @apply text-4xl;
@@ -129,7 +129,7 @@
     }
 
     .benefit {
-        @apply bg-gray-50 p-6 rounded;
+        @apply bg-gray-50 p-6 rounded col-span-12 md:col-span-4 lg:col-span-3;
 
         h3 {
             @apply text-2xl;
@@ -149,11 +149,11 @@
     }
 
     .col:first-child {
-        @apply col-span-8 col-start-2;
+        @apply col-span-12 md:col-span-8 md:col-start-2;
     }
 
     .col:last-child {
-        @apply col-span-10 col-start-2 border-l-8 border-gray-800 pl-6;
+        @apply col-span-12 md:col-span-10 md:col-start-2 border-l-8 border-gray-800 pl-6;
     }
 
     p:not(:last-child) {
@@ -181,11 +181,11 @@
     @apply py-16 bg-gray-800;
 
     .col:last-child {
-        @apply relative py-16 flex justify-center items-center;
+        @apply md:relative md:py-16 md:flex md:justify-center items-center;
     }
 
     img {
-        @apply absolute w-3/4;
+        @apply py-6 md:absolute w-full lg:w-3/4;
     }
 
     .usps {
@@ -193,10 +193,10 @@
     }
 
     .usp {
-        @apply relative -my-6 flex items-center;
+        @apply py-3 md:py-0 md:relative md:-my-6 flex items-center;
 
         .body {
-            @apply w-1/3 bg-gray-900 px-4 py-3 rounded;
+            @apply md:w-1/3 bg-gray-900 px-4 py-3 rounded;
 
             h4 {
                 @apply text-xl mb-0;
@@ -204,7 +204,7 @@
         }
     
         .line {
-            @apply w-32 bg-primary h-1 ml-1;
+            @apply hidden md:block w-32 bg-primary h-1 ml-1;
         }
     }
 
@@ -212,7 +212,7 @@
         @apply flex-row-reverse;
 
         .body {
-            @apply ml-1;
+            @apply md:ml-1;
         }
     
         .line {
