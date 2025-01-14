@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1736859722
+updated_at: 1736866441
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -45,7 +45,7 @@ page_builder:
         body: 'Our products are made for those who love to build, customize, and create. With open platforms and modular designs, we give you the tools to turn your vision into reality.'
       -
         id: m2htbzms
-        title: 'No Cloud Dependency'
+        title: 'Independent from the cloud'
         image: jorge-gordo-w2uh8ldd3tc-unsplash.jpg
         type: entry
         enabled: true
