@@ -16,3 +16,13 @@ fields:
       remove_empty_nodes: false
       type: bard
       display: Content
+      buttons:
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - anchor
+        - h4
+      fullscreen: false

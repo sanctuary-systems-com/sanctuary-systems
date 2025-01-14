@@ -155,4 +155,24 @@
     .col:last-child {
         @apply col-span-10 col-start-2 border-l-8 border-gray-800 pl-6;
     }
+
+    p:not(:last-child) {
+        @apply mb-6;
+
+        strong {
+            @apply text-primary-200;
+        }
+    }
+
+    em {
+        @apply font-normal;
+    }
+
+    strong {
+        @apply font-bold;
+    }
+
+    h3 {
+        @apply mb-0;
+    }
 }
