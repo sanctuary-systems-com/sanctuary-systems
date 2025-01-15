@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1736872929
+updated_at: 1736953691
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -15,13 +15,13 @@ page_builder:
     type: hero
     enabled: true
     title: 'Power Your Sanctuary with Local AI'
-    lead_title: 'The Rogue Core'
+    lead_title: 'The Haven Core'
     description: |-
-      Reclaim your home with the Rogue Core, the ultimate platform for <span>privacy-first</span>, DIY smart home systems. Built for autonomous, <span>local AI</span> home automation, this custom Raspberry Pi embraces a "Bring Your Own GPU" mindset.
+      Reclaim your home with the Haven Core, the ultimate platform for <span>privacy-first</span>, DIY smart home systems. Built for autonomous, <span>local AI</span> home automation, this custom Raspberry Pi 5 embraces a "Bring Your Own GPU" mindset.
       <br><br>
-      Featuring a PCIe port for connecting <span>full-power GPUs</span>, Rogue Core empowers you to run advanced large language models and create a private, offline voice assistant with unmatched performance.
+      Featuring a PCIe port for connecting <span>full-power GPUs</span>, Haven Core empowers you to run advanced large language models and create a private, offline voice assistant with unmatched performance.
     image: pcb.png
-    button_text: 'Explore Rogue Core'
+    button_text: 'Explore Haven Core'
     button_link: '#product'
   -
     id: m2htaiuq
@@ -112,7 +112,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Th Rogue Core, redefines what’s possible in home automation. A custom Raspberry Pi with a PCIe port, it lets you '
+            text: 'The Haven Core, redefines what’s possible in home automation. A custom Raspberry Pi 5 with a PCIe port, it lets you '
           -
             type: text
             marks:
@@ -164,27 +164,33 @@ page_builder:
     enabled: true
   -
     id: m5wme04w
-    lead_title: 'Why Choose Rogue Core?'
-    title: 'Unleash the Power of Local AI'
-    description: 'Rogue Core is more than a product—it’s your toolkit for crafting a smarter, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
+    lead_title: 'Why Choose Haven Core?'
+    title: 'Unleash full power Local AI'
+    description: 'Haven Core is more than a product—it’s your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
     image: pcb.png
     usps:
       -
         id: m5wmfi34
-        title: 'Custom PCIe port for GPU'
-        description: 'Keep your data where it belongs—in your hands. Rogue Core’s offline capabilities ensure your personal information stays private, free from prying eyes or invasive cloud services.'
+        title: 'Lightning-fast Local AI'
+        description: 'This custom Raspberry Pi 5 has a PCIe port that unlocks GPU-powered AI voice assistance (LLMs).'
         type: new_set
         enabled: true
       -
         id: m5wmggc3
-        title: 'Rasberry Pi'
-        description: 'Featuring a PCIe port, Rogue Core enables you to connect powerful GPUs, giving you the muscle to run advanced AI models and create systems tailored to your unique needs.'
+        title: 'Designed for Efficiency'
+        description: 'Raspberry Pi 5 Foundation: Delivers exceptional energy efficiency for your smart home setup.'
         type: new_set
         enabled: true
       -
         id: m5wmgpxf
-        title: 'Innovate Your Way'
-        description: 'With its modular design and open platform, Rogue Core lets you take full control of your home automation. Tinker, build, and customize to create a system that’s truly yours.'
+        title: 'Easy Setup'
+        description: "Get started effortlessly with a pre-installed kit or an easy-to-use installation image. Whether you're a DIY enthusiast or a first-time creator, setup is seamless"
+        type: new_set
+        enabled: true
+      -
+        id: m5xxutu9
+        title: 'Compact, Premium Form Factor'
+        description: 'The Mini ITX form factor provides flexibility for repurposing PC components like a PSU and cases for upgradeability and customization—all while maintaining a premium, compact build.'
         type: new_set
         enabled: true
     type: product

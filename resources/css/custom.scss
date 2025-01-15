@@ -208,7 +208,7 @@
         }
     }
 
-    .usp:nth-child(2) {
+    .usp:nth-child(even) {
         @apply flex-row-reverse;
 
         .body {
