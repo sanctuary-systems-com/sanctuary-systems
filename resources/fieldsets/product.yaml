@@ -1,4 +1,4 @@
-title: product
+title: Product
 fields:
   -
     handle: lead_title
@@ -44,3 +44,15 @@ fields:
                   field:
                     type: textarea
                     display: Description
+  -
+    handle: button_text
+    field:
+      type: text
+      display: 'Button text'
+      width: 50
+  -
+    handle: button_link
+    field:
+      type: link
+      display: 'Button link'
+      width: 50

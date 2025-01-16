@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737021086
+updated_at: 1737021442
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -195,4 +195,6 @@ page_builder:
         enabled: true
     type: product
     enabled: true
+    button_text: 'Explore the Haven Core'
+    button_link: '#'
 ---
