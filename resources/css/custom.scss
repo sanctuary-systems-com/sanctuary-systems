@@ -180,7 +180,19 @@
 .product {
     @apply py-16 bg-gray-800;
 
-    .col:last-child {
+    .container {
+        @apply grid grid-cols-3;
+    }
+
+    .col {
+        @apply col-span-3;
+    }
+
+    .col:first-child {
+        @apply col-span-2 lg:col-span-2;
+    }
+
+    .col:nth-child(2) {
         @apply md:relative md:py-16 md:flex md:justify-center items-center;
     }
 
