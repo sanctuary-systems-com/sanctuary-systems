@@ -70,3 +70,9 @@ fields:
               fields:
                 -
                   import: product
+            spec_list:
+              display: 'Spec. List'
+              icon: media-playlist
+              fields:
+                -
+                  import: spec_list

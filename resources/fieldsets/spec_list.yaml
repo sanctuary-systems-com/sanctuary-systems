@@ -1,0 +1,20 @@
+title: 'Spec. List'
+fields:
+  -
+    handle: list
+    field:
+      type: grid
+      display: List
+      fields:
+        -
+          handle: title
+          field:
+            type: text
+            display: Title
+            width: 25
+        -
+          handle: description
+          field:
+            type: text
+            display: Description
+            width: 75

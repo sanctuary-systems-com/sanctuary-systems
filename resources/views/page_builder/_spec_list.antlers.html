@@ -1,0 +1,22 @@
+{{#
+    @name Spec. List
+    @desc The spec. list page builder block. It extends the prose typography partial.
+    @set page.page_builder.spec_list
+#}}
+
+<!-- /page_builder/_spec_list.antlers.html -->
+{{ partial:page_builder/block class="spec_list" }}
+
+    <div class="container">
+        <dl class="divide-y divide-gray-700">
+            {{ list }}
+                <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                    <dt class="text-sm/6 font-bold">{{ title }}</dt>
+                    <dd class="mt-1 text-sm/6 sm:col-span-2 sm:mt-0">{{ description }}</dd>
+                </div>
+            {{ /list }}
+        </dl>
+    </div>
+    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_spec_list.antlers.html -->
