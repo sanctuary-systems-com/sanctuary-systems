@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1736953691
+updated_at: 1737021086
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -172,13 +172,13 @@ page_builder:
       -
         id: m5wmfi34
         title: 'Lightning-fast Local AI'
-        description: 'This custom Raspberry Pi 5 has a PCIe port that unlocks GPU-powered AI voice assistance (LLMs).'
+        description: 'This custom Raspberry Pi 5 has a PCIe port to unlock GPU-powered AI voice assistance (LLMs).'
         type: new_set
         enabled: true
       -
         id: m5wmggc3
         title: 'Designed for Efficiency'
-        description: 'Raspberry Pi 5 Foundation: Delivers exceptional energy efficiency for your smart home setup.'
+        description: 'Raspberry Pi 5 Foundation: Delivers balanced energy efficiency for your smart home setup.'
         type: new_set
         enabled: true
       -
