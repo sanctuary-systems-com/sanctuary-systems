@@ -4,14 +4,21 @@ blueprint: page
 title: 'Maven Core'
 page_builder:
   -
-    id: m621jy4b
-    title: 'The Maven Core'
-    description: '<strike>$229.99 USD</strike>  - <strong>$189.99 USD</strong><br>'
-    button_text: 'Join the Waitlist'
-    button_link: '#'
-    type: hero
-    enabled: true
+    id: m62kwpvp
     lead_title: 'Coming Soon'
+    title: 'The Maven Core'
+    description: |-
+      <strike>$229.99 USD</strike>  - <strong>$189.99 USD</strong><br>
+      <br>
+      Get ready to elevate your home setup with privacy-first Local AI. The Maven Core is <span>almost here</span>, and our first batch will be <span>limited.</span> Once the first batch sells out, we’ll move back to waitlist mode—don’t miss out!<br>
+      <br>
+      <strong>Join the waiting list here to get notified as soon as it’s available.</strong>
+    type: optin
+    enabled: true
+    fname_field: 'First name*'
+    email_field: 'Email Address*'
+    button_text: 'Join the Waitlist'
+    optin_note: 'We respect your privacy. This list will only be used to notify you when the Maven Core becomes available—no spam, no exceptions.'
   -
     id: m621115e
     content:
@@ -138,5 +145,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737227694
+updated_at: 1737231889
 ---

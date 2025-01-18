@@ -1,0 +1,37 @@
+title: Optin
+fields:
+  -
+    handle: lead_title
+    field:
+      type: text
+      display: 'Lead title'
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: fname_field
+    field:
+      type: text
+      display: 'Fname field'
+  -
+    handle: email_field
+    field:
+      type: text
+      display: Email_field
+  -
+    handle: button_text
+    field:
+      type: text
+      display: 'Button text'
+  -
+    handle: optin_note
+    field:
+      type: textarea
+      display: 'Optin note'

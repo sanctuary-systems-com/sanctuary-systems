@@ -21,6 +21,12 @@ fields:
               fields:
                 -
                   import: hero
+            optin:
+              display: Optin
+              icon: align-right
+              fields:
+                -
+                  import: optin
             benefits:
               display: Benefits
               icon: layout-three-columns

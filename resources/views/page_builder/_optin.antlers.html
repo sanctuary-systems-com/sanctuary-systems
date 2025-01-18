@@ -1,0 +1,34 @@
+{{#
+    @name Optin
+    @desc The optin page builder block. It extends the prose typography partial.
+    @set page.page_builder.optin
+#}}
+
+<!-- /page_builder/_optin.antlers.html -->
+{{ partial:page_builder/block class="optin" }}
+
+    <div class="container {{ if is_homepage }}py-32 lg:py-32{{ else }}pt-36 pb-12{{ /if }}">
+        <div class="col">
+            {{ if lead_title }}
+                <span class="lead-title">{{ lead_title }}</span>
+            {{ /if }}
+            <h1>{{ title }}</h1>
+            {{ if description }}
+                <p>{{ description }}</p>
+            {{ /if }}
+        </div>
+        <div class="col">
+            <form action="https://pepijndevos.us18.list-manage.com/subscribe/post?u=e7f7b594438b722449e6ccffd&amp;id=1591002080&amp;f_id=00a829e7f0" method="post" name="mc-embedded-subscribe-form" target="_self" novalidate="">
+                <input type="text" name="FNAME" required="" placeholder="{{ fname_field }}">
+                <input type="email" name="EMAIL" required="" placeholder="{{ email_field }}">
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    <input type="text" name="b_e7f7b594438b722449e6ccffd_1591002080" tabindex="-1" value="">
+                </div>
+                <input type="submit" name="subscribe" class="btn-primary" value="{{ button_text }}">
+            </form>
+            <p class="note">{{ optin_note }}</p>
+        </div>
+    </div>
+    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_optin.antlers.html -->

@@ -34,7 +34,7 @@
     }
 
     .btn {
-        @apply font-bold py-3 px-4 rounded inline-block mt-6 transition active:translate-x-1;
+        @apply font-bold py-3 px-4 rounded inline-block mt-6 transition active:translate-x-1 cursor-pointer;
     }
 
     .btn-primary {
@@ -124,6 +124,60 @@
         strong {
             @apply font-bold;
         }
+    }
+}
+
+.optin {
+    @apply bg-gray;
+
+    .container {
+        @apply grid grid-cols-2 gap-6;
+    }
+
+    .col {
+        @apply col-span-2 md:col-span-1;
+    }
+
+    .lead-title {
+        @apply text-xl;
+    }
+
+    p {
+        span {
+            @apply text-primary font-bold;
+        }
+
+        strike {
+            @apply text-gray-200;
+        }
+
+        strong {
+            @apply font-bold;
+        }
+
+        sub {
+            @apply text-sm;
+        }
+    }
+
+    form {
+        @apply bg-gray-900 p-6 rounded-md grid grid-cols-1 gap-6;
+        
+        input[type=text], input[type=email] {
+            @apply rounded text-gray-900 font-bold transition-all;
+
+            &:hover {
+                @apply ring ring-primary-800;
+            }
+        }
+
+        .btn-primary {
+            @apply mt-0;
+        }
+    }
+
+    .note {
+        @apply text-sm font-normal text-gray-200/50 py-4 px-6;
     }
 }
 
