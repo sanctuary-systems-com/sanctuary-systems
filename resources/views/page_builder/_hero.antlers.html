@@ -8,14 +8,21 @@
 {{ partial:page_builder/block class="hero" }}
 
     <div class="container">
-        <div class="col flex items-center">
-            <img src="{{ image }}" alt="pcb">
-        </div>
+        {{ if image }}
+            <div class="col flex items-center">
+                <img src="{{ image }}" alt="pcb">
+            </div>
+        {{ /if }}
         <div class="col">
             <span class="lead-title">{{ lead_title }}</span>
             <h1>{{ title }}</h1>
-            <p>{{ description }}</p>
-            <a href="{{ button_link }}" class="btn-ghost">{{ button_text }}</a>
+            {{ if description }}
+                <p>{{ description }}</p>
+            {{ /if }}
+
+            {{ if button_link }}
+                <a href="{{ button_link }}" class="btn-ghost">{{ button_text }}</a>
+            {{ /if }}
         </div>
         
     </div>
