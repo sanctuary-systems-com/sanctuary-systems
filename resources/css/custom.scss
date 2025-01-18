@@ -232,3 +232,21 @@
         }
     }
 }
+
+.spec_list {
+    dl {
+        @apply divide-y divide-gray-700;
+    }
+
+    .spec {
+        @apply px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0;
+    }
+
+    .title {
+        @apply text-sm/6 font-bold;
+    }
+
+    .description {
+        @apply mt-1 text-sm/6 sm:col-span-2 sm:mt-0;
+    }
+}

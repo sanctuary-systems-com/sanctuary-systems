@@ -8,11 +8,11 @@
 {{ partial:page_builder/block class="spec_list" }}
 
     <div class="container">
-        <dl class="divide-y divide-gray-700">
+        <dl>
             {{ list }}
-                <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                    <dt class="text-sm/6 font-bold">{{ title }}</dt>
-                    <dd class="mt-1 text-sm/6 sm:col-span-2 sm:mt-0">{{ description }}</dd>
+                <div class="spec">
+                    <dt class="title">{{ title }}</dt>
+                    <dd class="description">{{ description }}</dd>
                 </div>
             {{ /list }}
         </dl>
