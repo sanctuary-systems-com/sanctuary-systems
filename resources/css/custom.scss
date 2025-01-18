@@ -230,6 +230,10 @@
         @apply md:relative md:py-16 md:flex md:justify-center items-center;
     }
 
+    .col:last-child {
+        @apply flex;
+    }
+
     img {
         @apply py-6 md:absolute w-full lg:w-3/4;
     }
@@ -264,6 +268,10 @@
         .line {
             @apply ml-auto;
         }
+    }
+
+    .btn-primary {
+        @apply ml-auto;
     }
 }
 
