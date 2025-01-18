@@ -67,8 +67,8 @@ page_builder:
   -
     id: m623utnd
     gallery:
+      - rogue-core.png
       - pcb.png
-      - a-peak.jpg
     type: gallery
     enabled: true
   -
@@ -138,5 +138,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737224005
+updated_at: 1737227694
 ---
