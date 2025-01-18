@@ -47,13 +47,13 @@ page_builder:
       -
         id: m627mvng
         title: 'Energy Efficiency Meets Performance'
-        body: 'Leveraging the Raspberry Pi 5 foundation, Haven Core delivers exceptional energy efficiency without sacrificing capability.'
+        body: 'Based on the Raspberry Pi Compute Model 5, Haven Core delivers exceptional energy efficiency without sacrificing capability.'
         type: feature
         enabled: true
       -
         id: m627n4uk
         title: 'Effortless Setup'
-        body: 'With a pre-installed kit or easy-install image, getting started is seamless—for beginners and experienced DIY enthusiasts.'
+        body: 'With Home Assistant pre-installed and a preconfigured AI voice assistant, getting started is seamless—choose a plug-and-play compute module kit or an easy-to-install image, perfect for beginners and experienced DIY enthusiasts'
         type: feature
         enabled: true
       -
@@ -81,11 +81,11 @@ page_builder:
       -
         id: m61ztg1t
         title: 'Processor:'
-        description: 'Built with Raspberry Pi Compute Module 5 (CM5) Lite, offering reliable performance and versatility.'
+        description: 'Built with Raspberry Pi Compute Module 5 (CM5), offering reliable performance and versatility.'
       -
         id: m61ztgo1
         title: 'Ethernet:'
-        description: 'Gigabit Ethernet RJ45 with PoE+ HAT+ support for high-speed wired networking.'
+        description: 'Gigabit Ethernet RJ45 + HAT + support for high-speed wired networking.'
       -
         id: m61zti21
         title: 'USB:'
@@ -97,11 +97,11 @@ page_builder:
       -
         id: m620nk7r
         title: 'PCIe:'
-        description: 'PCIe socket for GPU integration, unlocking advanced local AI capabilities.'
+        description: 'High-speed gen 3 x1 socket for GPU compatibility, unlocking advanced local AI capabilities.'
       -
         id: m620nxcv
         title: 'Raspberry Pi HAT:'
-        description: 'Raspberry Pi HAT+ connector for additional functionality.'
+        description: 'Raspberry Pi HAT + connector for additional functionality.'
       -
         id: m620o5s8
         title: 'MIPI DSI/CSI:'
@@ -125,7 +125,7 @@ page_builder:
       -
         id: m620pf1b
         title: 'Storage:'
-        description: 'Integrated microSD card socket for CM5 Lite modules, enabling expandable storage.'
+        description: 'Integrated eMMC for CM5 modules, enabling reliable and fast storage.'
       -
         id: m620pnvv
         title: 'Front Panel I/O:'
@@ -138,5 +138,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737207706
+updated_at: 1737221452
 ---
