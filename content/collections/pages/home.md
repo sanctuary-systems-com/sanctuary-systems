@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737208054
+updated_at: 1737209559
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -22,7 +22,7 @@ page_builder:
       Featuring a PCIe port for connecting <span>full-power GPUs</span>, Haven Core empowers you to run advanced large language models and create a private, offline voice assistant with unmatched performance.
     image: pcb.png
     button_text: 'Explore Haven Core'
-    button_link: '#product'
+    button_link: 'entry::7f925bd3-aa62-4c27-bbfe-040c24bfae6f'
   -
     id: m2htaiuq
     lead: 'Why Sanctuary Systems?'
