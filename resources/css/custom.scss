@@ -83,6 +83,7 @@
 /* Sections */
 /* ******** */
 
+// Navbar
 .navbar {
     @apply absolute w-full py-4;
 
@@ -95,7 +96,7 @@
     }
 }
 
-
+// Hero section
 .hero {
     @apply bg-gray;
 
@@ -118,6 +119,7 @@
     }
 }
 
+// Benefits section
 .benefits {
     @apply py-16 lg:pb-16 lg:pt-0 lg:-mt-16;
 
@@ -146,6 +148,7 @@
     }
 }
 
+// Long Content section
 .long-content {
     @apply py-16;
     
@@ -182,6 +185,7 @@
     }
 }
 
+// Product section
 .product {
     @apply py-16 bg-gray-800;
 
@@ -238,6 +242,7 @@
     }
 }
 
+// Spec. List section
 .spec_list {
     dl {
         @apply divide-y divide-gray-700;
