@@ -23,98 +23,47 @@ page_builder:
             marks:
               -
                 type: italic
-            text: 'Imagine a home where privacy is non-negotiable, where your data stays yours, and where cutting-edge AI elevates your daily life. Haven Core makes this vision a reality.'
+            text: 'Haven Core is more than a product—it’s your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
           -
             type: hardBreak
           -
             type: hardBreak
           -
             type: text
-            text: 'Haven Core isn’t just a product—it’s your gateway to smarter living. Built around the Raspberry Pi Compute Module 5 (CM5) Lite and equipped with a PCIe slot for GPU compatibility, it provides the horsepower for advanced large language models (LLMs). All while maintaining the energy efficiency and sleek form factor you expect.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'Why Choose Haven Core?'
-      -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Unmatched Local AI Power'
-                  -
-                    type: hardBreak
-                  -
-                    type: text
-                    text: 'The PCIe slot enables GPU acceleration, letting you run powerful LLMs locally for privacy-first, lightning-fast voice assistance.'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Energy Efficiency Meets Performance'
-                  -
-                    type: hardBreak
-                  -
-                    type: text
-                    text: 'Leveraging the Raspberry Pi 5 foundation, Haven Core delivers exceptional energy efficiency without sacrificing capability.'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Effortless Setup'
-                  -
-                    type: hardBreak
-                  -
-                    type: text
-                    text: 'With a pre-installed kit or easy-install image, getting started is seamless—even for beginners.'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Customizable and Future-Ready'
-                  -
-                    type: hardBreak
-                  -
-                    type: text
-                    text: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed.'
+            text: 'Built around the Raspberry Pi Compute Module 5 (CM5) and equipped with a PCIe slot for GPU compatibility, it provides the horsepower for lightning-fast large language models (LLMs) computation. All while maintaining the energy efficiency and sleek form factor you expect.'
     type: long_content
     enabled: true
-    lead_title: 'A Revolution in Smart Home Technology'
-    title: 'The Perfect Blend of Power and Elegance'
+    lead_title: 'Why Choose Haven Core?'
+    title: 'Unleash full power Local AI'
+  -
+    id: m627mfoh
+    features:
+      -
+        id: m627mgvy
+        title: 'Unmatched Local AI Power'
+        body: 'This custom Raspberry Pi 5 features a PCIe port for the GPU of your choice, unlocking full-power large language model (LLM) computation. Experience lightning-fast, privacy-first, local AI voice assistance, with unmatched power.'
+        type: feature
+        enabled: true
+      -
+        id: m627mvng
+        title: 'Energy Efficiency Meets Performance'
+        body: 'Leveraging the Raspberry Pi 5 foundation, Haven Core delivers exceptional energy efficiency without sacrificing capability.'
+        type: feature
+        enabled: true
+      -
+        id: m627n4uk
+        title: 'Effortless Setup'
+        body: 'With a pre-installed kit or easy-install image, getting started is seamless—for beginners and experienced DIY enthusiasts.'
+        type: feature
+        enabled: true
+      -
+        id: m627nboc
+        title: 'Customizable and Future-Ready'
+        body: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed—while maintaining a premium, compact build.'
+        type: feature
+        enabled: true
+    type: features
+    enabled: true
   -
     id: m623utnd
     gallery:
@@ -189,5 +138,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737203806
+updated_at: 1737207706
 ---
