@@ -3,14 +3,8 @@ tree:
     id: ae84904c-b9ed-4ee3-bbc3-ae5c00feab7c
     entry: home
   -
-    id: 0e8efcc6-e5a1-4288-b322-54089e40846c
-    title: About
-    url: '#about'
+    id: e848da85-c03f-4c5e-b5a2-d751af55e605
+    entry: 7f925bd3-aa62-4c27-bbfe-040c24bfae6f
   -
-    id: f7ec8f54-765f-4e25-b68c-9e1fea33424d
-    title: Contact
-    url: '#contact'
-  -
-    id: a3b03480-d4d1-446c-b9e0-9079c0fee340
-    title: Product
-    url: '#product'
+    id: 8a5a3e2b-061b-4b54-acf3-aaaa99c58ba0
+    entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
