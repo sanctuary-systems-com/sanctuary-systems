@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737021442
+updated_at: 1737208054
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -171,30 +171,30 @@ page_builder:
     usps:
       -
         id: m5wmfi34
-        title: 'Lightning-fast Local AI'
-        description: 'This custom Raspberry Pi 5 has a PCIe port to unlock GPU-powered AI voice assistance (LLMs).'
+        title: 'Unmatched Local AI Power'
+        description: 'This custom Raspberry Pi 5 features a PCIe port for the GPU of your choice, unlocking full-power large language model (LLM) computation. Experience lightning-fast, privacy-first, local AI voice assistance, with unmatched power.'
         type: new_set
         enabled: true
       -
         id: m5wmggc3
-        title: 'Designed for Efficiency'
-        description: 'Raspberry Pi 5 Foundation: Delivers balanced energy efficiency for your smart home setup.'
+        title: 'Energy Efficiency Meets Performance'
+        description: 'Leveraging the Raspberry Pi 5 foundation, Haven Core delivers exceptional energy efficiency without sacrificing capability.'
         type: new_set
         enabled: true
       -
         id: m5wmgpxf
-        title: 'Easy Setup'
-        description: "Get started effortlessly with a pre-installed kit or an easy-to-use installation image. Whether you're a DIY enthusiast or a first-time creator, setup is seamless"
+        title: 'Effortless Setup'
+        description: 'With a pre-installed kit or easy-install image, getting started is seamless—for beginners and experienced DIY enthusiasts.'
         type: new_set
         enabled: true
       -
         id: m5xxutu9
-        title: 'Compact, Premium Form Factor'
-        description: 'The Mini ITX form factor provides flexibility for repurposing PC components like a PSU and cases for upgradeability and customization—all while maintaining a premium, compact build.'
+        title: 'Customizable and Future-Ready'
+        description: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed—while maintaining a premium, compact build.'
         type: new_set
         enabled: true
     type: product
     enabled: true
     button_text: 'Explore the Haven Core'
-    button_link: '#'
+    button_link: 'entry::7f925bd3-aa62-4c27-bbfe-040c24bfae6f'
 ---
