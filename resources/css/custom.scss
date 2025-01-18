@@ -250,6 +250,35 @@
     }
 }
 
+// Gallery section
+.gallery {
+    @apply bg-gray-800 py-16;
+
+    .slides {
+        @apply relative aspect-[16/9];
+    }
+
+    .slide {
+        @apply absolute inset-0;
+    }
+
+    .image {
+        @apply w-full h-full object-contain;
+    }
+
+    .gallery-nav {
+        @apply flex gap-6 mt-6 overflow-x-auto;
+    }
+
+    .nav-item {
+        @apply flex-none relative aspect-[16/9] w-24 sm:w-32 transition-opacity;
+    }
+
+    .thumbnail {
+        @apply w-full h-full object-cover rounded;
+    }
+}
+
 // Spec. List section
 .spec_list {
     dl {

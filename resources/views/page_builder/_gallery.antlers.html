@@ -1,18 +1,49 @@
 {{#
     @name Gallery
-    @desc The Gallery page builder block. It extends the prose typography partial.
+    @desc The Gallery page builder block with main image and thumbnail navigation.
     @set page.page_builder.gallery
 #}}
 
-<!-- /page_builder/_gallery.antlers.html -->
-{{ partial:page_builder/block class="bg-gray-950 py-16 sm:py-32 lg:py-48" }}
-    <div class="mx-auto max-w-5xl columns-3 gap-4">
-        {{ gallery }}
-            <a href="{{ url }}" data-lightbox="gallery" data-title="{{ alt }}">
-                {{ partial src="statamic-peak-tools::components/picture" :image="url" class="my-4" cover="true" sizes="(min-width: 768px) 35vw, 90vw" lazy="true" }}
-            </a>
-        {{ /gallery }}
+    <!-- /page_builder/_gallery.antlers.html -->
+    {{ partial:page_builder/block class="gallery" }}
+
+    <div class="container" x-data="{ 
+        activeImage: 0,
+        scrollToThumbnail(index) {
+            this.$nextTick(() => {
+                this.$refs[`thumb-${index}`].scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'center'
+                });
+            });
+        }
+    }">
+        <div class="slides">
+            {{ gallery }}
+            <div x-show="activeImage === {{ index }}" x-transition:enter="transition-all ease-in-out duration-700"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="slide">
+                {{ partial src="statamic-peak-tools::components/picture" 
+                        :image="url"
+                        class="image"
+                        sizes="(min-width: 1280px) 1200px, 90vw"
+                        lazy="true" }}
+            </div>
+            {{ /gallery }}
+        </div>
+
+        <div class="gallery-nav">
+            {{ gallery }}
+            <button @click="activeImage = {{ index }}; scrollToThumbnail({{ index }})" x-ref="thumb-{{ index }}"
+                class="nav-item" :class="{ 'opacity-50': activeImage !== {{ index }} }">
+                {{ partial src="statamic-peak-tools::components/picture"
+                        :image="url"
+                        class="thumbnail"
+                        sizes="128px"
+                        lazy="true" }}
+            </button>
+            {{ /gallery }}
+        </div>
     </div>
-    
-{{ /partial:page_builder/block }}
-<!-- End: /page_builder/_gallery.antlers.html -->
+
+    {{ /partial:page_builder/block }}
