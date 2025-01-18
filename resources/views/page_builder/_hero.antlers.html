@@ -7,14 +7,16 @@
 <!-- /page_builder/_hero.antlers.html -->
 {{ partial:page_builder/block class="hero" }}
 
-    <div class="container">
+    <div class="container {{ if is_homepage }}py-32 lg:py-32{{ else }}pt-36 pb-12{{ /if }}">
         {{ if image }}
             <div class="col flex items-center">
                 <img src="{{ image }}" alt="pcb">
             </div>
         {{ /if }}
         <div class="col">
-            <span class="lead-title">{{ lead_title }}</span>
+            {{ if lead_title }}
+                <span class="lead-title">{{ lead_title }}</span>
+            {{ /if }}
             <h1>{{ title }}</h1>
             {{ if description }}
                 <p>{{ description }}</p>
@@ -24,7 +26,6 @@
                 <a href="{{ button_link }}" class="btn-ghost">{{ button_text }}</a>
             {{ /if }}
         </div>
-        
     </div>
     
 {{ /partial:page_builder/block }}

@@ -78,6 +78,11 @@
     }
 }
 
+
+/* ******** */
+/* Sections */
+/* ******** */
+
 .navbar {
     @apply absolute w-full py-4;
 
@@ -92,7 +97,7 @@
 
 
 .hero {
-    @apply bg-gray py-32 lg:py-32;
+    @apply bg-gray;
 
     .container {
         @apply grid grid-cols-2 gap-6;
