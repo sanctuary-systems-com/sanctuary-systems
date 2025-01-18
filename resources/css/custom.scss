@@ -116,6 +116,14 @@
         span {
             @apply text-primary font-bold;
         }
+
+        strike {
+            @apply text-gray-200;
+        }
+
+        strong {
+            @apply font-bold;
+        }
     }
 }
 
