@@ -1,11 +1,11 @@
 ---
 id: 7f925bd3-aa62-4c27-bbfe-040c24bfae6f
 blueprint: page
-title: 'Haven Core'
+title: 'Maven Core'
 page_builder:
   -
     id: m621jy4b
-    title: 'The Haven Core'
+    title: 'The Maven Core'
     description: '<strike>$229.99 USD</strike>  - <strong>$189.99 USD</strong><br>'
     button_text: 'Join the Waitlist'
     button_link: '#'
@@ -23,7 +23,7 @@ page_builder:
             marks:
               -
                 type: italic
-            text: 'Haven Core is more than a product—it’s your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
+            text: 'Maven Core is your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
           -
             type: hardBreak
           -
@@ -33,7 +33,7 @@ page_builder:
             text: 'Built around the Raspberry Pi Compute Module 5 (CM5) and equipped with a PCIe slot for GPU compatibility, it provides the horsepower for lightning-fast large language models (LLMs) computation. All while maintaining the energy efficiency and sleek form factor you expect.'
     type: long_content
     enabled: true
-    lead_title: 'Why Choose Haven Core?'
+    lead_title: 'Why Choose Maven Core?'
     title: 'Unleash full power Local AI'
   -
     id: m627mfoh
@@ -47,7 +47,7 @@ page_builder:
       -
         id: m627mvng
         title: 'Energy Efficiency Meets Performance'
-        body: 'Based on the Raspberry Pi Compute Model 5, Haven Core delivers exceptional energy efficiency without sacrificing capability.'
+        body: 'Based on the Raspberry Pi Compute Model 5, Maven Core delivers exceptional energy efficiency without sacrificing capability.'
         type: feature
         enabled: true
       -
@@ -138,5 +138,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737221452
+updated_at: 1737224005
 ---

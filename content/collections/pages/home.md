@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737209559
+updated_at: 1737224100
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -15,13 +15,13 @@ page_builder:
     type: hero
     enabled: true
     title: 'Power Your Sanctuary with Local AI'
-    lead_title: 'The Haven Core'
+    lead_title: 'The Maven Core'
     description: |-
-      Reclaim your home with the Haven Core, the ultimate platform for <span>privacy-first</span>, DIY smart home systems. Built for autonomous, <span>local AI</span> home automation, this custom Raspberry Pi 5 embraces a "Bring Your Own GPU" mindset.
+      Reclaim your home with the Maven Core, the ultimate platform for <span>privacy-first</span>, DIY smart home systems. Built for autonomous, <span>local AI</span> home automation, this custom Raspberry Pi 5 embraces a "Bring Your Own GPU" mindset.
       <br><br>
-      Featuring a PCIe port for connecting <span>full-power GPUs</span>, Haven Core empowers you to run advanced large language models and create a private, offline voice assistant with unmatched performance.
+      Featuring a PCIe port for connecting <span>full-power GPUs</span>, Maven Core empowers you to run advanced large language models and create a private, offline voice assistant with unmatched performance.
     image: pcb.png
-    button_text: 'Explore Haven Core'
+    button_text: 'Explore Maven Core'
     button_link: 'entry::7f925bd3-aa62-4c27-bbfe-040c24bfae6f'
   -
     id: m2htaiuq
@@ -112,7 +112,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'The Haven Core, redefines what’s possible in home automation. A custom Raspberry Pi 5 with a PCIe port, it lets you '
+            text: 'The Maven Core, redefines what’s possible in home automation. A custom Raspberry Pi 5 with a PCIe port, it lets you '
           -
             type: text
             marks:
@@ -164,9 +164,9 @@ page_builder:
     enabled: true
   -
     id: m5wme04w
-    lead_title: 'Why Choose Haven Core?'
+    lead_title: 'Why Choose Maven Core?'
     title: 'Unleash full power Local AI'
-    description: 'Haven Core is more than a product—it’s your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
+    description: 'Maven Core is your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
     image: pcb.png
     usps:
       -
@@ -178,7 +178,7 @@ page_builder:
       -
         id: m5wmggc3
         title: 'Energy Efficiency Meets Performance'
-        description: 'Leveraging the Raspberry Pi 5 foundation, Haven Core delivers exceptional energy efficiency without sacrificing capability.'
+        description: 'Leveraging the Raspberry Pi 5 foundation, Maven Core delivers exceptional energy efficiency without sacrificing capability.'
         type: new_set
         enabled: true
       -
@@ -195,6 +195,6 @@ page_builder:
         enabled: true
     type: product
     enabled: true
-    button_text: 'Explore the Haven Core'
+    button_text: 'Explore the Maven Core'
     button_link: 'entry::7f925bd3-aa62-4c27-bbfe-040c24bfae6f'
 ---
