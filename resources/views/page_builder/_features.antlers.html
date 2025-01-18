@@ -1,0 +1,22 @@
+{{#
+    @name Features
+    @desc The features page builder block. It extends the prose typography partial.
+    @set page.page_builder.features
+#}}
+
+<!-- /page_builder/_features.antlers.html -->
+{{ partial:page_builder/block class="features" }}
+    <div class="container">
+
+        {{ features }}
+        <div class="feature">
+            <h3 class="dot">{{ title }}</h3>
+            <p>
+                {{ body }}
+            </p>
+        </div>
+        {{ /features }}
+        
+    </div>    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_features.antlers.html -->

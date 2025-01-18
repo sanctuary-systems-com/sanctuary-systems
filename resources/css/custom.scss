@@ -156,6 +156,23 @@
     }
 }
 
+// Features section
+.features {
+    @apply pb-16;
+
+    .container {
+        @apply grid grid-cols-12;
+    }
+
+    .feature {
+        @apply bg-gray-800 p-6 rounded col-span-12 md:col-span-6;
+
+        h3 {
+            @apply text-xl;
+        }
+    }
+}
+
 // Long Content section
 .long-content {
     @apply py-16;
@@ -281,6 +298,8 @@
 
 // Spec. List section
 .spec_list {
+    @apply bg-gray-800 pb-16;
+
     dl {
         @apply divide-y divide-gray-700;
     }

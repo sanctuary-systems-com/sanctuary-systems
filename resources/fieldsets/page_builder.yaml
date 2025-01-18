@@ -21,43 +21,24 @@ fields:
               fields:
                 -
                   import: hero
-            article:
-              display: Article
-              instructions: 'Long form content, can be expanded with media like figures, video, quotes or tables.'
-              icon: text-formatting-image-bottom
-              fields:
-                -
-                  import: article
             benefits:
               display: Benefits
               icon: layout-three-columns
               fields:
                 -
                   import: benefits
-            members:
-              display: Members
-              icon: user-avatar
+            features:
+              display: Features
+              icon: dashboard-layout
               fields:
                 -
-                  import: members
-            tour:
-              display: Tour
-              icon: form-address-field
-              fields:
-                -
-                  import: tour
+                  import: features
             gallery:
               display: Gallery
-              icon: dashboard-layout-2
+              icon: layout-carousel-horizontal
               fields:
                 -
                   import: gallery
-            youtube_video:
-              display: 'YouTube Video'
-              icon: social-youtube
-              fields:
-                -
-                  import: youtube_video
             long_content:
               display: 'Long content'
               icon: text-formatting-initial-letter
@@ -66,7 +47,7 @@ fields:
                   import: long_content
             product:
               display: Product
-              icon: addon-boxes-stack
+              icon: programming-module-box-cube
               fields:
                 -
                   import: product
@@ -76,3 +57,28 @@ fields:
               fields:
                 -
                   import: spec_list
+            members:
+              display: Members
+              icon: user-avatar
+              fields:
+                -
+                  import: members
+            youtube_video:
+              display: 'YouTube Video'
+              icon: social-youtube
+              fields:
+                -
+                  import: youtube_video
+            tour:
+              display: Tour
+              icon: form-address-field
+              fields:
+                -
+                  import: tour
+            article:
+              display: Article
+              instructions: 'Long form content, can be expanded with media like figures, video, quotes or tables.'
+              icon: text-formatting-image-bottom
+              fields:
+                -
+                  import: article

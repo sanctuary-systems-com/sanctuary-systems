@@ -1,0 +1,24 @@
+title: Features
+fields:
+  -
+    handle: features
+    field:
+      type: replicator
+      display: Features
+      sets:
+        features:
+          display: Features
+          sets:
+            feature:
+              display: Feature
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: body
+                  field:
+                    type: textarea
+                    display: Body
