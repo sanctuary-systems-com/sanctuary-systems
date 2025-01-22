@@ -5,10 +5,10 @@ title: Support
 page_builder:
   -
     id: m66bjbgy
-    title: 'Need Guidance?'
+    title: "We're Here to Support"
     type: hero
     enabled: true
-    lead_title: "We're Here to Support"
+    lead_title: 'Need Guidance?'
   -
     id: m67vcyz2
     article:
@@ -25,7 +25,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'We’ve compiled answers to the most common questions about Sentinel Core to help you make an informed decision.'
+            text: 'We’ve gathered answers to the most common questions about the Sentinel Core.'
     type: article
     enabled: true
   -
@@ -125,19 +125,19 @@ page_builder:
     list_items:
       -
         id: m67w0q16
-        title: 'What makes Sentinel Core different from other Home Assistant bases?'
-        description: 'Sentinel Core combines the power of a Raspberry Pi 5 with GPU compatibility, offering unmatched local AI capabilities in a compact, energy-efficient form.'
+        title: 'What makes the Sentinel Core different from other Home Assistant bases?'
+        description: 'The Sentinel Core combines the power of a Raspberry Pi 5 with GPU compatibility, offering unmatched local AI capabilities in a compact, energy-efficient form.'
         type: list
         enabled: true
       -
         id: m67vy7vo
         title: 'Do I need technical experience to set it up?'
-        description: 'Not at all! Haven Core comes with Home Assistant and AI voice assistance pre-installed, making setup seamless for both beginners and experienced users.'
+        description: 'Not at all! The Sentinel Core comes with Home Assistant and AI voice assistance pre-installed, making setup seamless for both beginners and experienced users.'
         type: list
         enabled: true
       -
         id: m67vygsk
-        title: 'Can I use my own GPU with Haven Core?'
+        title: 'Can I use my own GPU with the Sentinel Core?'
         description: 'Yes! The PCIe Gen 3 x1 socket supports GPU compatibility, so you can choose the GPU that fits your needs.'
         type: list
         enabled: true
@@ -149,14 +149,14 @@ page_builder:
         enabled: true
       -
         id: m67vytxp
-        title: 'Is Sentinel Core entirely offline?'
+        title: 'Is the Sentinel Core entirely offline?'
         description: 'Yes, it’s designed for privacy-first functionality, ensuring no reliance on cloud-based services.'
         type: list
         enabled: true
       -
         id: m67vz195
         title: 'What happens if I run into issues during setup?'
-        description: 'Our comprehensive documentation and support team are ready to assist you every step of the way.'
+        description: 'The setup is easy, but if you run into any issues, we will be here to help you.'
         type: list
         enabled: true
       -
@@ -191,5 +191,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737552288
+updated_at: 1737552932
 ---
