@@ -1,0 +1,35 @@
+{{#
+    @name Contact
+    @desc The Contact page builder block. It extends the prose typography partial.
+    @set page.page_builder.contact
+#}}
+
+<!-- /page_builder/_contact.antlers.html -->
+{{ partial:page_builder/block class="contact" }}
+
+    <div class="container">
+        <div class="col">
+            <span class="lead-title">{{ lead_title }}</span>
+            <h2>{{ title }}</h2>
+            <p>{{ description }}</p>
+        </div>
+        <div class="col">
+            {{ form:contact }}
+                {{ fields }}
+                    <label>
+                        {{ display }}
+                        {{ if validate | contains:required }}
+                        <sup class="text-red">*</sup>
+                        {{ /if }}
+                    </label>
+                    <div class="mb-4">{{ field }}</div>
+                    {{ if error }}
+                        <p class="text-gray-500">{{ error }}</p>
+                    {{ /if }}
+                {{ /fields }}
+                <button class="btn-primary">Submit</button>
+            {{ /form:contact }}
+        </div>
+    </div>
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_contact.antlers.html -->

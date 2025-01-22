@@ -94,3 +94,9 @@ fields:
               fields:
                 -
                   import: article
+            contact:
+              display: Contact
+              icon: form-text-field
+              fields:
+                -
+                  import: contact

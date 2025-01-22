@@ -1,0 +1,23 @@
+title: Contact
+fields:
+  -
+    handle: lead_title
+    field:
+      type: text
+      display: 'Lead title'
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: form
+    field:
+      max_items: 1
+      type: form
+      display: Form
