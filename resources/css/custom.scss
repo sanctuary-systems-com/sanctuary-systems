@@ -348,7 +348,7 @@
 
 // Gallery section
 .gallery {
-    @apply bg-gray-800 py-16;
+    @apply bg-gray-900 py-16;
 
     .slides {
         @apply relative aspect-[16/9];
@@ -377,7 +377,7 @@
 
 // Spec. List section
 .spec_list {
-    @apply bg-gray-800 pb-16;
+    @apply bg-gray-800 py-16;
 
     dl {
         @apply divide-y divide-gray-700;

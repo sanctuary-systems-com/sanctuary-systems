@@ -20,6 +20,14 @@ page_builder:
     button_text: 'Join the Waitlist'
     optin_note: 'We respect your privacy. This list will only be used to notify you when the Sentinel Core becomes available—no spam, no exceptions.'
   -
+    id: m623utnd
+    type: gallery
+    enabled: true
+    gallery:
+      - rogue-core-2.png
+      - pcb.png
+      - rogue-core.png
+  -
     id: m621115e
     content:
       -
@@ -71,14 +79,6 @@ page_builder:
         enabled: true
     type: features
     enabled: true
-  -
-    id: m623utnd
-    type: gallery
-    enabled: true
-    gallery:
-      - rogue-core-2.png
-      - pcb.png
-      - rogue-core.png
   -
     id: m61zt7h0
     list:
@@ -146,5 +146,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737451822
+updated_at: 1737552237
 ---

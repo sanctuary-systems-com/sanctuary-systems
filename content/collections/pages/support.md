@@ -178,22 +178,6 @@ page_builder:
         type: list
         enabled: true
   -
-    id: m66bkem9
-    lead_title: 'Coming Soon'
-    title: 'The Sentinel Core'
-    description: |-
-      <strike>$229.99 USD</strike>  - <strong>$189.99 USD</strong><br>
-      <br>
-      Get ready to elevate your home setup with privacy-first Local AI. The Sentinel Core is <span>almost here</span>, and our first batch will be <span>limited.</span> Once the first batch sells out, we’ll move back to waitlist mode—don’t miss out!<br>
-      <br>
-      <strong>Join the waiting list here to get notified as soon as it’s available.</strong>
-    fname_field: 'First name*'
-    email_field: 'Email Address*'
-    button_text: 'Join the Waitlist'
-    optin_note: 'We respect your privacy. This list will only be used to notify you when the Sentinel Core becomes available—no spam, no exceptions.'
-    type: optin
-    enabled: true
-  -
     id: m67wdhbx
     lead_title: 'Got Questions?'
     title: 'Reach Out to Our Team'
@@ -207,5 +191,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737550784
+updated_at: 1737552288
 ---
