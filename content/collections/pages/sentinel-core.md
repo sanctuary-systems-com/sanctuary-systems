@@ -1,16 +1,16 @@
 ---
 id: 7f925bd3-aa62-4c27-bbfe-040c24bfae6f
 blueprint: page
-title: 'Maven Core'
+title: 'Sentinel Core'
 page_builder:
   -
     id: m62kwpvp
     lead_title: 'Coming Soon'
-    title: 'The Maven Core'
+    title: 'The Sentinel Core'
     description: |-
       <strike>$229.99 USD</strike>  - <strong>$189.99 USD</strong><br>
       <br>
-      Get ready to elevate your home setup with privacy-first Local AI. The Maven Core is <span>almost here</span>, and our first batch will be <span>limited.</span> Once the first batch sells out, we’ll move back to waitlist mode—don’t miss out!<br>
+      Get ready to elevate your home setup with privacy-first Local AI. The Sentinel Core is <span>almost here</span>, and our first batch will be <span>limited.</span> Once the first batch sells out, we’ll move back to waitlist mode—don’t miss out!<br>
       <br>
       <strong>Join the waiting list here to get notified as soon as it’s available.</strong>
     type: optin
@@ -18,7 +18,7 @@ page_builder:
     fname_field: 'First name*'
     email_field: 'Email Address*'
     button_text: 'Join the Waitlist'
-    optin_note: 'We respect your privacy. This list will only be used to notify you when the Maven Core becomes available—no spam, no exceptions.'
+    optin_note: 'We respect your privacy. This list will only be used to notify you when the Sentinel Core becomes available—no spam, no exceptions.'
   -
     id: m621115e
     content:
@@ -30,7 +30,7 @@ page_builder:
             marks:
               -
                 type: italic
-            text: 'Maven Core is your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
+            text: 'The Sentinel Core is your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
           -
             type: hardBreak
           -
@@ -40,7 +40,7 @@ page_builder:
             text: 'Built around the Raspberry Pi Compute Module 5 (CM5) and equipped with a PCIe slot for GPU compatibility, it provides the horsepower for lightning-fast large language models (LLMs) computation. All while maintaining the energy efficiency and sleek form factor you expect.'
     type: long_content
     enabled: true
-    lead_title: 'Why Choose Maven Core?'
+    lead_title: 'Why Choose Sentinel Core?'
     title: 'Unleash full power Local AI'
   -
     id: m627mfoh
@@ -54,7 +54,7 @@ page_builder:
       -
         id: m627mvng
         title: 'Energy Efficiency Meets Performance'
-        body: 'Based on the Raspberry Pi Compute Model 5, Maven Core delivers exceptional energy efficiency without sacrificing capability.'
+        body: 'Based on the Raspberry Pi Compute Model 5, the Sentinel Core delivers exceptional energy efficiency without sacrificing capability.'
         type: feature
         enabled: true
       -
@@ -146,5 +146,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737277933
+updated_at: 1737451822
 ---
