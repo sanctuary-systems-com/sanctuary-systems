@@ -1,0 +1,22 @@
+{{#
+    @name List
+    @desc The list page builder block. It extends the prose typography partial.
+    @set page.page_builder.list
+#}}
+
+<!-- /page_builder/_list.antlers.html -->
+{{ partial:page_builder/block class="list" }}
+
+    <div class="container">
+        <dl>
+            {{ list_items }}
+                <div class="listitem">
+                    <dt class="title">{{ title }}</dt>
+                    <dd class="description">{{ description }}</dd>
+                </div>
+            {{ /list_items }}
+        </dl>
+    </div>
+    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_list.antlers.html -->

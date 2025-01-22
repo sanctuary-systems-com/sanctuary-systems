@@ -1,0 +1,24 @@
+title: List
+fields:
+  -
+    handle: list_items
+    field:
+      type: replicator
+      display: 'List items'
+      sets:
+        list:
+          display: List
+          sets:
+            list:
+              display: List
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description

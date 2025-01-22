@@ -63,6 +63,12 @@ fields:
               fields:
                 -
                   import: spec_list
+            list:
+              display: List
+              icon: media-playlist
+              fields:
+                -
+                  import: list
             members:
               display: Members
               icon: user-avatar

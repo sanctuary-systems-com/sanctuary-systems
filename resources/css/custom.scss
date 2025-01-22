@@ -407,3 +407,24 @@
         @apply mt-1 text-sm/6 sm:col-span-2 sm:mt-0;
     }
 }
+
+// List section
+.list {
+    @apply bg-gray-900 pb-16;
+
+    dl {
+        @apply divide-y divide-gray-700;
+    }
+
+    .listitem {
+        @apply py-6;
+    }
+
+    .title {
+        @apply font-bold;
+    }
+
+    .description {
+        @apply mt-1 sm:col-span-1 sm:mt-0;
+    }
+}
