@@ -181,6 +181,35 @@
     }
 }
 
+// Article section
+.article {
+    @apply py-16;
+
+    .container {
+        @apply grid grid-cols-1;
+    }
+
+    .description {
+        @apply flex flex-col justify-center lg:pt-16 col-span-12 lg:col-span-3;
+
+        h3 {
+            @apply text-4xl;
+        }
+    }
+
+    .benefit {
+        @apply bg-gray-50 p-6 rounded col-span-12 md:col-span-4 lg:col-span-3;
+
+        h3 {
+            @apply text-2xl;
+        }
+
+        p {
+            @apply text-gray-800;
+        }
+    }
+}
+
 // Benefits section
 .benefits {
     @apply py-16 lg:pb-16 lg:pt-0 lg:-mt-16;
