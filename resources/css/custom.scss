@@ -264,6 +264,37 @@
             @apply text-4xl;
         }
     }
+
+    strong {
+        @apply text-primary font-bold;
+    }
+
+    ul {
+        @apply mb-6;
+
+        li {
+            @apply mt-6 pl-6 relative;
+
+            ::before {
+                @apply bg-primary absolute block top-2 left-0;
+                content: "";
+                width: 10px;
+                height: 10px;
+            }
+
+            ul {
+                li {
+                    ::before {
+                        @apply bg-gray-300;
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        @apply my-6;
+    }
 }
 
 // Benefits section
