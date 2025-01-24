@@ -8,3 +8,10 @@ tree:
   -
     id: 2599b4de-b216-4b52-af0e-850b2af9a98c
     entry: c0ee1cfc-8b91-4035-839f-12fd85859be8
+    children:
+      -
+        id: ec942a45-c436-41a1-9638-83a36fd84e20
+        entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
+      -
+        id: 5301de27-781d-4348-b60a-811a840f6137
+        entry: 04236b76-f979-40dd-8d02-f838842a328e
