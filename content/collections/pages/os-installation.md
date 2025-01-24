@@ -3,7 +3,7 @@ id: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
 blueprint: page
 title: 'OS installation'
 updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1737716557
+updated_at: 1737742948
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -286,7 +286,36 @@ page_builder:
         content:
           -
             type: text
-            text: 'You can use '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'http://pkg.sanctuary-systems.com/hassos/'
+                  rel: null
+                  target: null
+                  title: null
+            text: Download
+          -
+            type: text
+            text: ' our GPU-enabled Home Assistant fork.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Use dd to write the raw OS image to your Compute Module. Run the following command, replacing /dev/sdX with the path to the mass storage device representation of your Compute Module and raw_os_image.img with the path to your raw OS image:'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: '$ sudo dd if=raw_os_image.img of=/dev/sdX bs=4MiB'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Alternatively you can use '
           -
             type: text
             marks:
@@ -300,33 +329,7 @@ page_builder:
             text: 'Raspberry Pi Imager'
           -
             type: text
-            text: ' to flash an operating system image to a Compute Module.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Alternatively, use dd to write a raw OS image (such as '
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: 'https://www.raspberrypi.com/documentation/computers/os.html#introduction'
-                  rel: null
-                  target: null
-                  title: null
-            text: 'Raspberry Pi OS'
-          -
-            type: text
-            text: ') to your Compute Module. Run the following command, replacing /dev/sdX with the path to the mass storage device representation of your Compute Module and raw_os_image.img with the path to your raw OS image:'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: '$ sudo dd if=raw_os_image.img of=/dev/sdX bs=4MiB'
+            text: ' to flash a generic operating system image to a Compute Module.'
       -
         type: paragraph
         content:
