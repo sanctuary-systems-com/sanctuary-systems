@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737454115
+updated_at: 1737740453
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -20,7 +20,7 @@ page_builder:
       Reclaim your home with the Sentinel Core, the ultimate platform for <span>privacy-first</span>, DIY smart home systems. Built for autonomous, <span>local AI</span> home automation, this custom Raspberry Pi 5 embraces a "Bring Your Own GPU" mindset.
       <br><br>
       Featuring a PCIe port for connecting <span>full-power GPUs</span>, the Sentinel Core empowers you to run advanced large language models and create a private, offline voice assistant with unmatched performance.
-    image: rogue-core-2.png
+    image: sentinel-core.png
     button_text: 'Explore Sentinel Core'
     button_link: 'entry::7f925bd3-aa62-4c27-bbfe-040c24bfae6f'
   -
