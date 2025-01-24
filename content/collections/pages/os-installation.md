@@ -2,8 +2,8 @@
 id: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
 blueprint: page
 title: 'OS installation'
-updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1737742948
+updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
+updated_at: 1737749190
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -17,20 +17,16 @@ page_builder:
     type: hero
     enabled: true
   -
-    id: m629bcji
-    title: 'Flash an image to the Compute Module'
-    content:
+    id: m6b4exx1
+    article:
       -
         type: heading
         attrs:
-          level: 3
+          level: 2
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
-            text: '1) Prerequisites'
+            text: 'What you’ll need'
       -
         type: paragraph
         content:
@@ -57,7 +53,37 @@ page_builder:
                     text: 'host device'
                   -
                     type: text
-                    text: '. You can use Linux (we recommend Raspberry Pi OS or Ubuntu), Windows 11, or macOS.'
+                    text: '. You can use:'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: ' Linux (we recommend Raspberry Pi OS or Ubuntu), '
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Windows 11, '
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'or macOS.'
           -
             type: listItem
             content:
@@ -77,7 +103,7 @@ page_builder:
                     type: text
                     text: 'a USB-C cable'
       -
-        type: paragraph
+        type: horizontalRule
       -
         type: paragraph
         content:
@@ -104,22 +130,13 @@ page_builder:
           -
             type: text
             text: .
-    type: long_content
+    type: article
     enabled: true
   -
-    id: m629f607
+    id: m6b5knx9
+    lead_title: 'Step 1'
+    title: 'Set up the Sentinel Core'
     content:
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: '2) Set up the Sentinel Core'
       -
         type: paragraph
         content:
@@ -158,22 +175,14 @@ page_builder:
                   -
                     type: text
                     text: 'Connect a cable from USB-C slave port J11 on the Sentinel Core to the host device.'
-    type: long_content
+    image: 404.png
+    type: panels
     enabled: true
   -
-    id: m629fn5b
+    id: m6b6g3mo
+    lead_title: 'Step 2'
+    title: 'Set up the host device'
     content:
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: '3) Set up the host device'
       -
         type: paragraph
         content:
@@ -182,16 +191,6 @@ page_builder:
             text: 'Next, let’s set up software on the host device.'
       -
         type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'Tip '
-          -
-            type: text
-            text: 'For a host device, we recommend a Raspberry Pi 4 or newer running 64-bit Raspberry Pi OS.'
       -
         type: paragraph
         content:
@@ -227,7 +226,9 @@ page_builder:
                     type: text
                     text: '):'
               -
-                type: paragraph
+                type: codeBlock
+                attrs:
+                  language: null
                 content:
                   -
                     type: text
@@ -251,7 +252,9 @@ page_builder:
                     type: text
                     text: 'Then, run rpiboot:'
               -
-                type: paragraph
+                type: codeBlock
+                attrs:
+                  language: null
                 content:
                   -
                     type: text
@@ -265,22 +268,15 @@ page_builder:
                   -
                     type: text
                     text: 'After a few seconds, the Compute Module should appear as a mass storage device. Check the /dev/ directory, likely /dev/sda or /dev/sdb, for the device. Alternatively, run lsblk and search for a device with a storage capacity that matches the capacity of your Compute Module.'
-    type: long_content
+    image: 404.png
+    type: panels
     enabled: true
+    note: 'Tip For a host device, we recommend a Raspberry Pi 4 or newer running 64-bit Raspberry Pi OS.'
   -
-    id: m629fy4p
+    id: m6b6y2zw
+    lead_title: 'Step 3'
+    title: 'Flash the eMMC'
     content:
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: '4) Flash the eMMC'
       -
         type: paragraph
         content:
@@ -305,7 +301,9 @@ page_builder:
             type: text
             text: 'Use dd to write the raw OS image to your Compute Module. Run the following command, replacing /dev/sdX with the path to the mass storage device representation of your Compute Module and raw_os_image.img with the path to your raw OS image:'
       -
-        type: paragraph
+        type: codeBlock
+        attrs:
+          language: null
         content:
           -
             type: text
@@ -348,22 +346,14 @@ page_builder:
           -
             type: text
             text: 'You can mount the /dev/sdX1 and /dev/sdX2 partitions normally.'
-    type: long_content
+    image: 404.png
+    type: panels
     enabled: true
   -
-    id: m629g74b
+    id: m6b6zexe
+    lead_title: 'Step 5'
+    title: 'Boot from eMMC'
     content:
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: '5) Boot from eMMC'
       -
         type: orderedList
         attrs:
@@ -396,6 +386,7 @@ page_builder:
                   -
                     type: text
                     text: 'Reconnect the 24-pin ATX connector and reconnect your GPU and any other peripherals.'
-    type: long_content
+    image: 404.png
+    type: panels
     enabled: true
 ---
