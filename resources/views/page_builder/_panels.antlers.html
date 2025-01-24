@@ -1,0 +1,31 @@
+{{#
+	@name Panels builder block
+	@desc The page builder block. It extends the prose typography partial.
+	@set page.page_builder.panels
+#}}
+<!-- /page_builder/_panels.antlers.html -->
+{{ partial:page_builder/block class="panels" }}
+<div class="container">
+	<div class="col">
+		{{ if lead_title }}
+			<span class="lead-title">{{ lead_title }}</span>
+		{{ /if }}
+		{{ if title }}
+			<h3>{{ title }}</h3>
+		{{ /if }}
+		{{ content }}
+			{{ partial src="components/{type}" }}
+		{{ /content }}
+		{{ if note }}
+			<p class="note">{{ note }}</p>
+		{{ /if }}
+	</div>
+	{{ if (image) }}
+		<div class="col panel-image" >
+			<img src="{{ image }}" alt="pcb">
+		</div>
+	{{ /if }}
+</div>
+
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/_panels.antlers.html -->

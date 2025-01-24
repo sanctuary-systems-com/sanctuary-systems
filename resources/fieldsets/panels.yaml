@@ -1,0 +1,53 @@
+title: Panels
+fields:
+  -
+    handle: lead_title
+    field:
+      type: text
+      display: 'Lead title'
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: content
+    field:
+      buttons:
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - anchor
+        - h4
+        - h5
+        - small
+        - codeblock
+        - horizontalrule
+      fullscreen: false
+      remove_empty_nodes: false
+      type: bard
+      display: Content
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            buttons:
+              display: Buttons
+              fields:
+                -
+                  import: buttons
+  -
+    handle: note
+    field:
+      type: text
+      display: Note
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: images
+      type: assets
+      display: Image

@@ -100,3 +100,9 @@ fields:
               fields:
                 -
                   import: contact
+            panels:
+              display: Panels
+              icon: layout-flip-right
+              fields:
+                -
+                  import: panels
