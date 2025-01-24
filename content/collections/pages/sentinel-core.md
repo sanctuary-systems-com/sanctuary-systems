@@ -24,9 +24,7 @@ page_builder:
     type: gallery
     enabled: true
     gallery:
-      - rogue-core-2.png
-      - pcb.png
-      - rogue-core.png
+      - sentinel-core.png
   -
     id: m621115e
     content:
@@ -141,6 +139,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1737712886
+updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
+updated_at: 1737743472
 ---
