@@ -1,9 +1,9 @@
 ---
 id: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
 blueprint: page
-title: Guide
-updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737454461
+title: 'OS installation'
+updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
+updated_at: 1737716557
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,7 +13,7 @@ page_builder:
   -
     id: m629hn9n
     lead_title: Support
-    title: 'How to setup the Haven Core'
+    title: 'How to reinstall the Operating System'
     type: hero
     enabled: true
   -
@@ -66,21 +66,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'The Compute Module IO Board '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: link
-                        attrs:
-                          href: 'https://www.raspberrypi.com/documentation/computers/compute-module.html#io-board-compatibility'
-                          rel: null
-                          target: null
-                          title: null
-                    text: 'that corresponds to your Compute Module model'
-                  -
-                    type: text
-                    text: .
+                    text: 'The Sentinel Core'
           -
             type: listItem
             content:
@@ -89,7 +75,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'A micro USB cable, or a USB-C cable for Compute Module models since CM5IO.'
+                    text: 'a USB-C cable'
       -
         type: paragraph
       -
@@ -133,58 +119,13 @@ page_builder:
             marks:
               -
                 type: bold
-            text: '2) Set up the IO Board'
+            text: '2) Set up the Sentinel Core'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'To begin, physically set up your IO Board. This includes connecting the Compute Module and host device to the IO Board.'
-      -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Compute Module 5 IO Board'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Compute Module 4 IO Board'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Compute Module IO Board'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'To set up the Compute Module 5 IO Board:'
+            text: 'To begin, physically set up your Sentinel Core.'
       -
         type: orderedList
         attrs:
@@ -198,7 +139,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Connect the Compute Module to the IO board. When connected, the Compute Module should lie flat.'
+                    text: 'Disconnect the Sentinel Core from any cables, including the 24-pin ATX connector.'
           -
             type: listItem
             content:
@@ -207,7 +148,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Fit nRPI_BOOT to J2 (disable eMMC Boot) on the IO board jumper.'
+                    text: 'Fit a jumper on header J2 on pins nRPI_BOOT (disable eMMC Boot)'
           -
             type: listItem
             content:
@@ -216,7 +157,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Connect a cable from USB-C slave port J11 on the IO board to the host device.'
+                    text: 'Connect a cable from USB-C slave port J11 on the Sentinel Core to the host device.'
     type: long_content
     enabled: true
   -
@@ -251,45 +192,6 @@ page_builder:
           -
             type: text
             text: 'For a host device, we recommend a Raspberry Pi 4 or newer running 64-bit Raspberry Pi OS.'
-      -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: Linux
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: macOS
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: Windows
       -
         type: paragraph
         content:
@@ -338,7 +240,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Connect the IO Board to power.'
+                    text: 'Make sure the USB-C cable is connected.'
           -
             type: listItem
             content:
@@ -424,16 +326,7 @@ page_builder:
         content:
           -
             type: text
-            text: '$ sudo dd '
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: if
-          -
-            type: text
-            text: '=raw_os_image.img of=/dev/sdX bs=4MiB'
+            text: '$ sudo dd if=raw_os_image.img of=/dev/sdX bs=4MiB'
       -
         type: paragraph
         content:
@@ -467,92 +360,11 @@ page_builder:
             marks:
               -
                 type: bold
-            text: '4) Boot from eMMC'
+            text: '5) Boot from eMMC'
       -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Compute Module 5 IO Board'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Compute Module 4 IO Board'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: 'Compute Module IO Board'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Disconnect nRPI_BOOT from J2 (disable eMMC Boot) on the IO board jumper.'
-    type: long_content
-    enabled: true
-  -
-    id: m629ggqm
-    content:
-      -
-        type: heading
+        type: orderedList
         attrs:
-          level: 4
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: '6) Boot'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Disconnect the USB slave port. Power-cycle the IO board to boot the Compute Module from the new image you just wrote to eMMC.'
-    type: long_content
-    enabled: true
-  -
-    id: m629gn9r
-    content:
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'Known issues'
-      -
-        type: bulletList
+          start: 1
         content:
           -
             type: listItem
@@ -562,40 +374,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'A small percentage of CM3 devices may experience problems booting. We have traced these back to the method used to create the FAT32 partition; we believe the problem is due to a difference in timing between the CPU and eMMC. If you have trouble booting your CM3, create the partitions manually with the following commands:'
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: '$ sudo parted /dev/<device> (parted) mkpart primary fat32 4MiB 64MiB (parted) q $ sudo mkfs.vfat '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: '-F32'
-                  -
-                    type: text
-                    text: ' /dev/<device> $ sudo cp '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: '-r'
-                  -
-                    type: text
-                    text: ' <files>/'
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: bold
-                    text: '*'
-                  -
-                    type: text
-                    text: ' <mountpoint>'
+                    text: 'Turn off the Sentinel Core and disconnect the USB-C cable'
           -
             type: listItem
             content:
@@ -604,7 +383,16 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'The CM1 bootloader returns a slightly incorrect USB packet to the host. Most USB hosts ignore it, but some USB ports don’t work due to this bug. CM3 fixed this bug.'
+                    text: 'Disconnect nRPI_BOOT from J2 (disable eMMC Boot) on the Sentinel Core'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Reconnect the 24-pin ATX connector and reconnect your GPU and any other peripherals.'
     type: long_content
     enabled: true
 ---

@@ -93,11 +93,11 @@ page_builder:
       -
         id: m61ztgo1
         title: 'Ethernet:'
-        description: 'Gigabit Ethernet RJ45 + HAT + support for high-speed wired networking.'
+        description: 'Gigabit Ethernet RJ45 support for high-speed wired networking.'
       -
         id: m61zti21
         title: 'USB:'
-        description: '2 × USB 3 sockets for fast data transfer and device connectivity.'
+        description: '2 × USB 3 + 1 × USB-C sockets for fast data transfer and device connectivity.'
       -
         id: m620lms3
         title: 'HDMI:'
@@ -109,7 +109,7 @@ page_builder:
       -
         id: m620nxcv
         title: 'Raspberry Pi HAT:'
-        description: 'Raspberry Pi HAT + connector for additional functionality.'
+        description: 'Raspberry Pi HAT connector for additional functionality.'
       -
         id: m620o5s8
         title: 'MIPI DSI/CSI:'
@@ -118,10 +118,6 @@ page_builder:
         id: m620oei4
         title: 'Power Connector:'
         description: '24-pin ATX power connector for compatibility with standard PC power supplies.'
-      -
-        id: m620oqje
-        title: 'External Power Supply:'
-        description: 'External +5V USB-C power supply option for added flexibility.'
       -
         id: m620ox8j
         title: 'RTC Battery:'
@@ -145,6 +141,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737552237
+updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
+updated_at: 1737712886
 ---

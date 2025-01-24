@@ -126,19 +126,19 @@ page_builder:
       -
         id: m67w0q16
         title: 'What makes the Sentinel Core different from other Home Assistant bases?'
-        description: 'The Sentinel Core combines the power of a Raspberry Pi 5 with GPU compatibility, offering unmatched local AI capabilities in a compact, energy-efficient form.'
+        description: 'The Sentinel Core combines the efficiency of a Raspberry Pi 5 with the power of a GPU, offering unmatched local AI capabilities in a compact, energy-efficient form.'
         type: list
         enabled: true
       -
         id: m67vy7vo
         title: 'Do I need technical experience to set it up?'
-        description: 'Not at all! The Sentinel Core comes with Home Assistant and AI voice assistance pre-installed, making setup seamless for both beginners and experienced users.'
+        description: 'Not at all! The Sentinel Core comes with Home Assistant and AI voice assistance pre-installed, and our easy to follow guide talks you through assembling your PC, making setup seamless for both beginners and experienced users.'
         type: list
         enabled: true
       -
         id: m67vygsk
         title: 'Can I use my own GPU with the Sentinel Core?'
-        description: 'Yes! The PCIe Gen 3 x1 socket supports GPU compatibility, so you can choose the GPU that fits your needs.'
+        description: 'Yes! The PCIe Gen 3 x1 socket supports a variety of GPUs, so you can choose the GPU that fits your needs. We currently recommend AMD cards with at least 8GB of VRAM and expect to support Intel and NVIDIA cards in the near future.'
         type: list
         enabled: true
       -
@@ -190,6 +190,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737552932
+updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
+updated_at: 1737715039
 ---
