@@ -242,100 +242,126 @@ page_builder:
     section_id: assembly
   -
     id: m6c3y3ey
-    lead_title: 'Step 1'
-    title: 'Remove the side panels from your case'
+    lead_title: Assembly
+    title: Assembly
     reversible: false
     type: panels
     enabled: true
     image: 404.png
-  -
-    id: m6c3yonc
-    lead_title: 'Step 2'
-    title: 'Mount the PSU in the designated location using the screws that come with the case'
-    reversible: false
-    type: panels
-    enabled: true
-    image: 404.png
-  -
-    id: m6c3yrjy
-    lead_title: 'Step 3'
-    title: 'Insert the IO faceplate into the back of the case'
-    reversible: false
-    type: panels
-    enabled: true
-    image: 404.png
-  -
-    id: m6c3yv0x
-    lead_title: 'Step 4'
-    title: 'Mount the Sentinel Core in the motherboard location of your case using the standoffs and screws supplied with the case'
-    reversible: false
-    type: panels
-    enabled: true
-    image: 404.png
-  -
-    id: m6c3yxos
-    lead_title: 'Step 5'
-    title: 'Plug the 24-pin power connector from the PSU into the Sentinel Core'
-    reversible: false
-    type: panels
-    enabled: true
-    image: 404.png
-  -
-    id: m6c3zfmo
-    lead_title: 'Step 6'
-    reversible: false
-    type: panels
-    enabled: true
-    title: 'Plug in any case fans into the 4-pin fan headers'
-    image: 404.png
-  -
-    id: m6c3zpba
-    lead_title: 'Step 7'
-    reversible: false
-    type: panels
-    enabled: true
-    title: 'Plug the power button and status LEDs into the designated headers'
-    image: 404.png
-  -
-    id: m6c3zv33
-    lead_title: 'Step 8'
-    reversible: false
-    type: panels
-    enabled: true
-    title: 'Remove the required amount of expansion slot covers from the case'
-    image: 404.png
-  -
-    id: m6c40157
-    lead_title: 'Step 9'
-    reversible: false
-    type: panels
-    enabled: true
-    title: 'Insert the 8- or 6-pin PCIe power cables into your GPU'
-    image: 404.png
-  -
-    id: m6c405qy
-    lead_title: 'Step 10'
-    reversible: false
-    type: panels
-    enabled: true
-    title: 'If your case uses a PCIe riser, insert it into the Sentinel Core and GPU'
-    image: 404.png
-  -
-    id: m6c40b87
-    lead_title: 'Step 11'
-    title: 'Carefully insert the GPU into the PCIe slot/riser and the exposed expansion slots'
-    reversible: false
-    type: panels
-    enabled: true
-    image: 404.png
-  -
-    id: m6c40jax
-    lead_title: 'Step 12'
-    title: 'Close the side panels'
-    reversible: false
-    type: panels
-    enabled: true
-    image: 404.png
+    content:
+      -
+        type: orderedList
+        attrs:
+          start: 1
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Remove the side panels from your case'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Mount the PSU in the designated location using the screws that come with the case'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Insert the IO faceplate into the back of the case'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Mount the Sentinel Core in the motherboard location of your case using the standoffs and screws supplied with the case'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Plug the 24-pin power connector from the PSU into the Sentinel Core'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Plug in any case fans into the 4-pin fan headers'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Plug the power button and status LEDs into the designated headers'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Remove the required amount of expansion slot covers from the case'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Insert the 8- or 6-pin PCIe power cables into your GPU'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'If your case uses a PCIe riser, insert it into the Sentinel Core and GPU'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Carefully insert the GPU into the PCIe slot/riser and the exposed expansion slots'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Close the side panels'
   -
     id: m6axdt5r
     title: 'First time login wizard'
@@ -366,60 +392,92 @@ page_builder:
     section_id: onboarding
   -
     id: m6c58oxe
-    lead_title: 'Step 1'
-    title: 'Connect Sentinel Core to wired Ethernet'
+    lead_title: Onboarding
+    title: Onboarding
     image: 404.png
     reversible: false
     type: panels
     enabled: true
-  -
-    id: m6c596j6
-    lead_title: 'Step 2'
-    title: 'Press the power button to turn it on'
-    image: 404.png
-    reversible: false
-    type: panels
-    enabled: true
-  -
-    id: m6c59zfx
-    lead_title: 'Step 3'
-    title: 'Browse to http://homeassistant.local:8123/'
-    image: 404.png
-    reversible: false
-    type: panels
-    enabled: true
-  -
-    id: m6c5ag17
-    lead_title: 'Step 4'
-    title: 'Start a new installation by creating an user account, or restore from a backup'
-    image: 404.png
-    reversible: false
-    type: panels
-    enabled: true
-  -
-    id: m6c5atx9
-    lead_title: 'Step 5'
-    title: 'Enter the location of your home on the map'
-    image: 404.png
-    reversible: false
-    type: panels
-    enabled: true
-  -
-    id: m6c5b871
-    lead_title: 'Step 6'
-    title: 'Select which information you want to share with Nabu Casa'
-    reversible: false
-    type: panels
-    enabled: true
-    image: 404.png
-  -
-    id: m6c5bfjg
-    lead_title: 'Step 7'
-    title: 'Check automatically discovered devices and continue to your dashboard'
-    image: 404.png
-    reversible: false
-    type: panels
-    enabled: true
+    content:
+      -
+        type: orderedList
+        attrs:
+          start: 1
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Connect Sentinel Core to wired Ethernet'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Press the power button to turn it on'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Browse to '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: link
+                        attrs:
+                          href: 'http://homeassistant.local:8123/'
+                          rel: null
+                          target: null
+                          title: null
+                    text: 'http://homeassistant.local:8123/'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Start a new installation by creating an user account, or restore from a backup'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Enter the location of your home on the map'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Select which information you want to share with Nabu Casa'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Check automatically discovered devices and continue to your dashboard'
   -
     id: m6axhp2y
     title: 'Choosing your assistant'
@@ -750,5 +808,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737807008
+updated_at: 1737808114
 ---
