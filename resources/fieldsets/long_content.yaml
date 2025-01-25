@@ -26,3 +26,8 @@ fields:
         - anchor
         - h4
       fullscreen: false
+  -
+    handle: section_id
+    field:
+      type: text
+      display: 'Section ID'

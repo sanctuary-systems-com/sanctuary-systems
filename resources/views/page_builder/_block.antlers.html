@@ -2,6 +2,6 @@
 	@name Page builder block
 	@desc The page builder block wrapper
 #}}
-<section class="{{ class }}" {{ if (bg_image) }} style="background: url('{{ bg_image.url }}'); background-position: center center; background-size: cover;" {{ /if }}>
+<section class="{{ class }}" {{ if (section_id) }}id="{{ section_id }}"{{ /if }}>
     {{ slot }}
 </section>
