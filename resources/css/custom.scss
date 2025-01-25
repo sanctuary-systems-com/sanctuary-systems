@@ -184,17 +184,23 @@
 // Panel section
 .panels {
     @apply py-16 bg-gray;
-
+    
     .container {
-        @apply grid grid-cols-3 gap-6;
+        @apply flex;
     }
 
-    .col {
-        @apply col-start-2 col-span-3 md:col-span-2;
+    &:nth-child(odd) {
+        .reversible {
+            @apply flex-row-reverse;
+        }
+    }
+
+    .panel-content {
+        @apply w-2/3;
     }
 
     .panel-image {
-        @apply row-span-full col-span-3 bg-cover bg-center md:col-span-1;
+        @apply w-1/3 flex items-center;
     }
 
     .lead-title {

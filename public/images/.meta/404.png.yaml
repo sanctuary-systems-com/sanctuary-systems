@@ -1,4 +1,6 @@
-data: {  }
+data:
+  alt: '404'
+  exempt_from_alt: false
 size: 27106
 last_modified: 1737547062
 width: 601

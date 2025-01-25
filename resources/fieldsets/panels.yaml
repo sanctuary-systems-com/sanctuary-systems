@@ -51,3 +51,9 @@ fields:
       container: images
       type: assets
       display: Image
+  -
+    handle: reversible
+    field:
+      default: true
+      type: toggle
+      display: Reversible

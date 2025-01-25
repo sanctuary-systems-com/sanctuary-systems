@@ -3,10 +3,11 @@
 	@desc The page builder block. It extends the prose typography partial.
 	@set page.page_builder.panels
 #}}
+
 <!-- /page_builder/_panels.antlers.html -->
 {{ partial:page_builder/block class="panels" }}
-<div class="container">
-	<div class="col">
+<div class="container{{ reversible ?= ' reversible' }}">
+	<div class="panel-content">
 		{{ if lead_title }}
 			<span class="lead-title">{{ lead_title }}</span>
 		{{ /if }}
@@ -21,8 +22,8 @@
 		{{ /if }}
 	</div>
 	{{ if (image) }}
-		<div class="col panel-image" >
-			<img src="{{ image }}" alt="pcb">
+		<div class="panel-image" >
+			<img src="{{ image:url }}" alt="{{ image:alt }}">
 		</div>
 	{{ /if }}
 </div>
