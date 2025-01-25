@@ -7,7 +7,13 @@ page_builder:
     id: m6as37rj
     lead_title: Documentation
     title: Guide
-    description: 'Assemble your server and set up your AI voice assistant'
+    description: |-
+      Assemble your server and set up your AI voice assistant.
+
+      <a href="#hardware" class="btn-ghost">Hardware</a>
+      <a href="#assembly" class="btn-ghost">Assembly</a>
+      <a href="#onboarding" class="btn-ghost">Onboarding</a>
+      <a href="#voice-assistant" class="btn-ghost">AI Voice Assistant Setup</a>
     type: hero
     enabled: true
   -
@@ -19,15 +25,15 @@ page_builder:
         content:
           -
             type: text
-            text: 'To turn your Sentinel Core into a full fledged AI home server, you will need to pair it with a few more components'
-      -
-        type: heading
-        attrs:
-          level: 4
-        content:
-          -
-            type: text
-            text: GPU
+            text: 'To turn your Sentinel Core into a full fledged AI home server, you will need to pair it with a few more components.'
+    type: long_content
+    enabled: true
+    lead_title: 'Select your hardware'
+    section_id: hardware
+  -
+    id: m6c355ee
+    title: 'Selecting your AI workhorse'
+    content:
       -
         type: paragraph
         content:
@@ -66,14 +72,16 @@ page_builder:
           -
             type: text
             text: 'Other criteria to keep in mind are the cards idle/maximum power draw and its dimensions, which will affect the selection of your PSU and case.'
-      -
-        type: heading
-        attrs:
-          level: 4
-        content:
-          -
-            type: text
-            text: Case
+    reversible: true
+    type: panels
+    enabled: true
+    lead_title: GPU
+    image: 404.png
+  -
+    id: m6c36moy
+    lead_title: Case
+    title: 'Find a fitting case'
+    content:
       -
         type: paragraph
         content:
@@ -110,14 +118,14 @@ page_builder:
                   -
                     type: text
                     text: 'Make note of the number of case fans supported or included. The Sentinel Core can drive up to two case fans.'
-      -
-        type: heading
-        attrs:
-          level: 4
-        content:
-          -
-            type: text
-            text: 'Power supply'
+    reversible: true
+    type: panels
+    enabled: true
+    image: 404.png
+  -
+    id: m6c37had
+    title: 'Delivering the power'
+    content:
       -
         type: paragraph
         content:
@@ -199,22 +207,25 @@ page_builder:
                   -
                     type: text
                     text: '0 RPM fan control for low noise'
-      -
-        type: heading
-        attrs:
-          level: 4
-        content:
-          -
-            type: text
-            text: Optional
+    reversible: true
+    type: panels
+    enabled: true
+    lead_title: 'Power supply'
+    image: 404.png
+  -
+    id: m6c37w9r
+    content:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'If you want to store a lot of media or big models, we recommend getting an USB 3 hard drive. Of course you can also look into Raspberry Pi HATs to enhance functionality or add a ZigBee dongle for extra connectivity. You might also look into replacing your case fans with more silent ones for example.'
-    type: long_content
+    reversible: true
+    type: panels
     enabled: true
+    lead_title: Optional
+    image: 404.png
   -
     id: m6awojj6
     title: Assembly
@@ -225,124 +236,109 @@ page_builder:
           -
             type: text
             text: 'Once you have all the parts it is time to build your AI home server. Your case should come with a manual that outlines the exact instructions for your particular case. But the general steps are usually as follows:'
-      -
-        type: orderedList
-        attrs:
-          start: 1
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Remove the side panels from your case'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Mount the PSU in the designated location using the screws that come with the case'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Insert the IO faceplate into the back of the case'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Mount the Sentinel Core in the motherboard location of your case using the standoffs and screws supplied with the case'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Plug the 24-pin power connector from the PSU into the Sentinel Core'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Plug in any case fans into the 4-pin fan headers'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Plug the power button and status LEDs into the designated headers'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Remove the required amount of expansion slot covers from the case'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Insert the 8- or 6-pin PCIe power cables into your GPU'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'If your case uses a PCIe riser, insert it into the Sentinel Core and GPU'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Carefully insert the GPU into the PCIe slot/riser and the exposed expansion slots'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Close the side panels'
     type: long_content
     enabled: true
+    lead_title: Assembly
+    section_id: assembly
+  -
+    id: m6c3y3ey
+    lead_title: 'Step 1'
+    title: 'Remove the side panels from your case'
+    reversible: false
+    type: panels
+    enabled: true
+    image: 404.png
+  -
+    id: m6c3yonc
+    lead_title: 'Step 2'
+    title: 'Mount the PSU in the designated location using the screws that come with the case'
+    reversible: false
+    type: panels
+    enabled: true
+    image: 404.png
+  -
+    id: m6c3yrjy
+    lead_title: 'Step 3'
+    title: 'Insert the IO faceplate into the back of the case'
+    reversible: false
+    type: panels
+    enabled: true
+    image: 404.png
+  -
+    id: m6c3yv0x
+    lead_title: 'Step 4'
+    title: 'Mount the Sentinel Core in the motherboard location of your case using the standoffs and screws supplied with the case'
+    reversible: false
+    type: panels
+    enabled: true
+    image: 404.png
+  -
+    id: m6c3yxos
+    lead_title: 'Step 5'
+    title: 'Plug the 24-pin power connector from the PSU into the Sentinel Core'
+    reversible: false
+    type: panels
+    enabled: true
+    image: 404.png
+  -
+    id: m6c3zfmo
+    lead_title: 'Step 6'
+    reversible: false
+    type: panels
+    enabled: true
+    title: 'Plug in any case fans into the 4-pin fan headers'
+    image: 404.png
+  -
+    id: m6c3zpba
+    lead_title: 'Step 7'
+    reversible: false
+    type: panels
+    enabled: true
+    title: 'Plug the power button and status LEDs into the designated headers'
+    image: 404.png
+  -
+    id: m6c3zv33
+    lead_title: 'Step 8'
+    reversible: false
+    type: panels
+    enabled: true
+    title: 'Remove the required amount of expansion slot covers from the case'
+    image: 404.png
+  -
+    id: m6c40157
+    lead_title: 'Step 9'
+    reversible: false
+    type: panels
+    enabled: true
+    title: 'Insert the 8- or 6-pin PCIe power cables into your GPU'
+    image: 404.png
+  -
+    id: m6c405qy
+    lead_title: 'Step 10'
+    reversible: false
+    type: panels
+    enabled: true
+    title: 'If your case uses a PCIe riser, insert it into the Sentinel Core and GPU'
+    image: 404.png
+  -
+    id: m6c40b87
+    lead_title: 'Step 11'
+    title: 'Carefully insert the GPU into the PCIe slot/riser and the exposed expansion slots'
+    reversible: false
+    type: panels
+    enabled: true
+    image: 404.png
+  -
+    id: m6c40jax
+    lead_title: 'Step 12'
+    title: 'Close the side panels'
+    reversible: false
+    type: panels
+    enabled: true
+    image: 404.png
   -
     id: m6axdt5r
-    title: Onboarding
+    title: 'First time login wizard'
     content:
       -
         type: paragraph
@@ -364,90 +360,69 @@ page_builder:
           -
             type: text
             text: .
-      -
-        type: orderedList
-        attrs:
-          start: 1
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Connect Sentinel Core to wired Ethernet'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Press the power button to turn it on'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Browse to '
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: link
-                        attrs:
-                          href: 'http://homeassistant.local:8123/'
-                          rel: null
-                          target: null
-                          title: null
-                    text: 'http://homeassistant.local:8123/'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Start a new installation by creating an user account, or restore from a backup'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Enter the location of your home on the map'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Select which information you want to share with Nabu Casa'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Check automatically discovered devices and continue to your dashboard'
     type: long_content
+    enabled: true
+    lead_title: Onboarding
+    section_id: onboarding
+  -
+    id: m6c58oxe
+    lead_title: 'Step 1'
+    title: 'Connect Sentinel Core to wired Ethernet'
+    image: 404.png
+    reversible: false
+    type: panels
+    enabled: true
+  -
+    id: m6c596j6
+    lead_title: 'Step 2'
+    title: 'Press the power button to turn it on'
+    image: 404.png
+    reversible: false
+    type: panels
+    enabled: true
+  -
+    id: m6c59zfx
+    lead_title: 'Step 3'
+    title: 'Browse to http://homeassistant.local:8123/'
+    image: 404.png
+    reversible: false
+    type: panels
+    enabled: true
+  -
+    id: m6c5ag17
+    lead_title: 'Step 4'
+    title: 'Start a new installation by creating an user account, or restore from a backup'
+    image: 404.png
+    reversible: false
+    type: panels
+    enabled: true
+  -
+    id: m6c5atx9
+    lead_title: 'Step 5'
+    title: 'Enter the location of your home on the map'
+    image: 404.png
+    reversible: false
+    type: panels
+    enabled: true
+  -
+    id: m6c5b871
+    lead_title: 'Step 6'
+    title: 'Select which information you want to share with Nabu Casa'
+    reversible: false
+    type: panels
+    enabled: true
+    image: 404.png
+  -
+    id: m6c5bfjg
+    lead_title: 'Step 7'
+    title: 'Check automatically discovered devices and continue to your dashboard'
+    image: 404.png
+    reversible: false
+    type: panels
     enabled: true
   -
     id: m6axhp2y
-    title: 'AI Voice Assistant Setup'
+    title: 'Choosing your assistant'
     content:
       -
         type: paragraph
@@ -554,14 +529,15 @@ page_builder:
                   -
                     type: text
                     text: 'Local microphone: Assist Microphone'
-      -
-        type: heading
-        attrs:
-          level: 4
-        content:
-          -
-            type: text
-            text: Add-ons
+    type: long_content
+    enabled: true
+    lead_title: 'AI Voice Assistant Setup'
+    section_id: voice-assistant
+  -
+    id: m6c5dile
+    lead_title: Add-ons
+    title: Add-ons
+    content:
       -
         type: paragraph
         content:
@@ -606,14 +582,15 @@ page_builder:
           -
             type: text
             text: 'For all these add-ons, make sure that "Start on boot" and "Watchdog" are enabled.'
-      -
-        type: heading
-        attrs:
-          level: 4
-        content:
-          -
-            type: text
-            text: Integrations
+    image: 404.png
+    reversible: true
+    type: panels
+    enabled: true
+  -
+    id: m6c5dych
+    lead_title: Integrations
+    title: Integrations
+    content:
       -
         type: paragraph
         content:
@@ -658,14 +635,15 @@ page_builder:
           -
             type: text
             text: 'You will probably want to tweak the prompt and make sure to enable "Control Home Assistant".'
-      -
-        type: heading
-        attrs:
-          level: 4
-        content:
-          -
-            type: text
-            text: 'Voice Assistant'
+    image: 404.png
+    reversible: true
+    type: panels
+    enabled: true
+  -
+    id: m6c5eoac
+    lead_title: 'Voice Assistant'
+    title: 'Voice Assistant'
+    content:
       -
         type: paragraph
         content:
@@ -762,13 +740,15 @@ page_builder:
           -
             type: text
             text: .
-    type: long_content
+    image: 404.png
+    reversible: true
+    type: panels
     enabled: true
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1737736970
+updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
+updated_at: 1737807008
 ---
