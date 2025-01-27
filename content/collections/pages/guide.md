@@ -9,7 +9,7 @@ page_builder:
     title: Guide
     description: |-
       Assemble your server and set up your AI voice assistant.
-
+      <br>
       <a href="#hardware" class="btn-ghost">Hardware</a>
       <a href="#assembly" class="btn-ghost">Assembly</a>
       <a href="#onboarding" class="btn-ghost">Onboarding</a>
@@ -76,7 +76,7 @@ page_builder:
     type: panels
     enabled: true
     lead_title: GPU
-    image: 404.png
+    image: gpu.png
   -
     id: m6c36moy
     lead_title: Case
@@ -121,7 +121,7 @@ page_builder:
     reversible: true
     type: panels
     enabled: true
-    image: 404.png
+    image: case.png
   -
     id: m6c37had
     title: 'Delivering the power'
@@ -808,5 +808,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737808114
+updated_at: 1737974665
 ---
