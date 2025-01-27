@@ -7,16 +7,37 @@ tabs:
         instructions: 'Configure system pages.'
         fields:
           -
-            handle: error_404_entry
-            field: common.entry
-            config:
-              display: '404'
-              width: 50
-              instructions: 'Show all content of page whenever an URL does not exist.'
-              collections:
-                - pages
-              validate:
-                - required
+            handle: lead_title
+            field:
+              type: text
+              display: 'Lead title'
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+          -
+            handle: button_text
+            field:
+              type: text
+              display: 'Button text'
+          -
+            handle: button_link
+            field:
+              type: link
+              display: 'Button link'
+          -
+            handle: image
+            field:
+              container: images
+              type: assets
+              display: Image
+              max_files: 1
       -
         display: Copyright
         instructions: 'Copyright configuration options.'
@@ -24,15 +45,10 @@ tabs:
           -
             handle: copyright_name
             field:
-              input_type: text
-              antlers: false
               display: 'Copyright name'
               type: text
-              icon: text
               instructions: 'Falls back to the application name.'
               width: 50
-              listable: hidden
-              instructions_position: above
           -
             handle: copyright_since
             field:
@@ -40,15 +56,11 @@ tabs:
               input_type: number
               character_limit: 4
               prepend: ©
-              antlers: false
               default: '2020'
               display: 'Copyright since'
               instructions: 'The website will add ` - current_year ` if they differ.'
               type: text
-              icon: text
               width: 50
-              listable: hidden
-              instructions_position: above
               validate:
                 - required
       -

@@ -8,6 +8,27 @@
 
 <!-- /errors/404.antlers.html -->
 <main class="stack-12 md:stack-16 lg:stack-24" id="content">
-    {{ partial:statamic-peak-seo::errors/entry_content }}
+    <section class="hero">
+        <div class="container pt-36 pb-12">
+            {{ if configuration:image }}
+            <div class="col flex items-center">
+                <img src="{{ configuration:image }}" alt="404">
+            </div>
+            {{ /if }}
+            <div class="col">
+                {{ if configuration:lead_title }}
+                <span class="lead-title">{{ configuration:lead_title }}</span>
+                {{ /if }}
+                <h1>{{ configuration:title }}</h1>
+                {{ if configuration:description }}
+                <p>{{ configuration:description }}</p>
+                {{ /if }}
+        
+                {{ if configuration:button_link }}
+                <a href="{{ configuration:button_link }}" class="btn-ghost">{{ configuration:button_text }}</a>
+                {{ /if }}
+            </div>
+        </div>
+    </section>
 </main>
 <!-- End: /errors/404.antlers.html -->
