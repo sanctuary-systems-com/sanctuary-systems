@@ -163,6 +163,8 @@ page_builder:
                     type: text
                     text: 'Check that it has enough 6+2 PCIe power connectors (not all SFX PSUs do)'
       -
+        type: horizontalRule
+      -
         type: paragraph
         content:
           -
@@ -220,7 +222,19 @@ page_builder:
         content:
           -
             type: text
-            text: 'If you want to store a lot of media or big models, we recommend getting an USB 3 hard drive. Of course you can also look into Raspberry Pi HATs to enhance functionality or add a ZigBee dongle for extra connectivity. You might also look into replacing your case fans with more silent ones for example.'
+            text: 'If you want to store a lot of media or big models, we recommend getting an USB 3 hard drive.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Of course, you can also look into Raspberry Pi HATs to enhance functionality or add a ZigBee dongle for extra connectivity.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'You might also look into replacing your case fans with more silent ones for example.'
     reversible: true
     type: panels
     enabled: true
@@ -228,7 +242,7 @@ page_builder:
     image: 404.png
   -
     id: m6awojj6
-    title: Assembly
+    title: 'Putting it together'
     content:
       -
         type: paragraph
@@ -238,12 +252,12 @@ page_builder:
             text: 'Once you have all the parts it is time to build your AI home server. Your case should come with a manual that outlines the exact instructions for your particular case. But the general steps are usually as follows:'
     type: long_content
     enabled: true
-    lead_title: Assembly
+    lead_title: Assambly
     section_id: assembly
   -
     id: m6c3y3ey
     lead_title: Assembly
-    title: Assembly
+    title: 'Putting it together'
     reversible: false
     type: panels
     enabled: true
@@ -553,6 +567,8 @@ page_builder:
                     text: 'Voice Assistant configuration'
       -
         type: paragraph
+      -
+        type: paragraph
         content:
           -
             type: text
@@ -808,5 +824,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737978334
+updated_at: 1737980109
 ---
