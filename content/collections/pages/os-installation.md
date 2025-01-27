@@ -3,7 +3,7 @@ id: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
 blueprint: page
 title: 'OS installation'
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737981134
+updated_at: 1737981360
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -299,7 +299,7 @@ page_builder:
             text: Download
           -
             type: text
-            text: ' our GPU-enabled Home Assistant fork.'
+            text: ' our newest GPU-enabled Home Assistant fork img.'
       -
         type: paragraph
         content:

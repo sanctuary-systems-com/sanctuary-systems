@@ -261,7 +261,7 @@ page_builder:
     reversible: false
     type: panels
     enabled: true
-    image: 404.png
+    image: assambly.png
     content:
       -
         type: orderedList
@@ -408,7 +408,7 @@ page_builder:
     id: m6c58oxe
     lead_title: Onboarding
     title: Onboarding
-    image: 404.png
+    image: monitor.png
     reversible: false
     type: panels
     enabled: true
@@ -453,7 +453,7 @@ page_builder:
                         attrs:
                           href: 'http://homeassistant.local:8123/'
                           rel: null
-                          target: null
+                          target: _blank
                           title: null
                     text: 'http://homeassistant.local:8123/'
           -
@@ -656,7 +656,7 @@ page_builder:
           -
             type: text
             text: 'For all these add-ons, make sure that "Start on boot" and "Watchdog" are enabled.'
-    image: 404.png
+    image: addon.png
     reversible: true
     type: panels
     enabled: true
@@ -709,7 +709,7 @@ page_builder:
           -
             type: text
             text: 'You will probably want to tweak the prompt and make sure to enable "Control Home Assistant".'
-    image: 404.png
+    image: integrations.png
     reversible: true
     type: panels
     enabled: true
@@ -814,7 +814,7 @@ page_builder:
           -
             type: text
             text: .
-    image: 404.png
+    image: ai.png
     reversible: true
     type: panels
     enabled: true
@@ -824,5 +824,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737980468
+updated_at: 1737987419
 ---
