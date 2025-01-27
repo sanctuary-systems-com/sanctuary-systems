@@ -3,8 +3,8 @@ tabs:
     display: General
     sections:
       -
-        display: 'System pages'
-        instructions: 'Configure system pages.'
+        display: '404'
+        instructions: 'Configure 404 page content.'
         fields:
           -
             handle: lead_title

@@ -1,9 +1,9 @@
 data:
-  alt: case
+  alt: 'Case for you home assistant setup'
   exempt_from_alt: false
-size: 3753
-last_modified: 1737822734
+size: 23339
+last_modified: 1737978312
 width: 150
-height: 195
+height: 185
 mime_type: image/png
 duration: null
