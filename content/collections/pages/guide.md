@@ -60,7 +60,7 @@ page_builder:
                 attrs:
                   href: 'https://pipci.jeffgeerling.com/'
                   rel: null
-                  target: null
+                  target: _blank
                   title: null
             text: 'Raspberry Pi PCIe Database'
           -
@@ -394,7 +394,7 @@ page_builder:
                 attrs:
                   href: 'https://www.home-assistant.io/getting-started/onboarding/'
                   rel: null
-                  target: null
+                  target: _blank
                   title: null
             text: 'Onboarding Home Assistant'
           -
@@ -638,7 +638,7 @@ page_builder:
                 attrs:
                   href: 'https://github.com/sanctuary-systems-com/llm-addons'
                   rel: null
-                  target: null
+                  target: _blank
                   title: null
             text: 'Home Assistant LLM add-on repository'
           -
@@ -679,7 +679,7 @@ page_builder:
                 attrs:
                   href: 'https://github.com/jekalmin/extended_openai_conversation'
                   rel: null
-                  target: null
+                  target: _blank
                   title: null
             text: 'Extended OpenAI Conversation'
           -
@@ -780,7 +780,7 @@ page_builder:
                 attrs:
                   href: 'https://www.home-assistant.io/voice-pe/'
                   rel: null
-                  target: null
+                  target: _blank
                   title: null
             text: 'Home Assistant Voice'
           -
@@ -794,7 +794,7 @@ page_builder:
                 attrs:
                   href: 'https://futureproofhomes.net/products/satellite1-pcb-dev-kit'
                   rel: null
-                  target: null
+                  target: _blank
                   title: null
             text: 'FutureProofHomes Satelite1'
           -
@@ -808,7 +808,7 @@ page_builder:
                 attrs:
                   href: 'https://github.com/rhasspy/wyoming-satellite'
                   rel: null
-                  target: null
+                  target: _blank
                   title: null
             text: 'Wyoming Satelite'
           -
@@ -824,5 +824,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737980109
+updated_at: 1737980468
 ---
