@@ -2,8 +2,8 @@
 id: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
 blueprint: page
 title: 'OS installation'
-updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737800826
+updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
+updated_at: 1737976303
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -16,6 +16,8 @@ page_builder:
     title: 'How to reinstall the Operating System'
     type: hero
     enabled: true
+    button_text: Dowload
+    button_link: 'http://pkg.sanctuary-systems.com/hassos/'
   -
     id: m6b4exx1
     article:
@@ -178,6 +180,7 @@ page_builder:
     image: 404.png
     type: panels
     enabled: true
+    reversible: true
   -
     id: m6b6g3mo
     lead_title: 'Step 2'
@@ -272,6 +275,7 @@ page_builder:
     type: panels
     enabled: true
     note: 'Tip For a host device, we recommend a Raspberry Pi 4 or newer running 64-bit Raspberry Pi OS.'
+    reversible: true
   -
     id: m6b6y2zw
     lead_title: 'Step 3'
@@ -349,6 +353,7 @@ page_builder:
     image: 404.png
     type: panels
     enabled: true
+    reversible: true
   -
     id: m6b6zexe
     lead_title: 'Step 5'
@@ -389,4 +394,5 @@ page_builder:
     image: 404.png
     type: panels
     enabled: true
+    reversible: true
 ---
