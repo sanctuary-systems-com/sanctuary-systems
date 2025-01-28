@@ -213,7 +213,7 @@ page_builder:
     type: panels
     enabled: true
     lead_title: 'Power supply'
-    image: 404.png
+    image: power-supply.png
   -
     id: m6c37w9r
     content:
@@ -239,7 +239,7 @@ page_builder:
     type: panels
     enabled: true
     lead_title: Optional
-    image: 404.png
+    image: optionals.png
   -
     id: m6awojj6
     title: 'Putting it together'
@@ -814,7 +814,7 @@ page_builder:
           -
             type: text
             text: .
-    image: ai.png
+    image: voice-assistant.png
     reversible: true
     type: panels
     enabled: true
@@ -824,5 +824,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737987419
+updated_at: 1738066005
 ---
