@@ -5,53 +5,79 @@ title: Guide
 page_builder:
   -
     id: m6as37rj
-    lead_title: Documentation
-    title: Guide
+    lead_title: 'Setup Guide'
+    title: 'Getting started'
     description: |-
-      Assemble your server and set up your AI voice assistant.
-      <br>
-      <a href="#hardware" class="btn-ghost">Hardware</a>
-      <a href="#assembly" class="btn-ghost">Assembly</a>
-      <a href="#onboarding" class="btn-ghost">Onboarding</a>
-      <a href="#voice-assistant" class="btn-ghost">AI Voice Assistant Setup</a>
+      We'll guide you through these <strong>4 easy steps</strong> to use your Sentinel Core as Home Assistant server with local AI voice assistant:<br>
+      <a href="#hardware" class="btn-ghost">1) Choose your hardware</a><br>
+      <a href="#assembly" class="btn-ghost">2) Hardware assembly</a><br>
+      <a href="#onboarding" class="btn-ghost">3) Home Assistant onboarding</a><br>
+      <a href="#voice-assistant" class="btn-ghost">4) Choose your AI Voice Assistant</a>
     type: hero
     enabled: true
   -
     id: m6as0xj2
-    title: 'Select your hardware'
+    title: 'Building the foundation'
     content:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'To turn your Sentinel Core into a full fledged AI home server, you will need to pair it with a few more components.'
+            text: 'Transform your Sentinel Core into a powerful AI home server by pairing it with a few essential components of your choice.'
     type: long_content
     enabled: true
-    lead_title: 'Select your hardware'
+    lead_title: 'Choose your hardware'
     section_id: hardware
   -
     id: m6c355ee
-    title: 'Selecting your AI workhorse'
+    title: 'Selecting your AI engine'
     content:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'The most important decision is the workhorse of this build, your GPU. Weather you are repurposing an old card or buying a new one, there are a few criteria to keep in mind.'
+            text: 'The first decision in this build is to select the engine that powers your AI: the GPU. Whether you’re giving new life to an used card or upgrading to something fresh, there are a few simple things to keep in mind:'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'We currently recommend AMD Radeon RX 6000 and 7000 series graphics cards, due to their price to performance and high quality open source Linux drivers. Your card should have at least 8GB VRAM, but we recommend 16GB or more if you want to experiment with larger models.'
+            text: 'We recommend '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'AMD Radeon RX 6000'
+          -
+            type: text
+            text: ' and '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: '7000 series'
+          -
+            type: text
+            text: ' GPUs for their exceptional price-to-performance ratio and dependable open-source Linux drivers. An 8GB VRAM card is great for getting started, but '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: '16GB or more '
+          -
+            type: text
+            text: 'lets you explore larger, more ambitious models.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'You are of course encouraged to try other cards from the '
+            text: 'You are of course encouraged to try other GPUs from the '
           -
             type: text
             marks:
@@ -65,13 +91,31 @@ page_builder:
             text: 'Raspberry Pi PCIe Database'
           -
             type: text
-            text: ', and report results for cards not listed.'
+            text: ', or share your results for cards not listed, to help grow the community’s knowledge.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Other criteria to keep in mind are the cards idle/maximum power draw and its dimensions, which will affect the selection of your PSU and case.'
+            text: 'Finally, keep the GPU’s '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'idle/maximum power'
+          -
+            type: text
+            text: ' and its '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'physical size'
+          -
+            type: text
+            text: ' in mind, as these will influence your choice of PSU and case.'
     reversible: true
     type: panels
     enabled: true
@@ -80,14 +124,14 @@ page_builder:
   -
     id: m6c36moy
     lead_title: Case
-    title: 'Find a fitting case'
+    title: 'Find the perfect fit'
     content:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Once you have selected a GPU, the next step is to find a fitting case. It is entirely possible to fit a Mini-ITX board into an ATX case you already own, but if you're buying a new Mini-ITX case, make note of the following criteria:"
+            text: 'With your GPU selected, it’s time to house your build in a case that suits both style and substance. If you already have an ATX case, it can easily accommodate a Mini-ITX board. However, if you’re eyeing a new Mini-ITX case, keep these tips in mind:'
       -
         type: bulletList
         content:
@@ -99,7 +143,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'It should fit your GPU, both in terms of the number of slots and the length of the card. Most cards these days are over 25cm long and two or more slots high, and not all Mini-ITX cases have room for that.'
+                    marks:
+                      -
+                        type: bold
+                    text: 'GPU fit:'
+                  -
+                    type: text
+                    text: ' Check that your case can handle the size of your GPU, both in length and height. Many modern GPUs are over 25cm long and take up two or more slots, which may exceed the capacity of some Mini-ITX cases.'
           -
             type: listItem
             content:
@@ -108,7 +158,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Make note of the type of PSU required, ATX or the smaller SFX.'
+                    marks:
+                      -
+                        type: bold
+                    text: 'PSU type:'
+                  -
+                    type: text
+                    text: ' Determine whether the case requires an ATX or the more compact SFX power supply.'
           -
             type: listItem
             content:
@@ -117,7 +173,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Make note of the number of case fans supported or included. The Sentinel Core can drive up to two case fans.'
+                    marks:
+                      -
+                        type: bold
+                    text: 'Cooling options:'
+                  -
+                    type: text
+                    text: ' Look for the number of case fans included or supported. The Sentinel Core can power up to two case fans, so you can keep your setup cool and efficient.'
     reversible: true
     type: panels
     enabled: true
@@ -131,7 +193,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'The final component you will need is a power supply unit (PSU) that suits your GPU and case:'
+            text: 'The last piece of the puzzle is your power supply unit (PSU), that suits your GPU and case:'
       -
         type: bulletList
         content:
@@ -143,7 +205,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Check if your case needs an ATX or SFX PSU'
+                    marks:
+                      -
+                        type: bold
+                    text: 'Case compatibility:'
+                  -
+                    type: text
+                    text: ' Check whether your case requires an ATX or SFX PSU.'
           -
             type: listItem
             content:
@@ -152,7 +220,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: "Check that the 12V wattage exceeds your GPU's maximum power draw (the Pi's 5V wattage is almost negligible)"
+                    marks:
+                      -
+                        type: bold
+                    text: 'Wattage:'
+                  -
+                    type: text
+                    text: " Make sure the PSU's 12V output comfortably exceeds your GPU’s maximum power draw. (The Pi’s 5V usage is negligible in comparison.)"
           -
             type: listItem
             content:
@@ -161,7 +235,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Check that it has enough 6+2 PCIe power connectors (not all SFX PSUs do)'
+                    marks:
+                      -
+                        type: bold
+                    text: 'Connections:'
+                  -
+                    type: text
+                    text: ' Confirm there are enough 6+2 PCIe power connectors for your GPU—some SFX models may fall short.'
       -
         type: horizontalRule
       -
@@ -169,7 +249,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Other factors you might want to consider:'
+            text: 'Other features you might want to consider:'
       -
         type: bulletList
         content:
@@ -181,7 +261,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'A modular supply allows for cleaner cable routing'
+                    marks:
+                      -
+                        type: bold
+                    text: 'Detachable cables:'
+                  -
+                    type: text
+                    text: ' A modular PSU allows for cleaner cable management.'
           -
             type: listItem
             content:
@@ -190,7 +276,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'High 80 Plus certification can indicate better power efficiency'
+                    marks:
+                      -
+                        type: bold
+                    text: 'Efficiency ratings:'
+                  -
+                    type: text
+                    text: ' 80 Plus or higher certification often means better power efficiency.'
           -
             type: listItem
             content:
@@ -199,7 +291,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Low idle power (this can be a nontrivial part of your total idle power!)'
+                    marks:
+                      -
+                        type: bold
+                    text: 'Low idle power:'
+                  -
+                    type: text
+                    text: ' An efficient PSU reduces idle power draw, saving energy when the system isn’t under load.'
           -
             type: listItem
             content:
@@ -208,7 +306,13 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: '0 RPM fan control for low noise'
+                    marks:
+                      -
+                        type: bold
+                    text: 'Silent operation:'
+                  -
+                    type: text
+                    text: ' Look for 0 RPM fan control to keep things whisper-quiet.'
     reversible: true
     type: panels
     enabled: true
@@ -222,10 +326,22 @@ page_builder:
         content:
           -
             type: text
-            text: 'If you want to store a lot of media or big models, we recommend getting an USB 3 hard drive.'
+            marks:
+              -
+                type: bold
+            text: 'Storage:'
+          -
+            type: text
+            text: ' If you want to store a lot of media or big models, we recommend getting an USB 3 hard drive.'
       -
         type: paragraph
         content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Connectivity: '
           -
             type: text
             text: 'Of course, you can also look into Raspberry Pi HATs to enhance functionality or add a ZigBee dongle for extra connectivity.'
@@ -234,15 +350,22 @@ page_builder:
         content:
           -
             type: text
+            marks:
+              -
+                type: bold
+            text: 'Silent fans: '
+          -
+            type: text
             text: 'You might also look into replacing your case fans with more silent ones for example.'
     reversible: true
     type: panels
     enabled: true
     lead_title: Optional
     image: optionals.png
+    title: 'What else could you want'
   -
     id: m6awojj6
-    title: 'Putting it together'
+    title: 'Where the plan comes together'
     content:
       -
         type: paragraph
@@ -252,7 +375,7 @@ page_builder:
             text: 'Once you have all the parts it is time to build your AI home server. Your case should come with a manual that outlines the exact instructions for your particular case. But the general steps are usually as follows:'
     type: long_content
     enabled: true
-    lead_title: Assambly
+    lead_title: 'Hardware assembly'
     section_id: assembly
   -
     id: m6c3y3ey
@@ -402,7 +525,7 @@ page_builder:
             text: .
     type: long_content
     enabled: true
-    lead_title: Onboarding
+    lead_title: 'Home Assistant onboarding'
     section_id: onboarding
   -
     id: m6c58oxe
@@ -494,7 +617,7 @@ page_builder:
                     text: 'Check automatically discovered devices and continue to your dashboard'
   -
     id: m6axhp2y
-    title: 'Choosing your assistant'
+    title: 'Choosing your AI voice assistant'
     content:
       -
         type: paragraph
@@ -605,7 +728,7 @@ page_builder:
                     text: 'Local microphone: Assist Microphone'
     type: long_content
     enabled: true
-    lead_title: 'AI Voice Assistant Setup'
+    lead_title: 'AI voice Assistant Setup'
     section_id: voice-assistant
   -
     id: m6c5dile
@@ -824,5 +947,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738066005
+updated_at: 1738074361
 ---
