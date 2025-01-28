@@ -3,7 +3,7 @@ id: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
 blueprint: page
 title: 'OS installation'
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1737981360
+updated_at: 1738069495
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -179,7 +179,7 @@ page_builder:
                   -
                     type: text
                     text: 'Connect a cable from USB-C slave port J11 on the Sentinel Core to the host device.'
-    image: 404.png
+    image: connect-sentinel-to-host.png
     type: panels
     enabled: true
     reversible: true
@@ -273,7 +273,7 @@ page_builder:
                   -
                     type: text
                     text: 'After a few seconds, the Compute Module should appear as a mass storage device. Check the /dev/ directory, likely /dev/sda or /dev/sdb, for the device. Alternatively, run lsblk and search for a device with a storage capacity that matches the capacity of your Compute Module.'
-    image: 404.png
+    image: host-device.png
     type: panels
     enabled: true
     note: 'Tip For a host device, we recommend a Raspberry Pi 4 or newer running 64-bit Raspberry Pi OS.'
@@ -341,24 +341,39 @@ page_builder:
             type: text
             text: 'Once the image has been written, disconnect and reconnect the Compute Module. You should now see two partitions (for Raspberry Pi OS):'
       -
-        type: paragraph
+        type: bulletList
         content:
           -
-            type: text
-            text: '/dev/sdX <- Device /dev/sdX1 <- First partition (FAT) /dev/sdX2 <- Second partition (Linux filesystem)'
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '/dev/sdX <- Device /dev/sdX1 <- First partition'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '(FAT) /dev/sdX2 <- Second partition (Linux filesystem)'
       -
         type: paragraph
         content:
           -
             type: text
             text: 'You can mount the /dev/sdX1 and /dev/sdX2 partitions normally.'
-    image: 404.png
+    image: host-device.png
     type: panels
     enabled: true
     reversible: true
   -
     id: m6b6zexe
-    lead_title: 'Step 5'
+    lead_title: 'Step 4'
     title: 'Boot from eMMC'
     content:
       -
@@ -393,7 +408,7 @@ page_builder:
                   -
                     type: text
                     text: 'Reconnect the 24-pin ATX connector and reconnect your GPU and any other peripherals.'
-    image: 404.png
+    image: connect-sentinel-to-host.png
     type: panels
     enabled: true
     reversible: true
