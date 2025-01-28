@@ -172,6 +172,12 @@ page_builder:
         type: list
         enabled: true
       -
+        id: m6gaqgan
+        title: 'Your custom Home Assistant software is pre-installed, what happens if I want to re-install it?'
+        description: 'We created this <a href="https://sanctuary-systems.com/support/os-installation">os-installation guide</a> to help you re-install if it''s necessary.'
+        type: list
+        enabled: true
+      -
         id: m67vzng8
         title: 'What happens if Sentinel Core sells out?'
         description: 'Stock is limited, but you can join the waiting list to be notified as soon as it’s available again.'
@@ -184,12 +190,11 @@ page_builder:
     description: "Whether you're curious about setup, specifications, or anything in between, we’re here to provide the answers you need. Simply fill out the form, and our team will get back to you promptly."
     type: contact
     enabled: true
-    form: contact
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1737715039
+updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
+updated_at: 1738058249
 ---
