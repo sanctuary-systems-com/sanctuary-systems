@@ -1,7 +1,9 @@
-data: {  }
-size: 780737
-last_modified: 1737743418
-width: 1641
-height: 868
+data:
+  alt: 'Sentinel Core'
+  exempt_from_alt: false
+size: 1195378
+last_modified: 1738093961
+width: 1687
+height: 894
 mime_type: image/png
 duration: null
