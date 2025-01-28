@@ -12,24 +12,29 @@
             <span class="lead-title">{{ lead_title }}</span>
             <h2>{{ title }}</h2>
             <p>{{ description }}</p>
+            {{ if contact_email }}
+                <a href="mailto:{{ contact_email | obfuscate }}" class="email">{{ contact_email | obfuscate }}</a>
+            {{ /if }}
         </div>
-        <div class="col">
-            {{ form:contact }}
-                {{ fields }}
-                    <label>
-                        {{ display }}
-                        {{ if validate | contains:required }}
-                        <sup class="text-red">*</sup>
+        {{ if show_form }}
+            <div class="col">
+                {{ form:contact }}
+                    {{ fields }}
+                        <label>
+                            {{ display }}
+                            {{ if validate | contains:required }}
+                            <sup class="text-red">*</sup>
+                            {{ /if }}
+                        </label>
+                        <div class="mb-4">{{ field }}</div>
+                        {{ if error }}
+                            <p class="text-gray-500">{{ error }}</p>
                         {{ /if }}
-                    </label>
-                    <div class="mb-4">{{ field }}</div>
-                    {{ if error }}
-                        <p class="text-gray-500">{{ error }}</p>
-                    {{ /if }}
-                {{ /fields }}
-                <button class="btn-primary">Submit</button>
-            {{ /form:contact }}
-        </div>
+                    {{ /fields }}
+                    <button class="btn-primary">Submit</button>
+                {{ /form:contact }}
+            </div>
+        {{ /if }}
     </div>
 {{ /partial:page_builder/block }}
 <!-- End: /page_builder/_contact.antlers.html -->

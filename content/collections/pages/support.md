@@ -190,11 +190,13 @@ page_builder:
     description: "Whether you're curious about setup, specifications, or anything in between, we’re here to provide the answers you need. Simply fill out the form, and our team will get back to you promptly."
     type: contact
     enabled: true
+    contact_email: support@sanctuary-systems.com
+    show_form: false
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738058249
+updated_at: 1738067751
 ---

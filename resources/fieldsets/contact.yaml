@@ -16,8 +16,20 @@ fields:
       type: textarea
       display: Description
   -
+    handle: contact_email
+    field:
+      type: text
+      display: 'Contact email'
+  -
+    handle: show_form
+    field:
+      type: toggle
+      display: 'Show contactform'
+  -
     handle: form
     field:
       max_items: 1
       type: form
       display: Form
+      if:
+        show_form: 'equals true'

@@ -576,4 +576,8 @@
     .col {
         @apply col-span-1;
     }
+
+    .email {
+        @apply inline-block mt-4;
+    }
 }
