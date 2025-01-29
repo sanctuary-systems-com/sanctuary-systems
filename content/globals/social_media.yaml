@@ -7,3 +7,9 @@ data:
       prefix: 'https://www.github.com/'
       type: github
       enabled: true
+    -
+      id: m6i7exlx
+      handle: '@Sanctuary-Systems'
+      prefix: 'https://www.youtube.com/'
+      type: youtube
+      enabled: true
