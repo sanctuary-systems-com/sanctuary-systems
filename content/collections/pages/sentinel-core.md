@@ -11,7 +11,7 @@ page_builder:
       <strike>€219.99 euro</strike>  - <strong>€179.99 euro</strong><br>
       <br>
       Get ready to elevate your home with privacy-first Local AI—powerful, private, and built for creators. The first batch is <span>limited</span>, and once they’re gone, we’re moving back to a waitlist—don’t miss out!
-    payment_link: 'https://buy.stripe.com/00gbKzdALeKNaLS144'
+    payment_link: 'https://buy.stripe.com/8wMdSHfIT7ilf283ce'
     button_text: 'Buy now'
     note: 'Your privacy is our priority—no hidden fees, no cloud, no compromises.<br>Shipping calculated at checkout. International shipping available.'
     type: payment
@@ -30,7 +30,7 @@ page_builder:
     lead_title: 'Coming Soon'
     title: 'The Sentinel Core'
     description: |-
-      <strike>$229.99 USD</strike>  - <strong>$189.99 USD</strong><br>
+      <strike>€219.99 USD</strike>  - <strong>€179.99 USD</strong><br>
       <br>
       Get ready to elevate your home setup with privacy-first Local AI. The Sentinel Core is <span>almost here</span>, and our first batch will be <span>limited.</span> Once the first batch sells out, we’ll move back to waitlist mode—don’t miss out!<br>
       <br>
@@ -83,6 +83,12 @@ page_builder:
         type: feature
         enabled: true
       -
+        id: m627nboc
+        title: 'Customizable and Future-Ready'
+        body: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed—while maintaining a premium, compact build.'
+        type: feature
+        enabled: true
+      -
         id: m627mvng
         title: 'Energy Efficiency Meets Performance'
         body: 'Based on the Raspberry Pi Compute Model 5, the Sentinel Core delivers exceptional energy efficiency without sacrificing capability.'
@@ -91,13 +97,7 @@ page_builder:
       -
         id: m627n4uk
         title: 'Effortless Setup'
-        body: 'With Home Assistant pre-installed and a preconfigured AI voice assistant, getting started is seamless—choose a plug-and-play compute module kit or an easy-to-install image, perfect for beginners and experienced DIY enthusiasts'
-        type: feature
-        enabled: true
-      -
-        id: m627nboc
-        title: 'Customizable and Future-Ready'
-        body: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed—while maintaining a premium, compact build.'
+        body: 'With our custom Home Assistant pre-installed, getting started is seamless—for beginners and experienced DIY enthusiasts.'
         type: feature
         enabled: true
     type: features
@@ -165,5 +165,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738161859
+updated_at: 1738167382
 ---
