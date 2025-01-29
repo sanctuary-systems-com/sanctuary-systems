@@ -189,6 +189,57 @@
     }
 }
 
+// Payment
+.Payment {
+    @apply bg-gray;
+
+    .container {
+        @apply grid grid-cols-2 gap-6;
+    }
+
+    .col {
+        @apply col-span-2 md:col-span-1;
+    }
+
+    .lead-title {
+        @apply text-xl;
+    }
+
+    p {
+        span {
+            @apply text-primary font-bold;
+        }
+
+        strike {
+            @apply text-gray-200;
+        }
+
+        strong {
+            @apply font-bold;
+        }
+
+        sub {
+            @apply text-sm;
+        }
+    }
+
+    .icons {
+        @apply mx-auto mt-4 h-5;
+    }
+    
+    .note {
+        @apply flex justify-center items-center text-gray-200/50 py-4 px-6;
+
+        .lock-icon {
+            @apply h-6 mr-2;
+        }
+
+        p {
+            @apply text-sm font-normal;
+        }
+    }
+}
+
 // Panel section
 .panels {
     @apply py-16 bg-gray;

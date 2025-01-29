@@ -1,0 +1,44 @@
+{{#
+    @name Payment
+    @desc The Payment page builder block. It extends the prose typography partial.
+    @set page.page_builder.Payment
+#}}
+
+<!-- /page_builder/Payment.antlers.html -->
+{{ partial:page_builder/block class="Payment" }}
+
+    <div class="container {{ if is_homepage }}py-32 lg:py-32{{ else }}pt-36 pb-12{{ /if }}">
+        <div class="col">
+            {{ if lead_title }}
+                <span class="lead-title">{{ lead_title }}</span>
+            {{ /if }}
+            <h1>{{ title }}</h1>
+            {{ if description }}
+                <p>{{ description }}</p>
+            {{ /if }}
+        </div>
+        <div class="col">
+            <div class="payment-form p-8 border-4 border-dashed rounded-xl">
+                {{ if payment_description }}
+                    <p>{{ payment_description }}</p>
+                {{ /if }}
+                <a class="btn-primary block text-center" href="{{ payment_link }}">{{ button_text }}</a>
+                {{ if payment_icons }}
+                    <img class="icons" src="{{ payment_icons.url }}" alt="{{ payment_icons.alt }}">
+                {{ /if }}
+            </div>
+            {{ if note }}
+                <div class="note">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="lock-icon">
+                        <path fill-rule="evenodd"
+                            d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p>{{ note }}</p>
+                </div>
+            {{ /if }}
+        </div>
+    </div>
+    
+{{ /partial:page_builder/block }}
+<!-- End: /page_builder/Payment.antlers.html -->

@@ -106,3 +106,9 @@ fields:
               fields:
                 -
                   import: panels
+            payment:
+              display: Payment
+              icon: money-atm-card
+              fields:
+                -
+                  import: payment

@@ -1,0 +1,44 @@
+title: Payment
+fields:
+  -
+    handle: lead_title
+    field:
+      type: text
+      display: 'Lead title'
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: description
+    field:
+      type: textarea
+      display: Description
+  -
+    handle: payment_description
+    field:
+      type: textarea
+      display: 'Payment description'
+  -
+    handle: payment_link
+    field:
+      type: text
+      display: 'Payment link'
+  -
+    handle: button_text
+    field:
+      type: text
+      display: 'Button text'
+  -
+    handle: payment_icons
+    field:
+      max_files: 1
+      container: images
+      type: assets
+      display: 'Payment icons'
+  -
+    handle: note
+    field:
+      type: text
+      display: Note
