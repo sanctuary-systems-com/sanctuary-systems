@@ -15,6 +15,10 @@
                 {{ configuration:copyright_name ?? config:app:name }}
             </span>
 
+            {{ if configuration:privacy_statement_entry }}
+                | <a class="link" href="{{ configuration:privacy_statement_entry:url }}">{{ configuration:privacy_statement_entry:title }}</a>
+            {{ /if }}
+
             {{# Let's users reset consent when you use the consent banner. #}}
             {{ yield:reset_consent }}
         </div>

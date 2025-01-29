@@ -651,3 +651,14 @@
         @apply inline-block mt-4;
     }
 }
+
+footer {
+
+    a {
+        @apply font-normal text-gray-200/50;
+        
+        &:hover{
+            @apply text-white;
+        }
+    }
+}
