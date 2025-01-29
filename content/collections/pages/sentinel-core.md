@@ -24,7 +24,9 @@ page_builder:
     type: gallery
     enabled: true
     gallery:
-      - sentinel-core.png
+      - sentinel-core-isometric-view.png
+      - sentinel-core-top-view.png
+      - sentinel-core-io-view.png
   -
     id: m621115e
     content:
@@ -140,5 +142,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738094170
+updated_at: 1738149076
 ---
