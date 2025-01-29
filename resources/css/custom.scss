@@ -572,6 +572,10 @@
     .thumbnail {
         @apply w-full h-full object-cover rounded;
     }
+
+    .note {
+        @apply text-center text-sm font-normal text-gray-200/30 mt-6;
+    }
 }
 
 // Spec. List section

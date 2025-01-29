@@ -44,6 +44,9 @@
             </button>
             {{ /gallery }}
         </div>
+        {{ if note }}
+            <p class="note">{{ note }}</p>
+        {{ /if }}
     </div>
 
     {{ /partial:page_builder/block }}

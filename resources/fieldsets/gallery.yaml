@@ -6,3 +6,8 @@ fields:
       container: images
       type: assets
       display: Gallery
+  -
+    handle: note
+    field:
+      type: text
+      display: Note
