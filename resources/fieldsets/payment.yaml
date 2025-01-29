@@ -16,10 +16,20 @@ fields:
       type: textarea
       display: Description
   -
+    handle: payment_title
+    field:
+      type: text
+      display: 'Payment title'
+  -
     handle: payment_description
     field:
-      type: textarea
+      type: text
       display: 'Payment description'
+  -
+    handle: payment_content
+    field:
+      type: textarea
+      display: 'Payment content'
   -
     handle: payment_link
     field:

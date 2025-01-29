@@ -5,7 +5,7 @@
 #}}
 
 <!-- /page_builder/Payment.antlers.html -->
-{{ partial:page_builder/block class="Payment" }}
+{{ partial:page_builder/block class="payment" }}
 
     <div class="container {{ if is_homepage }}py-32 lg:py-32{{ else }}pt-36 pb-12{{ /if }}">
         <div class="col">
@@ -19,8 +19,14 @@
         </div>
         <div class="col">
             <div class="payment-form p-8 border-4 border-dashed rounded-xl">
+                {{ if payment_title }}
+                    <h3>{{ payment_title }}</h3>
+                {{ /if }}
                 {{ if payment_description }}
-                    <p>{{ payment_description }}</p>
+                    <strong class="desc">{{ payment_description }}</strong>
+                {{ /if }}
+                {{ if payment_content }}
+                    {{ payment_content }}
                 {{ /if }}
                 <a class="btn-primary block text-center" href="{{ payment_link }}">{{ button_text }}</a>
                 {{ if payment_icons }}

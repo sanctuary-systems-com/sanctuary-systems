@@ -190,7 +190,7 @@
 }
 
 // Payment
-.Payment {
+.payment {
     @apply bg-gray;
 
     .container {
@@ -205,21 +205,36 @@
         @apply text-xl;
     }
 
-    p {
-        span {
-            @apply text-primary font-bold;
-        }
+    span {
+        @apply text-primary font-bold;
+    }
 
-        strike {
-            @apply text-gray-200;
-        }
+    strike {
+        @apply text-gray-200;
+    }
 
-        strong {
-            @apply font-bold;
-        }
+    strong {
+        @apply font-bold;
 
-        sub {
-            @apply text-sm;
+        &.desc {
+            @apply text-gray-400;
+        }
+    }
+
+    h3 {
+        @apply mb-0;
+    }
+
+    ul {
+        @apply my-6;
+
+        li {
+            @apply pl-6 relative;
+
+            &::before {
+                @apply text-primary absolute block top-0 left-0;
+                content: "\2714";
+            }
         }
     }
 
@@ -231,7 +246,7 @@
         @apply flex justify-center items-center text-gray-200/50 py-4 px-6;
 
         .lock-icon {
-            @apply h-6 mr-2;
+            @apply h-4 mr-2;
         }
 
         p {
