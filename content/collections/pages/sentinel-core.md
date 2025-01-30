@@ -140,7 +140,7 @@ page_builder:
         description: 'Built around the Raspberry Pi Compute Module 5 (CM5), combining peak efficiency with a rock-solid ecosystem.'
       -
         id: m6j5d4df
-        title: Memory
+        title: 'Memory:'
         description: '8GB LPDDR4 SDRAM with ECC for juggling multiple tasks without dropping the ball.'
       -
         id: m620pf1b
@@ -148,8 +148,12 @@ page_builder:
         description: '32GB eMMC flash memory for storing your digital brains.'
       -
         id: m61ztgo1
-        title: 'Ethernet:'
-        description: 'Gigabit Ethernet RJ45 support for high-speed wired networking.'
+        title: 'Internet:'
+        description: 'Gigabit Ethernet support for high-speed wired networking.'
+      -
+        id: m6j6b4uj
+        title: 'Wireless:'
+        description: 'WiFi (IEEE 802.11 b/g/n/ac), Bluetooth 5.0, BLE'
       -
         id: m61zti21
         title: 'USB:'
@@ -188,7 +192,7 @@ page_builder:
         description: 'Easily integrate a power button and power/status LEDs for streamlined user operation.'
       -
         id: m6j5h0lt
-        title: Perma-proto
+        title: 'Perma-proto:'
         description: 'A half-sized breadboard area for breaking the rules and building the impossible.'
     type: spec_list
     enabled: true
@@ -198,5 +202,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1738231582
+updated_at: 1738231841
 ---
