@@ -4,18 +4,43 @@ blueprint: page
 title: 'Sentinel Core'
 page_builder:
   -
+    id: m6j3pnjw
+    lead_title: 'Now Available for Pre-Order'
+    title: 'The Sentinel Core'
+    description: |-
+      <strike>€219.99 euro</strike>  - <strong>€179.99 euro</strong><br>
+      <br>
+      Get ready to elevate your home with privacy-first Local LLM—powerful, private, and built for creators. The first batch is <span>limited</span>, and once they’re gone, we’re moving back to a waitlist—don’t miss out!<br>
+      <br>
+      <strong class="desc">Orders are expected to ship at the beginning of Q2 this year.</strong>
+    payment_title: 'The Sentinel Core'
+    payment_description: 'with our custom Home Assistant pre-installed'
+    payment_content: |-
+      <ul>
+      <li>Including Raspberry Pi 5 Compute Module</li>
+      <li>PCIe expansion slot for GPU, enabling lightning-fast AI</li>
+      <li>Made for privacy-first LLM voice assistant</li>
+      </ul>
+    payment_link: 'https://buy.stripe.com/8wMdSHfIT7ilf283ce'
+    button_text: 'Pre-Order Now'
+    note: 'Your privacy is our priority—no hidden fees, no cloud, no compromises.<br>Shipping calculated at checkout. International shipping available.'
+    type: payment
+    enabled: true
+  -
     id: m6htktrj
     lead_title: 'Own Your Sanctuary'
     title: 'The Sentinel Core'
     description: |-
       <strike>€219.99 euro</strike>  - <strong>€179.99 euro</strong><br>
       <br>
-      Get ready to elevate your home with privacy-first Local AI—powerful, private, and built for creators. The first batch is <span>limited</span>, and once they’re gone, we’re moving back to a waitlist—don’t miss out!
+      Get ready to elevate your home with privacy-first Local AI—powerful, private, and built for creators. The first batch is <span>limited</span>, and once they’re gone, we’re moving back to a waitlist—don’t miss out!<br>
+      <br>
+      We will be shipp
     payment_link: 'https://buy.stripe.com/8wMdSHfIT7ilf283ce'
-    button_text: 'Buy now'
+    button_text: 'Pre-order now'
     note: 'Your privacy is our priority—no hidden fees, no cloud, no compromises.<br>Shipping calculated at checkout. International shipping available.'
     type: payment
-    enabled: true
+    enabled: false
     payment_description: 'with our custom Home Assistant pre-installed'
     payment_icons: payment-icons.svg
     payment_title: 'The Sentinel Core'
@@ -165,5 +190,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738167382
+updated_at: 1738229801
 ---
