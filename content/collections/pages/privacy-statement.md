@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738246639
+updated_at: 1738252999
 page_builder:
   -
     id: m6jdwh2r
@@ -31,7 +31,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Het onderstaande privacybeleid is van toepassing op alle sitebezoeken, transacties en overeenkomsten met Wishful Coding, gevestigd te Enschede [adres].'
+            text: 'Het onderstaande privacybeleid is van toepassing op alle sitebezoeken, transacties en overeenkomsten met Wishful Coding, gevestigd te Enschede.'
       -
         type: paragraph
         content:
@@ -564,23 +564,6 @@ page_builder:
         content:
           -
             type: text
-            text: 'Cookievoorkeuren bekijken of wijzigen'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'Cookievoorkeuren openen'
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
             text: 'Technische of functionele cookies'
       -
         type: paragraph
@@ -657,7 +640,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Als je wilt weten welke persoongegevens wij van jou hebben, dan kan je deze informatie eenvoudig zelf opvragen via [account]. Mocht je toch nog vragen hebben dan kan je altijd contact met ons op nemen door een e-mail te sturen via [emailadress] of door telefonisch contact met ons op te nemen via [telefoonnummer] op maandag tot en met vrijdag tussen 9.00 en 17.30 uur.'
+            text: 'Als je wilt weten welke persoongegevens wij van jou hebben, dan kan je deze informatie opvragen. Mocht je toch nog vragen hebben dan kan je altijd contact met ons op nemen door een e-mail te sturen naar {{ configuration:email | obfuscate }}'
       -
         type: paragraph
         content:
@@ -759,23 +742,35 @@ page_builder:
             type: text
             text: Contactgegevens
       -
-        type: paragraph
+        type: bulletList
         content:
           -
-            type: text
-            text: WishfulCoding.nl
-      -
-        type: paragraph
-        content:
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: WishfulCoding.nl
           -
-            type: text
-            text: '[adres]'
-      -
-        type: paragraph
-        content:
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'KvK nr.: 51198274'
           -
-            type: text
-            text: 'KvK nr.: 51198274'
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '{{ configuration:email | obfuscate }}'
       -
         type: heading
         attrs:
