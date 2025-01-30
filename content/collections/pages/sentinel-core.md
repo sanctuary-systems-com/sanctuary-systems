@@ -137,7 +137,15 @@ page_builder:
       -
         id: m61ztg1t
         title: 'Processor:'
-        description: 'Built with Raspberry Pi Compute Module 5 (CM5), offering reliable performance and versatility.'
+        description: 'Built around the Raspberry Pi Compute Module 5 (CM5), combining peak efficiency with a rock-solid ecosystem.'
+      -
+        id: m6j5d4df
+        title: Memory
+        description: '8GB LPDDR4 SDRAM with ECC for juggling multiple tasks without dropping the ball.'
+      -
+        id: m620pf1b
+        title: 'Storage:'
+        description: '32GB eMMC flash memory for storing your digital brains.'
       -
         id: m61ztgo1
         title: 'Ethernet:'
@@ -175,13 +183,13 @@ page_builder:
         title: 'Cooling:'
         description: 'Dual 12V 4-pin PC fan connectors for enhanced GPU cooling performance.'
       -
-        id: m620pf1b
-        title: 'Storage:'
-        description: 'Integrated eMMC for CM5 modules, enabling reliable and fast storage.'
-      -
         id: m620pnvv
         title: 'Front Panel I/O:'
         description: 'Easily integrate a power button and power/status LEDs for streamlined user operation.'
+      -
+        id: m6j5h0lt
+        title: Perma-proto
+        description: 'A half-sized breadboard area for breaking the rules and building the impossible.'
     type: spec_list
     enabled: true
 seo_noindex: false
@@ -189,6 +197,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738229801
+updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
+updated_at: 1738231582
 ---
