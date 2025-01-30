@@ -71,9 +71,15 @@ tabs:
             handle: privacy_statement_type
             field:
               options:
-                none: None
-                entry: Entry
-                pdf: PDF
+                -
+                  key: none
+                  value: None
+                -
+                  key: entry
+                  value: Entry
+                -
+                  key: pdf
+                  value: PDF
               default: none
               type: button_group
               instructions: 'Form consent fields will link to this Privacy Policy.'
@@ -91,10 +97,10 @@ tabs:
               listable: hidden
               display: 'Privacy statement (PDF)'
               width: 50
-              if:
-                privacy_statement_type: 'equals pdf'
               validate:
                 - 'required_if:privacy_statement_type,pdf'
+              if:
+                privacy_statement_type: 'equals pdf'
           -
             handle: privacy_statement_entry
             field: common.entry
@@ -107,6 +113,44 @@ tabs:
                 privacy_statement_type: 'equals entry'
               validate:
                 - 'required_if:privacy_statement_type,entry'
+      -
+        display: 'General Terms'
+        fields:
+          -
+            handle: general_terms_type
+            field:
+              options:
+                -
+                  key: none
+                  value: None
+                -
+                  key: entry
+                  value: Entry
+                -
+                  key: pdf
+                  value: PDF
+              type: button_group
+              display: 'General terms'
+              width: 50
+          -
+            handle: general_terms_asset
+            field:
+              max_files: 1
+              container: files
+              type: assets
+              display: 'General Terms (PDF)'
+              width: 50
+              if:
+                general_terms_type: 'equals pdf'
+          -
+            handle: general_terms_entry
+            field:
+              max_items: 1
+              type: entries
+              display: 'General Terms (entry)'
+              if:
+                general_terms_type: 'equals entry'
+              width: 50
       -
         display: 'Cookie notice'
         instructions: 'Configure an optional cookie notice.'

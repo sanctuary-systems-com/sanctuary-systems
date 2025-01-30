@@ -19,6 +19,10 @@
                 | <a class="link" href="{{ configuration:privacy_statement_entry:url }}">{{ configuration:privacy_statement_entry:title }}</a>
             {{ /if }}
 
+            {{ if configuration:general_terms_entry }}
+                <a class="link" href="{{ configuration:general_terms_entry:url }}">{{ configuration:general_terms_entry:title }}</a>
+            {{ /if }}
+
             {{# Let's users reset consent when you use the consent banner. #}}
             {{ yield:reset_consent }}
         </div>
