@@ -1,7 +1,7 @@
 ---
 id: c361956f-17b5-4488-8003-b4cfb5edb82e
 blueprint: page
-title: General-terms
+title: 'General Terms'
 page_builder:
   -
     id: m6i5kogh
@@ -1263,5 +1263,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738234280
+updated_at: 1738244483
 ---
