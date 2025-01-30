@@ -10,23 +10,16 @@ page_builder:
     enabled: true
     lead_title: 'Need Guidance?'
   -
-    id: m67vcyz2
-    article:
-      -
-        type: heading
-        attrs:
-          level: 3
-        content:
-          -
-            type: text
-            text: 'Frequently Asked Questions'
+    id: m6jenjpc
+    title: 'Frequently Asked Questions'
+    content:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'We’ve gathered answers to the most common questions about the Sentinel Core.'
-    type: article
+    type: long_content
     enabled: true
   -
     id: m67va7kw
@@ -198,5 +191,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738067751
+updated_at: 1738245813
 ---

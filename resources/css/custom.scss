@@ -353,6 +353,14 @@
         @apply text-primary font-bold;
     }
 
+    p {
+        @apply mb-6;
+    }
+
+    h3 {
+        @apply mt-12;
+    }
+
     ul {
         @apply mb-6;
 
@@ -377,7 +385,7 @@
     }
 
     ol {
-        @apply mb-16 ml-8 list-decimal;
+        @apply mb-6 ml-8 list-decimal;
 
         li {
             @apply mt-6 pl-6 relative;
