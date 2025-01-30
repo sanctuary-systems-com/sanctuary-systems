@@ -376,6 +376,14 @@
         }
     }
 
+    ol {
+        @apply mb-16 ml-8 list-decimal;
+
+        li {
+            @apply mt-6 pl-6 relative;
+        }
+    }
+
     hr {
         @apply my-6;
     }

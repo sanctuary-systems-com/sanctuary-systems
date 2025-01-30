@@ -1,7 +1,7 @@
 ---
 id: c361956f-17b5-4488-8003-b4cfb5edb82e
 blueprint: page
-title: 'Terms of Service'
+title: General-terms
 page_builder:
   -
     id: m6i5kogh
@@ -20,19 +20,11 @@ page_builder:
             type: text
             text: 'Artikel 1: Definities en toepasselijkheid'
       -
-        type: orderedList
-        attrs:
-          start: 1
+        type: paragraph
         content:
           -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'In deze Algemene Voorwaarden worden de volgende definities gebruikt:'
+            type: text
+            text: 'In deze Algemene Voorwaarden worden de volgende definities gebruikt:'
       -
         type: orderedList
         attrs:
@@ -353,6 +345,8 @@ page_builder:
                     type: text
                     text: 'De verwerking van de (persoons)gegevens van de Consument geschiedt overeenkomstig de GDPR.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -360,12 +354,6 @@ page_builder:
           -
             type: text
             text: 'Artikel 2: Identiteit Wishful Coding'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
       -
         type: orderedList
         attrs:
@@ -390,19 +378,15 @@ page_builder:
                     type: text
                     text: 'Wishful Coding is per e-mail bereikbaar op: support@sanctuary-systems.com.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
         content:
           -
             type: text
-            text: 'Artikel 3: Aanbod en offerte'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
+            text: "Artikel 3: Aanbod en offerte\_"
       -
         type: orderedList
         attrs:
@@ -450,6 +434,8 @@ page_builder:
                     type: text
                     text: 'gevoegde, getoonde en/of medegedeelde informatie af te wijken, bijvoorbeeld indien afwijking naar het oordeel van Wishful Coding nodig is ter verbetering van (de technische staat van) de aangeboden Zaak en/of Dienst. Indien de aangeboden Zaak en/of Dienst daarmee wezenlijk van de toegezegde Zaak en/of Dienst afwijkt, heeft de Consument de bevoegdheid om de Overeenkomst te ontbinden.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -457,12 +443,6 @@ page_builder:
           -
             type: text
             text: 'Artikel 4: Overeenkomst'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
       -
         type: orderedList
         attrs:
@@ -515,6 +495,8 @@ page_builder:
                     type: text
                     text: 'Schriftelijk door een zodanige medewerker zijn bevestigd.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -522,12 +504,6 @@ page_builder:
           -
             type: text
             text: 'Artikel 5: Prijzen'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
       -
         type: orderedList
         attrs:
@@ -572,19 +548,15 @@ page_builder:
                     type: text
                     text: 'de prijsverhoging een wettelijke prijsverhoging betreft. Een wettelijke prijsverhoging, bijvoorbeeld door verhoging van de omzetbelasting, levert geen grond op voor ontbinding.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
         content:
           -
             type: text
-            text: 'Artikel 6: Betaling'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
+            text: "Artikel 6: Betaling\_"
       -
         type: orderedList
         attrs:
@@ -665,6 +637,8 @@ page_builder:
                     type: text
                     text: 'Door de Consument gedane betalingen strekken steeds ter afdoening in de eerste plaats van alle verschuldigde rente en kosten, en in de tweede plaats van opeisbare facturen/betalingsverplichtingen die het langst openstaan, zelfs al vermeldt de Consument dat de voldoening betrekking heeft op een latere factuur/ betalingsverplichting.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -672,12 +646,6 @@ page_builder:
           -
             type: text
             text: 'Artikel 7: Levering en uitvoering'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
       -
         type: orderedList
         attrs:
@@ -747,6 +715,8 @@ page_builder:
                     type: text
                     text: "Wishful Coding heeft het recht de Overeenkomst door derden te laten uitvoeren, in welk geval de Consument bevoegd is de Overeenkomst te ontbinden. \_"
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -787,6 +757,8 @@ page_builder:
                     type: text
                     text: 'De Consument is verplicht op eerste verzoek van Wishful Coding medewerking te verlenen aan afgifte van de eigendommen van Wishful Coding.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -794,12 +766,6 @@ page_builder:
           -
             type: text
             text: 'Artikel 9: Garantie'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
       -
         type: orderedList
         attrs:
@@ -824,6 +790,8 @@ page_builder:
                     type: text
                     text: 'Naast de in artikel 9.1. omschreven garantie van Wishful Coding, kan het zijn dat de fabrikant of importeur van de Zaak of onderdelen daarvan een eigen garantie biedt. Voor vragen daarover kan de Consument contact opnemen met Wishful Coding.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -831,12 +799,6 @@ page_builder:
           -
             type: text
             text: 'Artikel 10: Klachten en reclames'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "\_"
       -
         type: orderedList
         attrs:
@@ -861,6 +823,8 @@ page_builder:
                     type: text
                     text: "Wishful Coding streeft ernaar om ingediende klachten over de afgeleverde Zaak en/of uitgevoerde Dienst \_binnen 14 dagen na ontvangst van de klacht te beantwoorden. Indien daarvoor meer tijd blijk te zijn, dan laat Wishful Coding binnen 14 dagen na ontvangst van de klacht weten wanneer de Consument antwoord kan verwachten."
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -883,6 +847,8 @@ page_builder:
                     type: text
                     text: "Iedere aansprakelijkheid van Wishful Coding jegens de Consument is uitgesloten, met uitzondering van wettelijke verplichtingen tot schadevergoeding die op Wishful Coding van toepassing zijn.\_"
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -904,6 +870,8 @@ page_builder:
                   -
                     type: text
                     text: 'De Consument kan een bestelling kosteloos annulering als de (onderdelen van) de bestelling nog niet is (zijn) verzonden, tenzij het gaat om een Zaak en/of Dienst waarvoor overeenkomstig artikel 14 het Herroepingsrecht niet geldt.'
+      -
+        type: paragraph
       -
         type: heading
         attrs:
@@ -1023,6 +991,8 @@ page_builder:
                     type: text
                     text: "Als de Consument gebruik maakt van zijn Herroepingsrecht, worden alle aanvullende Overeenkomsten van rechtswege ontbonden.\_"
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -1071,6 +1041,8 @@ page_builder:
                   -
                     type: text
                     text: 'Na gebruikmaking van het Herroepingsrecht ziet de Consument af van het gebruik van de digitale inhoud of de digitale dienst en van de terbeschikkingstelling daarvan aan derden.'
+      -
+        type: paragraph
       -
         type: heading
         attrs:
@@ -1251,6 +1223,8 @@ page_builder:
                     type: text
                     text: 'Het is de Consument niet toegestaan de rechten en verplichtingen uit de Overeenkomst over te dragen aan een derde zonder voorafgaande Schriftelijke toestemming van Wishful Coding.'
       -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 3
@@ -1288,6 +1262,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1738233489
+updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
+updated_at: 1738234280
 ---
