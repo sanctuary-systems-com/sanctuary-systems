@@ -195,3 +195,11 @@ tabs:
                 cookie_notice_type: 'equals entry'
               validate:
                 - 'required_if:cookie_notice_type,entry'
+      -
+        display: Contactinfo
+        fields:
+          -
+            handle: email
+            field:
+              type: text
+              display: Email

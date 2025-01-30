@@ -44,7 +44,7 @@ page_builder:
                     text: 'Aanvullende overeenkomst:'
                   -
                     type: text
-                    text: ' een overeenkomst waarbij de Consument zaken, (digitale) diensten verwerft in verband met een Overeenkomst op Afstand en deze zaken of diensten door de Wishful Coding worden geleverd of door een derde partij op basis van een afspraak tussen die derde partij en Wishful Coding;'
+                    text: ' een overeenkomst waarbij de Consument zaken, (digitale) diensten verwerft in verband met een Overeenkomst op Afstand en deze zaken of diensten door Wishful Coding worden geleverd of door een derde partij op basis van een afspraak tussen die derde partij en Wishful Coding;'
           -
             type: listItem
             content:
@@ -74,7 +74,7 @@ page_builder:
                     text: 'Wishful Coding'
                   -
                     type: text
-                    text: ': de zelstandige zonder personeel Wishful Coding, gevestigd te Enschede, ingeschreven in het handelsregister van de Kamer van Koophandel onder het nummer: 51198274.'
+                    text: ': de zelfstandige zonder personeel Wishful Coding, gevestigd te Enschede, ingeschreven in het handelsregister van de Kamer van Koophandel onder het nummer: 51198274.'
           -
             type: listItem
             content:
@@ -320,21 +320,7 @@ page_builder:
                     type: hardBreak
                   -
                     type: text
-                    text: "\_\_\_\_\_\_\_\_\_\_ \_ website van Wishful Coding ("
-                  -
-                    type: text
-                    marks:
-                      -
-                        type: link
-                        attrs:
-                          href: 'https://sanctuary-systems.nl'
-                          rel: null
-                          target: null
-                          title: null
-                    text: 'https://sanctuary-systems.nl'
-                  -
-                    type: text
-                    text: ).
+                    text: "\_\_\_\_\_\_\_\_\_\_ \_ website van Wishful Coding (https://sanctuary-systems.com)."
           -
             type: listItem
             content:
@@ -367,7 +353,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Wishful Coding is een zelstandige zonder personeel die handelt onder de naam Sanctuary Systems.'
+                    text: 'Wishful Coding is een zelfstandige zonder personeel die handelt onder de naam Sanctuary Systems.'
           -
             type: listItem
             content:
@@ -376,7 +362,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Wishful Coding is per e-mail bereikbaar op: support@sanctuary-systems.com.'
+                    text: 'Wishful Coding is per e-mail bereikbaar op: {{ configuration:email | obfuscate }}'
       -
         type: paragraph
       -
@@ -1263,5 +1249,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738244483
+updated_at: 1738249882
 ---
