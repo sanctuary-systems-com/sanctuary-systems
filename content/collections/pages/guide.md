@@ -738,13 +738,33 @@ page_builder:
         content:
           -
             type: text
-            text: 'From Official add-ons install Piper and Samba share. Optionally also install openWakeWord and Assist Microphone.'
+            text: 'From Official add-ons install Piper. Optionally also install openWakeWord and Assist Microphone.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Sentinel Core additionally comes preconfigured withe the '
+            text: 'From '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://github.com/hacs/addons'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'HACS add-ons repository '
+          -
+            type: text
+            text: 'install Get HACS.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'From our very own '
           -
             type: text
             marks:
@@ -755,22 +775,16 @@ page_builder:
                   rel: null
                   target: _blank
                   title: null
-            text: 'Home Assistant LLM add-on repository'
+            text: 'LLM add-on repository'
           -
             type: text
-            text: ', from which we will install Ramalama and Ramalama Whisper for GPU accelerated Llama.cpp and Whisper.cpp. Additionally, install Sanctuary Updater to receive OS updates from our GPU-enabled fork of Home Assistant.'
+            text: ', install Llama.cpp and Whisper.cpp for GPU accelerated LLMs and voice recognition. Additionally, install Sanctuary Updater to receive OS updates from our GPU-enabled fork of Home Assistant.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'For most of these the default options are fine, but in particular you will want to set a Samba password and experiment with choosing different LLM models in the Ramalama configuration.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'For all these add-ons, make sure that "Start on boot" and "Watchdog" are enabled.'
+            text: 'For all these add-ons, make sure that "Start on boot" is enabled.'
     image: addon.png
     reversible: true
     type: panels
@@ -799,7 +813,7 @@ page_builder:
             text: 'Extended OpenAI Conversation'
           -
             type: text
-            text: '. To install that, download the ZIP file from the above link and extract it, connect to the Samba share and open the "config" folder. Drag the custom_components folder from the ZIP to the Samba share config folder. Now restart Home Assistant in Settings -> System and select "Restart Home Assistant" or "Reboot system" from the power menu in the top right.'
+            text: '. To install that, head over to the HACS panel in the sidebar, search for Extended OpenAI Conversation and click download and install.'
       -
         type: paragraph
         content:
@@ -817,13 +831,27 @@ page_builder:
         content:
           -
             type: text
-            text: 'Now click "Add Integration" and search for Extended OpenAI Conversation and add it. For the Base URL enter "http://localhost:10202" where 10202 is the port configured in the Ramalama addon. For the API key enter anything you want, and then proceed.'
+            text: 'Now click "Add Integration" and search for Extended OpenAI Conversation and add it. For the Base URL enter "http://localhost:8765" where 8765 is the port configured in the Llama.cpp addon. For the API key enter anything you want, and then proceed.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'You will probably want to tweak the prompt and make sure to enable "Control Home Assistant".'
+            text: 'In the configuration, change the chat model to a HuggingFace repository name like '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B-GGUF'
+                  rel: null
+                  target: null
+                  title: null
+            text: NousResearch/Hermes-3-Llama-3.1-8B-GGUF
+          -
+            type: text
+            text: '. You will probably want to tweak the prompt and make sure to enable "Control Home Assistant".'
     image: integrations.png
     reversible: true
     type: panels
@@ -938,6 +966,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738179085
+updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
+updated_at: 1743585347
 ---

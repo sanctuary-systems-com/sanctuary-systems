@@ -2,8 +2,8 @@
 id: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
 blueprint: page
 title: 'OS installation'
-updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738069495
+updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
+updated_at: 1743584614
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -19,7 +19,7 @@ page_builder:
     button_text: Dowload
     description: |-
       Download our GPU-enabled Home Assistant fork:
-      <a href="http://pkg.sanctuary-systems.com/hassos/haos_rpi5-64-15.0.dev0.img.xz" target="_blank" class="btn-ghost">Dowload HAOS v15.0</a>
+      <a href="http://pkg.sanctuary-systems.com/hassos/haos_rpi5-64-15.1.img.xz" target="_blank" class="btn-ghost">Dowload HAOS v15.1</a>
   -
     id: m6b4exx1
     article:
