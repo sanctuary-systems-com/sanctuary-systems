@@ -19,7 +19,7 @@ page_builder:
     button_text: Dowload
     description: |-
       Download our GPU-enabled Home Assistant fork:
-      <a href="http://pkg.sanctuary-systems.com/hassos/haos_rpi5-64-15.1.img.xz" target="_blank" class="btn-ghost">Dowload HAOS v15.1</a>
+      <a href="http://pkg.sanctuary-systems.com/hassos/haos_rpi5-64-15.2.img.xz" target="_blank" class="btn-ghost">Dowload HAOS v15.2</a>
   -
     id: m6b4exx1
     article:
