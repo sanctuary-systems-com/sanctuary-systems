@@ -8,7 +8,7 @@ page_builder:
     lead_title: 'Now Available for Pre-Order'
     title: 'The Sentinel Core'
     description: |-
-      <strike>€219.99 euro</strike>  - <strong>€179.99 euro</strong><br>
+      <strong>€219.99 euro</strong>
       <br>
       Get ready to elevate your home with privacy-first Local LLM—powerful, private, and built for creators. The first batch is <span>limited</span>, and once they’re gone, we’re moving back to a waitlist—don’t miss out!<br>
       <br>
@@ -202,5 +202,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1738231841
+updated_at: 1748034498
 ---
