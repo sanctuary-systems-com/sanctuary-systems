@@ -12,7 +12,7 @@ page_builder:
       <br>
       Get ready to elevate your home with privacy-first Local LLM—powerful, private, and built for creators. The first batch is <span>limited</span>, and once they’re gone, we’re moving back to a waitlist—don’t miss out!<br>
       <br>
-      <strong class="desc">Orders are expected to ship at the beginning of Q2 this year.</strong>
+      <strong class="desc">Orders are expected to ship Q3 this year.</strong>
     payment_title: 'The Sentinel Core'
     payment_description: 'with our custom Home Assistant pre-installed'
     payment_content: |-
@@ -202,5 +202,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1748034498
+updated_at: 1748349435
 ---
