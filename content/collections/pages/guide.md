@@ -687,7 +687,7 @@ page_builder:
   -
     id: m6c5dile
     lead_title: Add-ons
-    title: Add-ons
+    title: 'Adding the building blocks'
     content:
       -
         type: paragraph
@@ -802,7 +802,7 @@ page_builder:
   -
     id: m6c5dych
     lead_title: Integrations
-    title: Integrations
+    title: 'Making everything work together'
     content:
       -
         type: paragraph
@@ -835,13 +835,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Now head back to Settings -> Devices & Services, and from there use "add service" to configure the integrations we''ll need.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Make sure the following Wyoming items are configured:'
+            text: 'Now head back to Settings -> Devices & Services. Either Wyoming has detected Piper and Whisper.cpp or you need to add them yourself:'
       -
         type: bulletList
         content:
@@ -853,7 +847,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Piper, host: localhost, port: 10200'
+                    text: 'If they are detected, just hit the "Add" button.'
           -
             type: listItem
             content:
@@ -862,13 +856,34 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Whisper.cpp, host: localhost, port: 10303'
+                    text: 'Otherwise, select Wyoming Protocol and from there use "Add service" button to configure the integrations we''ll need. Just enter the host and port, and hit "submit":'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Piper, host: localhost, port: 10200'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Whisper.cpp, host: localhost, port: 10303'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Now configure Extended OpenAI Conversation:'
+            text: 'Now configure Extended OpenAI Conversation: Settings > Devices & Services > Hit the "Add intergration" button. Add "Extended OpenAI Conversation" with these settings:'
       -
         type: bulletList
         content:
@@ -931,7 +946,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'In the configuration, change'
+            text: 'In the configuration (Settings > Devices & Services > Extended OpenAI Conversation > ⚙️), change:'
       -
         type: bulletList
         content:
@@ -989,7 +1004,7 @@ page_builder:
   -
     id: m6c5eoac
     lead_title: 'Voice Assistant'
-    title: 'Voice Assistant'
+    title: 'Giving it a voice'
     content:
       -
         type: paragraph
@@ -1761,6 +1776,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1752657098
+updated_by: 4ec89364-7b70-4c80-9d33-825e7c64a1f8
+updated_at: 1752687649
 ---
