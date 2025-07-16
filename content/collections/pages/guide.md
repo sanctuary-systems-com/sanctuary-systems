@@ -680,44 +680,6 @@ page_builder:
                   -
                     type: text
                     text: 'Voice Assistant configuration'
-      -
-        type: paragraph
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'And optionally:'
-      -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Wake word detection: OpenWakeWord'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Speakers and microphones throughout your house: Wyoming'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Local microphone: Assist Microphone'
     type: long_content
     enabled: true
     lead_title: 'AI voice Assistant Setup'
@@ -732,19 +694,61 @@ page_builder:
         content:
           -
             type: text
-            text: 'Start by going to settings -> Add-ons -> Add-on store.'
+            text: 'Start by going to settings -> Add-ons -> Add-on store. From there install:'
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Piper - text to speech'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Get HACS - the installer for the The Home Assistant Community Store'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Llama.cpp - LLM runner'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Whisper.cpp - speech recognition'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Sanctuary Updater - to update our GPU enabled operating system fork'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'From Official add-ons install Piper. Optionally also install openWakeWord and Assist Microphone.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'From '
+            text: 'Our fork already comes configured with the '
           -
             type: text
             marks:
@@ -755,16 +759,10 @@ page_builder:
                   rel: null
                   target: null
                   title: null
-            text: 'HACS add-ons repository '
+            text: 'HACS add-ons repository'
           -
             type: text
-            text: 'install Get HACS.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'From our very own '
+            text: ' and our very own '
           -
             type: text
             marks:
@@ -778,13 +776,25 @@ page_builder:
             text: 'LLM add-on repository'
           -
             type: text
-            text: ', install Llama.cpp and Whisper.cpp for GPU accelerated LLMs and voice recognition. Additionally, install Sanctuary Updater to receive OS updates from our GPU-enabled fork of Home Assistant.'
+            text: .
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'For all these add-ons, make sure that "Start on boot" is enabled.'
+            text: 'Start Llama.cpp, Whisper.cpp and Piper, and make sure "start on boot" is checked.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If you want to check and install operating system updates, start Sanctuary Updater.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Start Get HACS and then switch to the logs tab and follow the instructions, which will prompt you to restart Home Assistant.'
     image: addon.png
     reversible: true
     type: panels
@@ -799,7 +809,13 @@ page_builder:
         content:
           -
             type: text
-            text: "There currently isn't an official Llama.cpp integration, so we will use "
+            text: 'Now head over to Settings -> Devices & Services -> Add Integration, search for HACS, and install it.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Go to the new HACS icon in the side bar, search for '
           -
             type: text
             marks:
@@ -813,45 +829,159 @@ page_builder:
             text: 'Extended OpenAI Conversation'
           -
             type: text
-            text: '. To install that, head over to the HACS panel in the sidebar, search for Extended OpenAI Conversation and click download and install.'
+            text: ", and install it. Don't worry, we'll change the settings so it connects to llama.cpp instead of OpenAI."
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Now head over to Settings -> Devices & Services.'
+            text: 'Now head back to Settings -> Devices & Services, and from there use "add service" to configure the integrations we''ll need.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'All the installed voice add-ons should be auto-detected by Wyoming. If not, manually add Wyoming and click on "add service", then enter "localhost" and the port from the settings of each voice add-on.'
+            text: 'Make sure the following Wyoming items are configured:'
       -
-        type: paragraph
+        type: bulletList
         content:
           -
-            type: text
-            text: 'Now click "Add Integration" and search for Extended OpenAI Conversation and add it. For the Base URL enter "http://localhost:8765" where 8765 is the port configured in the Llama.cpp addon. For the API key enter anything you want, and then proceed.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'In the configuration, change the chat model to a HuggingFace repository name like '
-          -
-            type: text
-            marks:
+            type: listItem
+            content:
               -
-                type: link
-                attrs:
-                  href: 'https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B-GGUF'
-                  rel: null
-                  target: null
-                  title: null
-            text: NousResearch/Hermes-3-Llama-3.1-8B-GGUF
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Piper, host: localhost, port: 10200'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Whisper.cpp, host: localhost, port: 10303'
+      -
+        type: paragraph
+        content:
           -
             type: text
-            text: '. You will probably want to tweak the prompt and make sure to enable "Control Home Assistant".'
+            text: 'Now configure Extended OpenAI Conversation:'
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Name: llama.cpp'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'API key: dummy'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Base URL: http://localhost:8765 (so it uses llama.cpp locally on the Sentinel Core)'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Version: leave blank'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Organization: leave blank'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Skip authentication: no'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'In the configuration, change'
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'prompt template: customize the personality as you like'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'chat model: a HuggingFace repository name like '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: link
+                        attrs:
+                          href: 'https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B-GGUF'
+                          rel: null
+                          target: null
+                          title: null
+                    text: NousResearch/Hermes-3-Llama-3.1-8B-GGUF
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Maximum tokens to return in response: 300 (increase if you get an error about response length)'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'tool use: enable'
     image: integrations.png
     reversible: true
     type: panels
@@ -878,7 +1008,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'Conversation Agent: the configuration added in Extended OpenAI Converation'
+                    text: 'Conversation Agent: llama.cpp'
           -
             type: listItem
             content:
@@ -961,11 +1091,676 @@ page_builder:
     reversible: true
     type: panels
     enabled: true
+  -
+    id: md5p72i4
+    lead_title: Overview
+    title: 'The system at a glance'
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Home Assistant has quite a complex menu, so here is where you find all the different settings and components at a glance'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: Settings
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Devices and Services - glue between Home Assistant and add-ons and other things'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Extended OpenAI Conversation'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Options (⚙️)'
+                              -
+                                type: bulletList
+                                content:
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            marks:
+                                              -
+                                                type: bold
+                                            text: 'The prompt / personality of your assistant'
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            marks:
+                                              -
+                                                type: bold
+                                            text: 'The large language model used from HuggingFace'
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            text: 'Functions your model can call ('
+                                          -
+                                            type: text
+                                            marks:
+                                              -
+                                                type: link
+                                                attrs:
+                                                  href: 'https://github.com/jekalmin/extended_openai_conversation/tree/main/examples/function'
+                                                  rel: null
+                                                  target: null
+                                                  title: null
+                                            text: examples
+                                          -
+                                            type: text
+                                            text: )
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Add service'
+                              -
+                                type: bulletList
+                                content:
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            text: 'API key: anything'
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            text: 'Base URL: http://localhost:8765'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Wyoming - configure the connection to the voice related add-ons'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Voice Assistants - configuration of the whole pipeline'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Assistants -> Home Assistant'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    marks:
+                                      -
+                                        type: bold
+                                    text: 'Conversation agent: the integration to use (Extended OpenAI Conversation)'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Prefer Handling command locally: try the default rule based assistant before sending the prompt to the (also local) LLM.'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Speech to text: whisper.cpp'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Text to speech: piper'
+                              -
+                                type: bulletList
+                                content:
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            marks:
+                                              -
+                                                type: bold
+                                            text: 'Language & voice: select the model to use for TTS'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Add-ons - independent software components'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Add-on store - install and update add-ons'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Llama.cpp - LLM runner'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    marks:
+                                      -
+                                        type: bold
+                                    text: 'Logs: watch LLM status and any possible errors'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Whisper.cpp - speech recognition'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Configuration: voice model, language'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Logs: watch voice recognition status and any possible errors'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Sanctuary Updater:'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Configuration: force update'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    marks:
+                                      -
+                                        type: bold
+                                    text: 'Logs: see version check status and update progress'
+    reversible: true
+    type: panels
+    enabled: false
+  -
+    id: md5qrnze
+    lead_title: Overview
+    title: 'The system at a glance'
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Home Assistant has quite a complex menu, so here is where you find all the different settings and components at a glance'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: Settings
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Devices and Services - glue between Home Assistant and add-ons and other things'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Extended OpenAI Conversation'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Options (⚙️)'
+                              -
+                                type: bulletList
+                                content:
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            marks:
+                                              -
+                                                type: bold
+                                            text: 'The prompt / personality of your assistant'
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            marks:
+                                              -
+                                                type: bold
+                                            text: 'The large language model used from HuggingFace'
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            text: 'Functions your model can call ('
+                                          -
+                                            type: text
+                                            marks:
+                                              -
+                                                type: link
+                                                attrs:
+                                                  href: 'https://github.com/jekalmin/extended_openai_conversation/tree/main/examples/function'
+                                                  rel: null
+                                                  target: null
+                                                  title: null
+                                            text: examples
+                                          -
+                                            type: text
+                                            text: )
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Add service'
+                              -
+                                type: bulletList
+                                content:
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            text: 'API key: anything'
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            text: 'Base URL: http://localhost:8765'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Wyoming - configure the connection to the voice related add-ons'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Voice Assistants - configuration of the whole pipeline'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Assistants -> Home Assistant'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    marks:
+                                      -
+                                        type: bold
+                                    text: 'Conversation agent: the integration to use (Extended OpenAI Conversation)'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Prefer Handling command locally: try the default rule based assistant before sending the prompt to the (also local) LLM.'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Speech to text: whisper.cpp'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Text to speech: piper'
+                              -
+                                type: bulletList
+                                content:
+                                  -
+                                    type: listItem
+                                    content:
+                                      -
+                                        type: paragraph
+                                        content:
+                                          -
+                                            type: text
+                                            marks:
+                                              -
+                                                type: bold
+                                            text: 'Language & voice: select the model to use for TTS'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Add-ons - independent software components'
+              -
+                type: bulletList
+                content:
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Add-on store - install and update add-ons'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Llama.cpp - LLM runner'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    marks:
+                                      -
+                                        type: bold
+                                    text: 'Logs: watch LLM status and any possible errors'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Whisper.cpp - speech recognition'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Configuration: voice model, language'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Logs: watch voice recognition status and any possible errors'
+                  -
+                    type: listItem
+                    content:
+                      -
+                        type: paragraph
+                        content:
+                          -
+                            type: text
+                            text: 'Sanctuary Updater:'
+                      -
+                        type: bulletList
+                        content:
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    text: 'Configuration: force update'
+                          -
+                            type: listItem
+                            content:
+                              -
+                                type: paragraph
+                                content:
+                                  -
+                                    type: text
+                                    marks:
+                                      -
+                                        type: bold
+                                    text: 'Logs: see version check status and update progress'
+    type: long_content
+    enabled: true
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1743585347
+updated_at: 1752657098
 ---

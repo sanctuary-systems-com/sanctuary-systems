@@ -3,7 +3,7 @@ id: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
 blueprint: page
 title: 'OS installation'
 updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1752651044
+updated_at: 1752651241
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -339,34 +339,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Once the image has been written, disconnect and reconnect the Compute Module. You should now see two partitions (for Raspberry Pi OS):'
-      -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: '/dev/sdX <- Device /dev/sdX1 <- First partition'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: '(FAT) /dev/sdX2 <- Second partition (Linux filesystem)'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'You can mount the /dev/sdX1 and /dev/sdX2 partitions normally.'
+            text: 'Once the image has been written, disconnect and reconnect the Compute Module. You should now see some partitions. You can mount the partitions normally if desired.'
     image: host-device.png
     type: panels
     enabled: true
