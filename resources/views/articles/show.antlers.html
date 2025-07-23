@@ -1,0 +1,25 @@
+<main class="stack-12 md:stack-16 lg:stack-24" id="content">
+    {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+
+    <section class="articles">
+        <div class="container">
+            <h3>More articles</h3>
+            {{ collection:articles limit="3" }}
+                <a href="{{ url }}" class="article-item">
+                    <div class="col-span-1">
+                        <img src="{{ featured_image:url }}" alt="{{ featured_image:alt ?? title }}">
+                    </div>
+                    <div class="col-span-4">
+                        <span class="title">{{ title }}</span>
+                        <div class="description">{{ description }}</div>
+                    </div>
+                    <div class="col-span-1 text-right">
+                        <span class="date">{{ date }}</span>
+                    </div>
+                </a>
+            {{ /collection:articles }}
+        </div>
+    </section>
+</main>

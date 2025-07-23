@@ -678,3 +678,20 @@ footer {
         }
     }
 }
+
+// Articles index
+.articles {
+    @apply py-16;
+
+    .container {
+        @apply grid divide-y divide-gray-800;
+    }
+
+    .article-item {
+       @apply grid grid-cols-6 gap-4 no-underline py-8;
+    }
+
+    .description {
+        @apply text-white font-normal;
+    }
+}
