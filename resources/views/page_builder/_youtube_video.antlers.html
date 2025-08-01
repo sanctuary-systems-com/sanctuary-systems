@@ -10,9 +10,11 @@
         <iframe class="w-full aspect-video" src="{{ youtube_video_url }}" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-        <div>
-            <a href="{{ button_url }}" class="rounded bg-primary-300 text-gray-900 font-bold py-4 px-8 mx-auto inline-block mt-4">{{ button_text }}</a>
-        </div>
+        {{ if button_url }}
+            <div>
+                <a href="{{ button_url }}" class="rounded bg-primary-300 text-gray-900 font-bold py-4 px-8 mx-auto inline-block mt-4">{{ button_text }}</a>
+            </div>
+        {{ /if }}
     </div>
     
 {{ /partial:page_builder/block }}
