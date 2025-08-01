@@ -9,8 +9,12 @@
 
     <div class="container">
         <div class="col">
-            <span class="lead-title">{{ lead_title }}</span>
-            <h2>{{ title }}</h2>
+            {{ if lead_title }}
+                <span class="lead-title">{{ lead_title }}</span>
+            {{ /if }}
+            {{ if title }}
+                <h2>{{ title }}</h2>
+            {{ /if }}
         </div>
         <div class="col">
             {{ content }}
