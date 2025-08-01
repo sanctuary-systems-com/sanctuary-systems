@@ -6,7 +6,7 @@
     <section class="articles">
         <div class="container">
             <h3>More articles</h3>
-            {{ collection:articles limit="3" }}
+            {{ collection:articles sort="random" limit="3" }}
                 <a href="{{ url }}" class="article-item group">
                     <div class="col-span-1 transition-all duration-300 group-hover:translate-x-1">
                         <img class="aspect-square object-cover" src="{{ featured_image:url }}" alt="{{ featured_image:alt ?? title }}">

@@ -5,7 +5,7 @@
 
     <section class="articles">
         <div class="container">
-            {{ collection:articles }}
+            {{ collection:articles sort="date:desc" }}
                 <a href="{{ url }}" class="article-item group">
                     <div class="col-span-1 transition-all duration-300 group-hover:translate-x-1">
                         <img class="aspect-square object-cover" src="{{ featured_image:url }}" alt="{{ featured_image:alt ?? title }}">
