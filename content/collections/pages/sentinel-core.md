@@ -98,7 +98,7 @@ page_builder:
     fname_field: 'First name*'
     email_field: 'Email Address*'
     button_text: 'Keep in touch'
-    optin_note: 'We respect your privacy. You’ll only hear from us when it matters. No noise. No nonsense. Unsub whenever you want.'
+    optin_note: 'We respect your privacy. You’ll only hear from us when it matters. No noise. No nonsense. Just what you asked for. Unsub whenever you want.'
     mailchimp_groups:
       - sentinel_waitinglist
       - general_product_updates
@@ -233,5 +233,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 4ec89364-7b70-4c80-9d33-825e7c64a1f8
-updated_at: 1754485137
+updated_at: 1754492229
 ---

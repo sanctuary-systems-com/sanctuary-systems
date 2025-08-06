@@ -21,15 +21,19 @@
             <form action="https://sanctuary-systems.us18.list-manage.com/subscribe/post?u=e7f7b594438b722449e6ccffd&amp;id=1591002080&amp;v_id=5982&amp;f_id=00a829e7f0" method="post" name="mc-embedded-subscribe-form" target="_self" novalidate="">
                 <input type="text" name="FNAME" required="" placeholder="{{ fname_field }}">
                 <input type="email" name="EMAIL" required="" placeholder="{{ email_field }}">
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                </div>
                 <div aria-hidden="true" style="position: absolute; left: -5000px;">
                     <input type="text" name="b_e7f7b594438b722449e6ccffd_1591002080" tabindex="-1" value="">
                 </div>
                 {{ if visible_group_checkboxes }}
                     <div>
-                        <p>Notify me about:</p>
+                        <p>Send me:</p>
                         <ul>
-                            <li>{{ if mailchimp_groups | pluck('key') | contains('sentinel_waitinglist') }}<input type="checkbox" name="group[222851][8]" id="WaitlistSentinelCore" value="" checked>{{ /if }} Next batches</li>
-                            <li>{{ if mailchimp_groups | pluck('key') | contains('general_product_updates') }}<input type="checkbox" name="group[222851][16]" id="GeneralProductUpdates" value="" checked>{{ /if }} Products & offers</li>
+                            <li>{{ if mailchimp_groups | pluck('key') | contains('sentinel_waitinglist') }}<input type="checkbox" name="group[222851][8]" id="WaitlistSentinelCore" value="" checked>{{ /if }} Batch notifications</li>
+                            <li>{{ if mailchimp_groups | pluck('key') | contains('general_product_updates') }}<input type="checkbox" name="group[222851][16]" id="GeneralProductUpdates" value="" checked>{{ /if }} Products offers</li>
                             <li>{{ if mailchimp_groups | pluck('key') | contains('tips_and_tricks') }}<input type="checkbox" name="group[222851][32]" id="TipsAndTricks" value="" checked>{{ /if }} Tips and tricks</li>
                         </ul>
                     </div>
