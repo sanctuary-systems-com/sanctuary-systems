@@ -26,6 +26,22 @@ fields:
       type: text
       display: Email_field
   -
+    handle: mailchimp_groups
+    field:
+      options:
+        -
+          key: sentinel_waitinglist
+          value: 'Sentinel waitinglist'
+        -
+          key: general_product_updates
+          value: 'General product updates'
+        -
+          key: tips_and_tricks
+          value: 'Tips and tricks'
+      type: checkboxes
+      display: 'Mailchimp Groups'
+      inline: true
+  -
     handle: button_text
     field:
       type: text
@@ -35,3 +51,15 @@ fields:
     field:
       type: textarea
       display: 'Optin note'
+  -
+    handle: more_top_padding
+    field:
+      type: toggle
+      display: 'More top padding'
+      width: 50
+  -
+    handle: visible_group_checkboxes
+    field:
+      type: toggle
+      display: 'Visible group checkboxes'
+      width: 50

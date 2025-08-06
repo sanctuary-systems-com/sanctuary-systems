@@ -135,6 +135,7 @@
     }
 }
 
+// Opt-in
 .optin {
     @apply bg-gray;
 
@@ -150,7 +151,7 @@
         @apply text-xl;
     }
 
-    p {
+    .description {
         span {
             @apply text-primary font-bold;
         }
@@ -166,7 +167,12 @@
         sub {
             @apply text-sm;
         }
+
+        ul {
+            @apply list-disc pl-4;
+        }
     }
+
 
     form {
         @apply bg-gray-900 p-6 rounded-md grid grid-cols-1 gap-6;
@@ -179,13 +185,25 @@
             }
         }
 
+        input[type=checkbox] {
+            @apply bg-white transition-all;
+
+            &:hover {
+                @apply bg-primary-100 cursor-pointer;
+            }
+
+            &:checked {
+                @apply bg-primary-300;
+            }
+        }
+
         .btn-primary {
             @apply mt-0;
         }
     }
 
     .note {
-        @apply text-sm font-normal text-gray-200/50 py-4 px-6;
+        @apply text-sm font-normal text-gray-200/50 pt-4 px-6;
     }
 }
 

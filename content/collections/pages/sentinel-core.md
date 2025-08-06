@@ -66,6 +66,11 @@ page_builder:
     email_field: 'Email Address*'
     button_text: 'Join the Waitlist'
     optin_note: 'We respect your privacy. This list will only be used to notify you when the Sentinel Core becomes available—no spam, no exceptions.'
+    mailchimp_groups:
+      - sentinel_waitinglist
+    less_bottom_padding: true
+    more_top_padding: true
+    visible_group_checkboxes: false
   -
     id: m623utnd
     type: gallery
@@ -75,6 +80,32 @@ page_builder:
       - sentinel-core-top-view.png
       - sentinel-core-io-view.png
     note: 'These images are renders - actual product may differ'
+  -
+    id: mdzwzqv1
+    lead_title: 'Not Ready Yet? Stay in the Loop'
+    title: 'Get Updates, Tips & Early Access'
+    description: |-
+      If now’s not the right time to order, you can still stay connected.
+      We’ll keep you in the loop with:
+      <ul>
+      <li>Next batch alerts</li>
+      <li>Product updates & exclusive offers</li>
+      <li>DIY tips, tutorials, and inspiration</li>
+      </ul>
+      <br> <strong>Subscribe and get the updates you care about, on your terms.</strong>
+    type: optin
+    enabled: true
+    fname_field: 'First name*'
+    email_field: 'Email Address*'
+    button_text: 'Keep in touch'
+    optin_note: 'We respect your privacy. You’ll only hear from us when it matters. No noise. No nonsense. Unsub whenever you want.'
+    mailchimp_groups:
+      - sentinel_waitinglist
+      - general_product_updates
+      - tips_and_tricks
+    less_bottom_padding: false
+    more_top_padding: false
+    visible_group_checkboxes: true
   -
     id: m621115e
     content:
@@ -201,6 +232,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: cff888d4-2e6d-4cab-8708-b98e43893a12
-updated_at: 1748349435
+updated_by: 4ec89364-7b70-4c80-9d33-825e7c64a1f8
+updated_at: 1754485137
 ---

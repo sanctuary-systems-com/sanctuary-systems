@@ -7,23 +7,33 @@
 <!-- /page_builder/_optin.antlers.html -->
 {{ partial:page_builder/block class="optin" }}
 
-    <div class="container {{ if is_homepage }}py-32 lg:py-32{{ else }}pt-36 pb-12{{ /if }}">
+    <div class="container {{ if more_top_padding }}pt-32 pb-12{{ else }}py-12 lg:py-12{{ /if }}">
         <div class="col">
             {{ if lead_title }}
                 <span class="lead-title">{{ lead_title }}</span>
             {{ /if }}
             <h1>{{ title }}</h1>
             {{ if description }}
-                <p>{{ description }}</p>
+                <div class="description">{{ description }}</div>
             {{ /if }}
         </div>
         <div class="col">
-            <form action="https://pepijndevos.us18.list-manage.com/subscribe/post?u=e7f7b594438b722449e6ccffd&amp;id=1591002080&amp;f_id=00a829e7f0" method="post" name="mc-embedded-subscribe-form" target="_self" novalidate="">
+            <form action="https://sanctuary-systems.us18.list-manage.com/subscribe/post?u=e7f7b594438b722449e6ccffd&amp;id=1591002080&amp;v_id=5982&amp;f_id=00a829e7f0" method="post" name="mc-embedded-subscribe-form" target="_self" novalidate="">
                 <input type="text" name="FNAME" required="" placeholder="{{ fname_field }}">
                 <input type="email" name="EMAIL" required="" placeholder="{{ email_field }}">
                 <div aria-hidden="true" style="position: absolute; left: -5000px;">
                     <input type="text" name="b_e7f7b594438b722449e6ccffd_1591002080" tabindex="-1" value="">
                 </div>
+                {{ if visible_group_checkboxes }}
+                    <div>
+                        <p>Notify me about:</p>
+                        <ul>
+                            <li>{{ if mailchimp_groups | pluck('key') | contains('sentinel_waitinglist') }}<input type="checkbox" name="group[222851][8]" id="WaitlistSentinelCore" value="" checked>{{ /if }} Next batches</li>
+                            <li>{{ if mailchimp_groups | pluck('key') | contains('general_product_updates') }}<input type="checkbox" name="group[222851][16]" id="GeneralProductUpdates" value="" checked>{{ /if }} Products & offers</li>
+                            <li>{{ if mailchimp_groups | pluck('key') | contains('tips_and_tricks') }}<input type="checkbox" name="group[222851][32]" id="TipsAndTricks" value="" checked>{{ /if }} Tips and tricks</li>
+                        </ul>
+                    </div>
+                {{ /if }}
                 <input type="submit" name="subscribe" class="btn-primary" value="{{ button_text }}">
             </form>
             <p class="note">{{ optin_note }}</p>
