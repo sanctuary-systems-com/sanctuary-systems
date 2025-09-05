@@ -25,7 +25,7 @@ page_builder:
     button_text: 'Pre-Order Now'
     note: 'Your privacy is our priority—no hidden fees, no cloud, no compromises.<br>Shipping calculated at checkout. International shipping available.'
     type: payment
-    enabled: true
+    enabled: false
   -
     id: m6htktrj
     lead_title: 'Own Your Sanctuary'
@@ -55,13 +55,11 @@ page_builder:
     lead_title: 'Coming Soon'
     title: 'The Sentinel Core'
     description: |-
-      <strike>€219.99 USD</strike>  - <strong>€179.99 USD</strong><br>
-      <br>
-      Get ready to elevate your home setup with privacy-first Local AI. The Sentinel Core is <span>almost here</span>, and our first batch will be <span>limited.</span> Once the first batch sells out, we’ll move back to waitlist mode—don’t miss out!<br>
+      Get ready to elevate your home setup with privacy-first Local AI. The Sentinel Core is <span>almost here</span>, and our batches are <span>limited.</span> Once the batch sells out, we’ll move back to waitlist mode—don’t miss out!<br>
       <br>
       <strong>Join the waiting list here to get notified as soon as it’s available.</strong>
     type: optin
-    enabled: false
+    enabled: true
     fname_field: 'First name*'
     email_field: 'Email Address*'
     button_text: 'Join the Waitlist'
@@ -233,5 +231,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 4ec89364-7b70-4c80-9d33-825e7c64a1f8
-updated_at: 1754492229
+updated_at: 1757080674
 ---
