@@ -112,34 +112,46 @@ page_builder:
         content:
           -
             type: text
+            text: 'The Sentinel Core is your toolkit for crafting a powerful, private, and fully autonomous home. Built for creators, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary, all '
+          -
+            type: text
             marks:
               -
-                type: italic
-            text: 'The Sentinel Core is your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
+                type: bold
+            text: 'without depending on the cloud'
+          -
+            type: text
+            text: .
           -
             type: hardBreak
           -
             type: hardBreak
           -
             type: text
-            text: 'Built around the Raspberry Pi Compute Module 5 (CM5) and equipped with a PCIe slot for GPU compatibility, it provides the horsepower for lightning-fast large language models (LLMs) computation. All while maintaining the energy efficiency and sleek form factor you expect.'
+            text: 'At its heart is the Raspberry Pi Compute Module 5 (CM5) and a high-speed PCIe slot, ready for GPU acceleration. That means you have the hardware muscle to run large language models (LLMs) locally and experiment with privacy-first AI. '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'How you use that power is entirely up to you.'
     type: long_content
     enabled: true
     lead_title: 'Why Choose Sentinel Core?'
-    title: 'Unleash full power Local AI'
+    title: 'Unleash Local AI Potential, On Your Terms'
   -
     id: m627mfoh
     features:
       -
         id: m627mgvy
-        title: 'Unmatched Local AI Power'
-        body: 'This custom Raspberry Pi 5 features a PCIe port for the GPU of your choice, unlocking full-power large language model (LLM) computation. Experience lightning-fast, privacy-first, local AI voice assistance, with unmatched power.'
+        title: 'Hardware Built to Empower'
+        body: 'We provide the foundation: a powerful, flexible platform that’s fully yours to shape. Whether you’re running Home Assistant and want to exploring local LLMs, or building something entirely new, Sentinel Core is designed to support your creativity without locking you into anyone else’s ecosystem.'
         type: feature
         enabled: true
       -
         id: m627nboc
         title: 'Customizable and Future-Ready'
-        body: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed—while maintaining a premium, compact build.'
+        body: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed, while maintaining a premium, compact build.'
         type: feature
         enabled: true
       -
@@ -150,8 +162,8 @@ page_builder:
         enabled: true
       -
         id: m627n4uk
-        title: 'Effortless Setup'
-        body: 'With our custom Home Assistant pre-installed, getting started is seamless—for beginners and experienced DIY enthusiasts.'
+        title: 'Your Sanctuary, Your Setup'
+        body: 'We believe in giving creators total control. Sentinel Core ships as a powerful hardware platform, you decide how to build on it. GPU-accelerated local AI on Raspberry Pi is still a frontier, and while it’s possible, it requires experimentation and a willingness to tinker. We include a quick-start guide to help you take the first steps, and we plan to share more community-driven resources over time as the ecosystem evolves.'
         type: feature
         enabled: true
     type: features
@@ -225,11 +237,23 @@ page_builder:
         description: 'A half-sized breadboard area for breaking the rules and building the impossible.'
     type: spec_list
     enabled: true
+  -
+    id: mghoxcy3
+    title: 'Your System. Your Rules.'
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Sentinel Core gives you the foundation, the rest is up to you. Build the system you’ve always wanted, without the compromises of the cloud. Reclaim your home, your data, and your creative freedom.'
+    type: long_content
+    enabled: true
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 4ec89364-7b70-4c80-9d33-825e7c64a1f8
-updated_at: 1757080674
+updated_at: 1759910610
 ---

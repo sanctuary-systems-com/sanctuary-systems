@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: cdeed34e-ed72-49e8-9645-bf272a80a401
-updated_at: 1738162558
+updated_by: 4ec89364-7b70-4c80-9d33-825e7c64a1f8
+updated_at: 1759911198
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -17,9 +17,9 @@ page_builder:
     title: 'Power Your Sanctuary with Local AI'
     lead_title: 'The Sentinel Core'
     description: |-
-      Reclaim your home with the Sentinel Core, the ultimate platform for <span>privacy-first</span>, DIY smart home systems. Built for autonomous, <span>local AI</span> home automation, this custom Raspberry Pi 5 embraces a "Bring Your Own GPU" mindset.
+      Reclaim your home with the Sentinel Core, the ultimate platform for <span>privacy-first</span>, DIY smart home systems. Built for autonomous, <span>local AI</span> home automation experimentation, this custom Raspberry Pi 5 embraces a "Bring Your Own GPU" mindset.
       <br><br>
-      Featuring a PCIe port for connecting <span>full-power GPUs</span>, the Sentinel Core empowers you to run advanced large language models and create a private, offline voice assistant with unmatched performance.
+      Featuring a PCIe port for connecting <span>full-power GPUs</span>, the Sentinel Core gives you the hardware foundation to explore advanced large language models and build private, offline AI experiences, all on your terms.
     button_text: 'Explore Sentinel Core'
     button_link: 'entry::7f925bd3-aa62-4c27-bbfe-040c24bfae6f'
     image: sentinel-core-isometric-view.png
@@ -165,31 +165,31 @@ page_builder:
   -
     id: m5wme04w
     lead_title: 'Why Choose Sentinel Core?'
-    title: 'Unleash full power Local AI'
+    title: 'Unleash Local AI Potential'
     description: 'The Sentinel Core is your toolkit for crafting a powerful, private, and fully autonomous home. Designed with creators in mind, it gives you the freedom to innovate, reclaim control, and safeguard your sanctuary.'
     usps:
       -
         id: m5wmgpxf
-        title: 'Effortless Setup'
-        description: 'With our custom Home Assistant pre-installed, getting started is seamless—for beginners and experienced DIY enthusiasts.'
+        title: 'Built for Experimenters'
+        description: 'We believe in giving creators total control. Sentinel Core ships as a powerful hardware platform, you decide how to build on it. GPU-accelerated local AI on Raspberry Pi is still a frontier, and while it’s possible, it requires experimentation and a willingness to tinker. We have a quick-start guide to help you take the first steps, and we plan to share more community-driven resources over time as the ecosystem evolves.'
         type: new_set
         enabled: true
       -
         id: m5xxutu9
         title: 'Customizable and Future-Ready'
-        description: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed—while maintaining a premium, compact build.'
+        description: 'Its Mini ITX form factor offers compatibility with repurposed PC components, giving you the freedom to customize and upgrade as needed, while maintaining a premium, compact build.'
         type: new_set
         enabled: true
       -
         id: m5wmggc3
         title: 'Energy Efficiency Meets Performance'
-        description: 'Leveraging the Raspberry Pi 5 foundation, the Sentinel Core delivers exceptional energy efficiency without sacrificing capability.'
+        description: 'Built on the Raspberry Pi 5 foundation, the Sentinel Core delivers exceptional energy efficiency without sacrificing capability.'
         type: new_set
         enabled: true
       -
         id: m5wmfi34
-        title: 'Unmatched Local AI Power'
-        description: 'This custom Raspberry Pi 5 features a PCIe port for the GPU of your choice, unlocking full-power large language model (LLM) computation. Experience lightning-fast, privacy-first, local AI voice assistance, with unmatched power.'
+        title: 'Your Sanctuary, Your Setup'
+        description: 'This custom Raspberry Pi 5 features a PCIe port for the GPU of your choice, unlocking new possibilities for local AI and LLM experimentation. It’s a platform built for those who want to explore, innovate, and push the boundaries of what’s possible, privately and on their own terms.'
         type: new_set
         enabled: true
     type: product
